@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="hi-en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="RSSB Senior Computer Instructor 2026 - Complete Exam Preparation App with Study Plan, Theory, Practice MCQs, and Progress Tracking">
+  <meta name="keywords" content="RSSB, Senior Computer Instructor, 2026, Rajasthan, Exam Prep, Study, MCQ, Computer Science">
+  <title>RSSB Exam Prep 2026 — Senior Computer Instructor</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- NAV -->
+  <nav class="navbar" id="navbar">
+    <a class="nav-brand" onclick="navigateTo('/')">
+      <span class="nav-brand-icon">🎯</span>
+      <span>RSSB Prep 2026</span>
+    </a>
+    <button class="hamburger" id="hamburger" onclick="toggleMobileNav()">☰</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#/" onclick="navClick(event, '/')" id="nav-dashboard">📊 Dashboard</a></li>
+      <li><a href="#/study-plan" onclick="navClick(event, '/study-plan')" id="nav-study-plan">📅 Study Plan</a></li>
+      <li><a href="#/progress" onclick="navClick(event, '/progress')" id="nav-progress">📈 Mera Progress</a></li>
+    </ul>
+  </nav>
+
+  <!-- MAIN CONTENT -->
+  <main class="main-content">
+    <div class="container" id="app">
+      <div class="spinner"></div>
+    </div>
+  </main>
+
+  <!-- DATA FILES -->
+  <script src="data/study-plan-data.js"></script>
+  <script src="data/subject-pedagogy.js"></script>
+  <script src="data/subject-mental-ability.js"></script>
+  <script src="data/subject-computer-fundamentals.js"></script>
+  <script src="data/subject-programming.js"></script>
+  <script src="data/subject-oop.js"></script>
+  <script src="data/subject-dsa.js"></script>
+  <script src="data/subject-algorithms.js"></script>
+  <script src="data/subject-digital-logic.js"></script>
+  <script src="data/subject-computer-org.js"></script>
+  <script src="data/subject-os.js"></script>
+  <script src="data/subject-dbms.js"></script>
+  <script src="data/subject-se.js"></script>
+  <script src="data/subject-networks.js"></script>
+  <script src="data/subject-security.js"></script>
+  <script src="data/subject-communication.js"></script>
+  <script src="data/subject-web-dev.js"></script>
+
+  <!-- APP JS -->
+  <script src="js/storage.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
