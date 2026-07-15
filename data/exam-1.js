@@ -3,2405 +3,2388 @@ window.EXAMS['exam1'] = {
     paper1: [
   {
     "id": "e1_p1_q1",
-    "text": "[Q1] Which river is known as the lifeline of Rajasthan?",
+    "text": "In which year was the state of Rajasthan formed?",
     "options": [
-      "Luni",
-      "Chambal",
-      "Mahi",
-      "Banas"
+      "1949",
+      "1947",
+      "1950",
+      "1956"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 1 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q2",
-    "text": "[Q2] Who built the Hawa Mahal in Jaipur?",
+    "text": "A train 100m long passes a pole in 10s. Speed?",
     "options": [
-      "Sawai Jai Singh",
-      "Sawai Pratap Singh",
-      "Raja Man Singh",
-      "Maharana Pratap"
+      "20 m/s",
+      "15 m/s",
+      "10 m/s",
+      "5 m/s"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 2 in Paper I of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q3",
-    "text": "[Q3] Which festival is celebrated in Rajasthan with camel races?",
+    "text": "Which year is a leap year?",
     "options": [
-      "Teej",
-      "Pushkar Fair",
-      "Desert Festival",
-      "Gangaur"
+      "2024",
+      "2021",
+      "2023",
+      "2022"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 3 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q4",
-    "text": "[Q4] In which year was the state of Rajasthan formed?",
+    "text": "If 10 men can do a work in 15 days, how many days for 5 men?",
     "options": [
-      "1947",
-      "1949",
-      "1950",
-      "1956"
+      "30 days",
+      "20 days",
+      "25 days",
+      "15 days"
     ],
-    "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 4 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q5",
-    "text": "[Q5] What is the official state tree of Rajasthan?",
+    "text": "What is the capital of Rajasthan?",
     "options": [
-      "Banyan",
-      "Peepal",
-      "Khejri",
-      "Neem"
+      "Jaipur",
+      "Kota",
+      "Jodhpur",
+      "Udaipur"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 5 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q6",
-    "text": "[Q6] Which is the highest peak in the Aravalli Range?",
+    "text": "The average of first 5 natural numbers is?",
     "options": [
-      "Mount Abu",
-      "Guru Shikhar",
-      "Achalgarh",
-      "Kumbhalgarh"
+      "2",
+      "4",
+      "3",
+      "5"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 6 in Paper I of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q7",
-    "text": "[Q7] The famous Dilwara Temples are located in:",
+    "text": "What is 20% of 150?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Mount Abu",
-      "Jaisalmer"
+      "30",
+      "50",
+      "40",
+      "20"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 7 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q8",
-    "text": "[Q8] Which is the largest desert in Rajasthan?",
+    "text": "If 'APPLE' is coded as 'BQQMF', what is 'MAN'?",
     "options": [
-      "Sahara",
-      "Thar",
-      "Gobi",
-      "Kalahari"
+      "OBO",
+      "NBN",
+      "MBO",
+      "NBO"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 8 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q9",
-    "text": "[Q9] If 'A' is encoded as 1 and 'B' as 2, what is the code for 'CAB'?",
+    "text": "Which river is known as the lifeline of Rajasthan?",
     "options": [
-      "312",
-      "123",
-      "231",
-      "321"
+      "Chambal",
+      "Banas",
+      "Mahi",
+      "Luni"
     ],
     "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 9 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q10",
-    "text": "[Q10] What is the capital of Rajasthan?",
+    "text": "Who was the founder of Jaipur?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Jaipur",
-      "Kota"
+      "Rana Sanga",
+      "Maharana Pratap",
+      "Sawai Jai Singh II",
+      "Raja Man Singh"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 10 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q11",
-    "text": "[Q11] Which river is known as the lifeline of Rajasthan?",
+    "text": "Which year is a leap year?",
     "options": [
-      "Luni",
-      "Chambal",
-      "Mahi",
-      "Banas"
+      "2024",
+      "2022",
+      "2023",
+      "2021"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 11 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q12",
-    "text": "[Q12] Who built the Hawa Mahal in Jaipur?",
+    "text": "Who wrote 'Annals and Antiquities of Rajasthan'?",
     "options": [
-      "Sawai Jai Singh",
-      "Sawai Pratap Singh",
-      "Raja Man Singh",
-      "Maharana Pratap"
+      "George Thomas",
+      "V.N. Mishra",
+      "G.H. Ojha",
+      "James Tod"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 12 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q13",
-    "text": "[Q13] Which festival is celebrated in Rajasthan with camel races?",
+    "text": "If 10 men can do a work in 15 days, how many days for 5 men?",
     "options": [
-      "Teej",
-      "Pushkar Fair",
-      "Desert Festival",
-      "Gangaur"
+      "25 days",
+      "15 days",
+      "30 days",
+      "20 days"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 13 in Paper I of Mock Exam 1."
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q14",
-    "text": "[Q14] In which year was the state of Rajasthan formed?",
+    "text": "If A is brother of B, and B is sister of C, how is A related to C?",
     "options": [
-      "1947",
-      "1949",
-      "1950",
-      "1956"
+      "Brother",
+      "Uncle",
+      "Sister",
+      "Cousin"
     ],
-    "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 14 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q15",
-    "text": "[Q15] What is the official state tree of Rajasthan?",
+    "text": "Where is the famous Dilwara Temple located?",
     "options": [
-      "Banyan",
-      "Peepal",
-      "Khejri",
-      "Neem"
+      "Ranakpur",
+      "Jaisalmer",
+      "Mount Abu",
+      "Udaipur"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 15 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q16",
-    "text": "[Q16] Which is the highest peak in the Aravalli Range?",
+    "text": "Find the next number: 1, 4, 9, 16, ?",
     "options": [
-      "Mount Abu",
-      "Guru Shikhar",
-      "Achalgarh",
-      "Kumbhalgarh"
+      "25",
+      "30",
+      "24",
+      "20"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 16 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q17",
-    "text": "[Q17] The famous Dilwara Temples are located in:",
+    "text": "Who wrote 'Annals and Antiquities of Rajasthan'?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Mount Abu",
-      "Jaisalmer"
+      "V.N. Mishra",
+      "James Tod",
+      "G.H. Ojha",
+      "George Thomas"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 17 in Paper I of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q18",
-    "text": "[Q18] Which is the largest desert in Rajasthan?",
+    "text": "Which year is a leap year?",
     "options": [
-      "Sahara",
-      "Thar",
-      "Gobi",
-      "Kalahari"
+      "2023",
+      "2022",
+      "2021",
+      "2024"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 18 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q19",
-    "text": "[Q19] If 'A' is encoded as 1 and 'B' as 2, what is the code for 'CAB'?",
+    "text": "Which festival is celebrated at Pushkar?",
     "options": [
-      "312",
-      "123",
-      "231",
-      "321"
+      "Elephant Festival",
+      "Camel Fair",
+      "Desert Festival",
+      "Teej"
     ],
-    "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 19 in Paper I of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q20",
-    "text": "[Q20] What is the capital of Rajasthan?",
+    "text": "Who wrote 'Annals and Antiquities of Rajasthan'?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Jaipur",
-      "Kota"
+      "G.H. Ojha",
+      "V.N. Mishra",
+      "James Tod",
+      "George Thomas"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 20 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q21",
-    "text": "[Q21] Which river is known as the lifeline of Rajasthan?",
+    "text": "Keoladeo National Park is famous for?",
     "options": [
-      "Luni",
-      "Chambal",
-      "Mahi",
-      "Banas"
+      "Birds",
+      "Elephants",
+      "Lions",
+      "Tigers"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 21 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q22",
-    "text": "[Q22] Who built the Hawa Mahal in Jaipur?",
+    "text": "Which river is known as the lifeline of Rajasthan?",
     "options": [
-      "Sawai Jai Singh",
-      "Sawai Pratap Singh",
-      "Raja Man Singh",
-      "Maharana Pratap"
+      "Banas",
+      "Chambal",
+      "Mahi",
+      "Luni"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 22 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q23",
-    "text": "[Q23] Which festival is celebrated in Rajasthan with camel races?",
+    "text": "Find the next number: 2, 6, 12, 20, ?",
     "options": [
-      "Teej",
-      "Pushkar Fair",
-      "Desert Festival",
-      "Gangaur"
+      "32",
+      "28",
+      "30",
+      "36"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 23 in Paper I of Mock Exam 1."
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q24",
-    "text": "[Q24] In which year was the state of Rajasthan formed?",
+    "text": "Which festival is celebrated at Pushkar?",
     "options": [
-      "1947",
-      "1949",
-      "1950",
-      "1956"
+      "Teej",
+      "Elephant Festival",
+      "Desert Festival",
+      "Camel Fair"
     ],
     "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 24 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q25",
-    "text": "[Q25] What is the official state tree of Rajasthan?",
+    "text": "A man walks 3km North, then 4km East. How far is he from start?",
     "options": [
-      "Banyan",
-      "Peepal",
-      "Khejri",
-      "Neem"
+      "1km",
+      "5km",
+      "6km",
+      "7km"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 25 in Paper I of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q26",
-    "text": "[Q26] Which is the highest peak in the Aravalli Range?",
+    "text": "A man walks 3km North, then 4km East. How far is he from start?",
     "options": [
-      "Mount Abu",
-      "Guru Shikhar",
-      "Achalgarh",
-      "Kumbhalgarh"
+      "1km",
+      "6km",
+      "5km",
+      "7km"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 26 in Paper I of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q27",
-    "text": "[Q27] The famous Dilwara Temples are located in:",
+    "text": "The average of first 5 natural numbers is?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Mount Abu",
-      "Jaisalmer"
+      "2",
+      "3",
+      "4",
+      "5"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 27 in Paper I of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q28",
-    "text": "[Q28] Which is the largest desert in Rajasthan?",
+    "text": "The folk dance 'Ghoomar' is traditionally performed by?",
     "options": [
-      "Sahara",
-      "Thar",
-      "Gobi",
-      "Kalahari"
+      "Kalbelia tribe",
+      "Bhil tribe women",
+      "Men only",
+      "Garasia tribe"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 28 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q29",
-    "text": "[Q29] If 'A' is encoded as 1 and 'B' as 2, what is the code for 'CAB'?",
+    "text": "If A is brother of B, and B is sister of C, how is A related to C?",
     "options": [
-      "312",
-      "123",
-      "231",
-      "321"
+      "Uncle",
+      "Sister",
+      "Brother",
+      "Cousin"
     ],
-    "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 29 in Paper I of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q30",
-    "text": "[Q30] What is the capital of Rajasthan?",
+    "text": "What is the state tree of Rajasthan?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Jaipur",
-      "Kota"
+      "Banyan",
+      "Peepal",
+      "Neem",
+      "Khejri"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 30 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q31",
-    "text": "[Q31] Which river is known as the lifeline of Rajasthan?",
+    "text": "Which year is a leap year?",
     "options": [
-      "Luni",
-      "Chambal",
-      "Mahi",
-      "Banas"
+      "2022",
+      "2021",
+      "2024",
+      "2023"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 31 in Paper I of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q32",
-    "text": "[Q32] Who built the Hawa Mahal in Jaipur?",
+    "text": "What is the state animal of Rajasthan (Wild)?",
     "options": [
-      "Sawai Jai Singh",
-      "Sawai Pratap Singh",
-      "Raja Man Singh",
-      "Maharana Pratap"
+      "Camel",
+      "Tiger",
+      "Chinkara",
+      "Leopard"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 32 in Paper I of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q33",
-    "text": "[Q33] Which festival is celebrated in Rajasthan with camel races?",
+    "text": "What is the state animal of Rajasthan (Livestock)?",
     "options": [
-      "Teej",
-      "Pushkar Fair",
-      "Desert Festival",
-      "Gangaur"
+      "Cow",
+      "Camel",
+      "Sheep",
+      "Horse"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 33 in Paper I of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q34",
-    "text": "[Q34] In which year was the state of Rajasthan formed?",
+    "text": "The average of first 5 natural numbers is?",
     "options": [
-      "1947",
-      "1949",
-      "1950",
-      "1956"
+      "5",
+      "3",
+      "4",
+      "2"
     ],
-    "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 34 in Paper I of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q35",
-    "text": "[Q35] What is the official state tree of Rajasthan?",
+    "text": "A train 100m long passes a pole in 10s. Speed?",
     "options": [
-      "Banyan",
-      "Peepal",
-      "Khejri",
-      "Neem"
+      "5 m/s",
+      "15 m/s",
+      "20 m/s",
+      "10 m/s"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 35 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q36",
-    "text": "[Q36] Which is the highest peak in the Aravalli Range?",
+    "text": "Who wrote 'Annals and Antiquities of Rajasthan'?",
     "options": [
-      "Mount Abu",
-      "Guru Shikhar",
-      "Achalgarh",
-      "Kumbhalgarh"
+      "V.N. Mishra",
+      "G.H. Ojha",
+      "James Tod",
+      "George Thomas"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 36 in Paper I of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q37",
-    "text": "[Q37] The famous Dilwara Temples are located in:",
+    "text": "If A is brother of B, and B is sister of C, how is A related to C?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Mount Abu",
-      "Jaisalmer"
+      "Sister",
+      "Uncle",
+      "Cousin",
+      "Brother"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 37 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q38",
-    "text": "[Q38] Which is the largest desert in Rajasthan?",
+    "text": "Who was the founder of Jaipur?",
     "options": [
-      "Sahara",
-      "Thar",
-      "Gobi",
-      "Kalahari"
+      "Maharana Pratap",
+      "Sawai Jai Singh II",
+      "Rana Sanga",
+      "Raja Man Singh"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 38 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q39",
-    "text": "[Q39] If 'A' is encoded as 1 and 'B' as 2, what is the code for 'CAB'?",
+    "text": "Which river is known as the lifeline of Rajasthan?",
     "options": [
-      "312",
-      "123",
-      "231",
-      "321"
+      "Luni",
+      "Mahi",
+      "Banas",
+      "Chambal"
     ],
-    "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 39 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q40",
-    "text": "[Q40] What is the capital of Rajasthan?",
+    "text": "What is the famous block printing of Bagru known for?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Jaipur",
-      "Kota"
+      "Chemical dyes",
+      "Mirror work",
+      "Silk thread work",
+      "Natural dyes"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 40 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q41",
-    "text": "[Q41] Which river is known as the lifeline of Rajasthan?",
+    "text": "A train 100m long passes a pole in 10s. Speed?",
     "options": [
-      "Luni",
-      "Chambal",
-      "Mahi",
-      "Banas"
+      "5 m/s",
+      "10 m/s",
+      "15 m/s",
+      "20 m/s"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 41 in Paper I of Mock Exam 1."
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q42",
-    "text": "[Q42] Who built the Hawa Mahal in Jaipur?",
+    "text": "In which year was the state of Rajasthan formed?",
     "options": [
-      "Sawai Jai Singh",
-      "Sawai Pratap Singh",
-      "Raja Man Singh",
-      "Maharana Pratap"
+      "1947",
+      "1949",
+      "1950",
+      "1956"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 42 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q43",
-    "text": "[Q43] Which festival is celebrated in Rajasthan with camel races?",
+    "text": "A train 100m long passes a pole in 10s. Speed?",
     "options": [
-      "Teej",
-      "Pushkar Fair",
-      "Desert Festival",
-      "Gangaur"
+      "20 m/s",
+      "15 m/s",
+      "5 m/s",
+      "10 m/s"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 43 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q44",
-    "text": "[Q44] In which year was the state of Rajasthan formed?",
+    "text": "What is the famous block printing of Bagru known for?",
     "options": [
-      "1947",
-      "1949",
-      "1950",
-      "1956"
+      "Silk thread work",
+      "Mirror work",
+      "Natural dyes",
+      "Chemical dyes"
     ],
-    "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 44 in Paper I of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q45",
-    "text": "[Q45] What is the official state tree of Rajasthan?",
+    "text": "The average of first 5 natural numbers is?",
     "options": [
-      "Banyan",
-      "Peepal",
-      "Khejri",
-      "Neem"
+      "2",
+      "5",
+      "3",
+      "4"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 45 in Paper I of Mock Exam 1."
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q46",
-    "text": "[Q46] Which is the highest peak in the Aravalli Range?",
+    "text": "In which year was the state of Rajasthan formed?",
     "options": [
-      "Mount Abu",
-      "Guru Shikhar",
-      "Achalgarh",
-      "Kumbhalgarh"
+      "1950",
+      "1956",
+      "1949",
+      "1947"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 46 in Paper I of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q47",
-    "text": "[Q47] The famous Dilwara Temples are located in:",
+    "text": "A train 100m long passes a pole in 10s. Speed?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Mount Abu",
-      "Jaisalmer"
+      "20 m/s",
+      "10 m/s",
+      "15 m/s",
+      "5 m/s"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 47 in Paper I of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q48",
-    "text": "[Q48] Which is the largest desert in Rajasthan?",
+    "text": "The average of first 5 natural numbers is?",
     "options": [
-      "Sahara",
-      "Thar",
-      "Gobi",
-      "Kalahari"
+      "3",
+      "4",
+      "2",
+      "5"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 48 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q49",
-    "text": "[Q49] If 'A' is encoded as 1 and 'B' as 2, what is the code for 'CAB'?",
+    "text": "What is 20% of 150?",
     "options": [
-      "312",
-      "123",
-      "231",
-      "321"
+      "40",
+      "30",
+      "20",
+      "50"
     ],
-    "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 49 in Paper I of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q50",
-    "text": "[Q50] What is the capital of Rajasthan?",
+    "text": "What is 20% of 150?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Jaipur",
-      "Kota"
+      "20",
+      "50",
+      "30",
+      "40"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 50 in Paper I of Mock Exam 1."
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q51",
-    "text": "[Q51] Which river is known as the lifeline of Rajasthan?",
+    "text": "Where is the 'Brahma Temple' located in Rajasthan?",
     "options": [
-      "Luni",
-      "Chambal",
-      "Mahi",
-      "Banas"
+      "Pushkar",
+      "Salasar",
+      "Deshnoke",
+      "Nathdwara"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 51 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q52",
-    "text": "[Q52] Who built the Hawa Mahal in Jaipur?",
+    "text": "Find the next number: 1, 4, 9, 16, ?",
     "options": [
-      "Sawai Jai Singh",
-      "Sawai Pratap Singh",
-      "Raja Man Singh",
-      "Maharana Pratap"
+      "25",
+      "20",
+      "30",
+      "24"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 52 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q53",
-    "text": "[Q53] Which festival is celebrated in Rajasthan with camel races?",
+    "text": "Which district has the highest literacy rate in Rajasthan?",
     "options": [
-      "Teej",
-      "Pushkar Fair",
-      "Desert Festival",
-      "Gangaur"
+      "Jhunjhunu",
+      "Kota",
+      "Jaipur",
+      "Sikar"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 53 in Paper I of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q54",
-    "text": "[Q54] In which year was the state of Rajasthan formed?",
+    "text": "The average of first 5 natural numbers is?",
     "options": [
-      "1947",
-      "1949",
-      "1950",
-      "1956"
+      "2",
+      "4",
+      "5",
+      "3"
     ],
     "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 54 in Paper I of Mock Exam 1."
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q55",
-    "text": "[Q55] What is the official state tree of Rajasthan?",
+    "text": "Where is the 'Brahma Temple' located in Rajasthan?",
     "options": [
-      "Banyan",
-      "Peepal",
-      "Khejri",
-      "Neem"
+      "Deshnoke",
+      "Pushkar",
+      "Salasar",
+      "Nathdwara"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 55 in Paper I of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q56",
-    "text": "[Q56] Which is the highest peak in the Aravalli Range?",
+    "text": "Who wrote 'Annals and Antiquities of Rajasthan'?",
     "options": [
-      "Mount Abu",
-      "Guru Shikhar",
-      "Achalgarh",
-      "Kumbhalgarh"
+      "V.N. Mishra",
+      "George Thomas",
+      "G.H. Ojha",
+      "James Tod"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 56 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q57",
-    "text": "[Q57] The famous Dilwara Temples are located in:",
+    "text": "A train 100m long passes a pole in 10s. Speed?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Mount Abu",
-      "Jaisalmer"
+      "5 m/s",
+      "20 m/s",
+      "15 m/s",
+      "10 m/s"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 57 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q58",
-    "text": "[Q58] Which is the largest desert in Rajasthan?",
+    "text": "Which is the highest peak in Rajasthan?",
     "options": [
-      "Sahara",
-      "Thar",
-      "Gobi",
-      "Kalahari"
+      "Ser",
+      "Guru Shikhar",
+      "Achalgarh",
+      "Kumbhalgarh"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 58 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q59",
-    "text": "[Q59] If 'A' is encoded as 1 and 'B' as 2, what is the code for 'CAB'?",
+    "text": "If 10 men can do a work in 15 days, how many days for 5 men?",
     "options": [
-      "312",
-      "123",
-      "231",
-      "321"
+      "30 days",
+      "25 days",
+      "15 days",
+      "20 days"
     ],
     "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 59 in Paper I of Mock Exam 1."
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q60",
-    "text": "[Q60] What is the capital of Rajasthan?",
+    "text": "Who wrote 'Annals and Antiquities of Rajasthan'?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Jaipur",
-      "Kota"
+      "James Tod",
+      "George Thomas",
+      "G.H. Ojha",
+      "V.N. Mishra"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 60 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q61",
-    "text": "[Q61] Which river is known as the lifeline of Rajasthan?",
+    "text": "What is the capital of Rajasthan?",
     "options": [
-      "Luni",
-      "Chambal",
-      "Mahi",
-      "Banas"
+      "Kota",
+      "Jodhpur",
+      "Jaipur",
+      "Udaipur"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 61 in Paper I of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q62",
-    "text": "[Q62] Who built the Hawa Mahal in Jaipur?",
+    "text": "Which city is known as the Lake City of India?",
     "options": [
-      "Sawai Jai Singh",
-      "Sawai Pratap Singh",
-      "Raja Man Singh",
-      "Maharana Pratap"
+      "Pushkar",
+      "Udaipur",
+      "Mount Abu",
+      "Ajmer"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 62 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q63",
-    "text": "[Q63] Which festival is celebrated in Rajasthan with camel races?",
+    "text": "A train 100m long passes a pole in 10s. Speed?",
     "options": [
-      "Teej",
-      "Pushkar Fair",
-      "Desert Festival",
-      "Gangaur"
+      "10 m/s",
+      "20 m/s",
+      "5 m/s",
+      "15 m/s"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 63 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q64",
-    "text": "[Q64] In which year was the state of Rajasthan formed?",
+    "text": "Where is the famous Dilwara Temple located?",
     "options": [
-      "1947",
-      "1949",
-      "1950",
-      "1956"
+      "Jaisalmer",
+      "Mount Abu",
+      "Ranakpur",
+      "Udaipur"
     ],
-    "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 64 in Paper I of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q65",
-    "text": "[Q65] What is the official state tree of Rajasthan?",
+    "text": "In which year was the state of Rajasthan formed?",
     "options": [
-      "Banyan",
-      "Peepal",
-      "Khejri",
-      "Neem"
+      "1950",
+      "1947",
+      "1956",
+      "1949"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 65 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q66",
-    "text": "[Q66] Which is the highest peak in the Aravalli Range?",
+    "text": "If 'APPLE' is coded as 'BQQMF', what is 'MAN'?",
     "options": [
-      "Mount Abu",
-      "Guru Shikhar",
-      "Achalgarh",
-      "Kumbhalgarh"
+      "NBO",
+      "NBN",
+      "MBO",
+      "OBO"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 66 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q67",
-    "text": "[Q67] The famous Dilwara Temples are located in:",
+    "text": "Which river is known as the lifeline of Rajasthan?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Mount Abu",
-      "Jaisalmer"
+      "Banas",
+      "Mahi",
+      "Luni",
+      "Chambal"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 67 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q68",
-    "text": "[Q68] Which is the largest desert in Rajasthan?",
+    "text": "A train 100m long passes a pole in 10s. Speed?",
     "options": [
-      "Sahara",
-      "Thar",
-      "Gobi",
-      "Kalahari"
+      "20 m/s",
+      "15 m/s",
+      "10 m/s",
+      "5 m/s"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 68 in Paper I of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q69",
-    "text": "[Q69] If 'A' is encoded as 1 and 'B' as 2, what is the code for 'CAB'?",
+    "text": "Which fort is known as the Golden Fort (Sonar Quila)?",
     "options": [
-      "312",
-      "123",
-      "231",
-      "321"
+      "Chittorgarh Fort",
+      "Jaisalmer Fort",
+      "Amer Fort",
+      "Mehrangarh Fort"
     ],
-    "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 69 in Paper I of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q70",
-    "text": "[Q70] What is the capital of Rajasthan?",
+    "text": "Who was the founder of Jaipur?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Jaipur",
-      "Kota"
+      "Rana Sanga",
+      "Maharana Pratap",
+      "Sawai Jai Singh II",
+      "Raja Man Singh"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 70 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q71",
-    "text": "[Q71] Which river is known as the lifeline of Rajasthan?",
+    "text": "Where is the famous Dilwara Temple located?",
     "options": [
-      "Luni",
-      "Chambal",
-      "Mahi",
-      "Banas"
+      "Udaipur",
+      "Ranakpur",
+      "Mount Abu",
+      "Jaisalmer"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 71 in Paper I of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q72",
-    "text": "[Q72] Who built the Hawa Mahal in Jaipur?",
+    "text": "In which year was the state of Rajasthan formed?",
     "options": [
-      "Sawai Jai Singh",
-      "Sawai Pratap Singh",
-      "Raja Man Singh",
-      "Maharana Pratap"
+      "1947",
+      "1949",
+      "1956",
+      "1950"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 72 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q73",
-    "text": "[Q73] Which festival is celebrated in Rajasthan with camel races?",
+    "text": "A man walks 3km North, then 4km East. How far is he from start?",
     "options": [
-      "Teej",
-      "Pushkar Fair",
-      "Desert Festival",
-      "Gangaur"
+      "5km",
+      "7km",
+      "1km",
+      "6km"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 73 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q74",
-    "text": "[Q74] In which year was the state of Rajasthan formed?",
+    "text": "Where is the famous Dilwara Temple located?",
     "options": [
-      "1947",
-      "1949",
-      "1950",
-      "1956"
+      "Mount Abu",
+      "Jaisalmer",
+      "Udaipur",
+      "Ranakpur"
     ],
-    "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 74 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q75",
-    "text": "[Q75] What is the official state tree of Rajasthan?",
+    "text": "Where is the famous Dilwara Temple located?",
     "options": [
-      "Banyan",
-      "Peepal",
-      "Khejri",
-      "Neem"
+      "Udaipur",
+      "Ranakpur",
+      "Mount Abu",
+      "Jaisalmer"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 75 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q76",
-    "text": "[Q76] Which is the highest peak in the Aravalli Range?",
+    "text": "Which river is known as the lifeline of Rajasthan?",
     "options": [
-      "Mount Abu",
-      "Guru Shikhar",
-      "Achalgarh",
-      "Kumbhalgarh"
+      "Mahi",
+      "Luni",
+      "Chambal",
+      "Banas"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 76 in Paper I of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q77",
-    "text": "[Q77] The famous Dilwara Temples are located in:",
+    "text": "A train 100m long passes a pole in 10s. Speed?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Mount Abu",
-      "Jaisalmer"
+      "10 m/s",
+      "20 m/s",
+      "15 m/s",
+      "5 m/s"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 77 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q78",
-    "text": "[Q78] Which is the largest desert in Rajasthan?",
+    "text": "Find the next number: 1, 4, 9, 16, ?",
     "options": [
-      "Sahara",
-      "Thar",
-      "Gobi",
-      "Kalahari"
+      "24",
+      "30",
+      "20",
+      "25"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 78 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q79",
-    "text": "[Q79] If 'A' is encoded as 1 and 'B' as 2, what is the code for 'CAB'?",
+    "text": "Find the next number: 1, 4, 9, 16, ?",
     "options": [
-      "312",
-      "123",
-      "231",
-      "321"
+      "25",
+      "24",
+      "20",
+      "30"
     ],
     "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 79 in Paper I of Mock Exam 1."
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q80",
-    "text": "[Q80] What is the capital of Rajasthan?",
+    "text": "If 10 men can do a work in 15 days, how many days for 5 men?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Jaipur",
-      "Kota"
+      "25 days",
+      "20 days",
+      "15 days",
+      "30 days"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 80 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q81",
-    "text": "[Q81] Which river is known as the lifeline of Rajasthan?",
+    "text": "Who was the founder of Jaipur?",
     "options": [
-      "Luni",
-      "Chambal",
-      "Mahi",
-      "Banas"
+      "Raja Man Singh",
+      "Maharana Pratap",
+      "Rana Sanga",
+      "Sawai Jai Singh II"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 81 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q82",
-    "text": "[Q82] Who built the Hawa Mahal in Jaipur?",
+    "text": "What is the capital of Rajasthan?",
     "options": [
-      "Sawai Jai Singh",
-      "Sawai Pratap Singh",
-      "Raja Man Singh",
-      "Maharana Pratap"
+      "Kota",
+      "Jodhpur",
+      "Udaipur",
+      "Jaipur"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 82 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q83",
-    "text": "[Q83] Which festival is celebrated in Rajasthan with camel races?",
+    "text": "What is the state animal of Rajasthan (Livestock)?",
     "options": [
-      "Teej",
-      "Pushkar Fair",
-      "Desert Festival",
-      "Gangaur"
+      "Sheep",
+      "Cow",
+      "Camel",
+      "Horse"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 83 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q84",
-    "text": "[Q84] In which year was the state of Rajasthan formed?",
+    "text": "A man walks 3km North, then 4km East. How far is he from start?",
     "options": [
-      "1947",
-      "1949",
-      "1950",
-      "1956"
+      "5km",
+      "1km",
+      "6km",
+      "7km"
     ],
-    "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 84 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q85",
-    "text": "[Q85] What is the official state tree of Rajasthan?",
+    "text": "If 10 men can do a work in 15 days, how many days for 5 men?",
     "options": [
-      "Banyan",
-      "Peepal",
-      "Khejri",
-      "Neem"
+      "20 days",
+      "30 days",
+      "15 days",
+      "25 days"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 85 in Paper I of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q86",
-    "text": "[Q86] Which is the highest peak in the Aravalli Range?",
+    "text": "Which year is a leap year?",
     "options": [
-      "Mount Abu",
-      "Guru Shikhar",
-      "Achalgarh",
-      "Kumbhalgarh"
+      "2022",
+      "2023",
+      "2024",
+      "2021"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 86 in Paper I of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q87",
-    "text": "[Q87] The famous Dilwara Temples are located in:",
+    "text": "Which river is known as the lifeline of Rajasthan?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Mount Abu",
-      "Jaisalmer"
+      "Mahi",
+      "Luni",
+      "Banas",
+      "Chambal"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 87 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q88",
-    "text": "[Q88] Which is the largest desert in Rajasthan?",
+    "text": "What is 20% of 150?",
     "options": [
-      "Sahara",
-      "Thar",
-      "Gobi",
-      "Kalahari"
+      "50",
+      "40",
+      "20",
+      "30"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 88 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q89",
-    "text": "[Q89] If 'A' is encoded as 1 and 'B' as 2, what is the code for 'CAB'?",
+    "text": "Which festival is celebrated at Pushkar?",
     "options": [
-      "312",
-      "123",
-      "231",
-      "321"
+      "Teej",
+      "Camel Fair",
+      "Desert Festival",
+      "Elephant Festival"
     ],
-    "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 89 in Paper I of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q90",
-    "text": "[Q90] What is the capital of Rajasthan?",
+    "text": "In which year was the state of Rajasthan formed?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Jaipur",
-      "Kota"
+      "1950",
+      "1947",
+      "1956",
+      "1949"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 90 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q91",
-    "text": "[Q91] Which river is known as the lifeline of Rajasthan?",
+    "text": "Find the next number: 1, 4, 9, 16, ?",
     "options": [
-      "Luni",
-      "Chambal",
-      "Mahi",
-      "Banas"
+      "24",
+      "25",
+      "30",
+      "20"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 91 in Paper I of Mock Exam 1."
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q92",
-    "text": "[Q92] Who built the Hawa Mahal in Jaipur?",
+    "text": "If A is brother of B, and B is sister of C, how is A related to C?",
     "options": [
-      "Sawai Jai Singh",
-      "Sawai Pratap Singh",
-      "Raja Man Singh",
-      "Maharana Pratap"
+      "Uncle",
+      "Brother",
+      "Cousin",
+      "Sister"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 92 in Paper I of Mock Exam 1."
+    "explanation": "Standard Aptitude Logic."
   },
   {
     "id": "e1_p1_q93",
-    "text": "[Q93] Which festival is celebrated in Rajasthan with camel races?",
+    "text": "Which city is known as the Sun City of Rajasthan?",
     "options": [
-      "Teej",
-      "Pushkar Fair",
-      "Desert Festival",
-      "Gangaur"
+      "Bikaner",
+      "Jaisalmer",
+      "Jodhpur",
+      "Jaipur"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 93 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q94",
-    "text": "[Q94] In which year was the state of Rajasthan formed?",
+    "text": "Which fort is known as the Golden Fort (Sonar Quila)?",
     "options": [
-      "1947",
-      "1949",
-      "1950",
-      "1956"
+      "Amer Fort",
+      "Chittorgarh Fort",
+      "Mehrangarh Fort",
+      "Jaisalmer Fort"
     ],
     "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 94 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q95",
-    "text": "[Q95] What is the official state tree of Rajasthan?",
+    "text": "Which city is known as the Sun City of Rajasthan?",
     "options": [
-      "Banyan",
-      "Peepal",
-      "Khejri",
-      "Neem"
+      "Jodhpur",
+      "Jaisalmer",
+      "Jaipur",
+      "Bikaner"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 95 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q96",
-    "text": "[Q96] Which is the highest peak in the Aravalli Range?",
+    "text": "Which city is known as the Lake City of India?",
     "options": [
-      "Mount Abu",
-      "Guru Shikhar",
-      "Achalgarh",
-      "Kumbhalgarh"
+      "Udaipur",
+      "Ajmer",
+      "Pushkar",
+      "Mount Abu"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 96 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q97",
-    "text": "[Q97] The famous Dilwara Temples are located in:",
+    "text": "Which district has the highest literacy rate in Rajasthan?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Mount Abu",
-      "Jaisalmer"
+      "Jaipur",
+      "Sikar",
+      "Kota",
+      "Jhunjhunu"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 97 in Paper I of Mock Exam 1."
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q98",
-    "text": "[Q98] Which is the largest desert in Rajasthan?",
+    "text": "Who was the founder of Jaipur?",
     "options": [
-      "Sahara",
-      "Thar",
-      "Gobi",
-      "Kalahari"
+      "Sawai Jai Singh II",
+      "Maharana Pratap",
+      "Raja Man Singh",
+      "Rana Sanga"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 98 in Paper I of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q99",
-    "text": "[Q99] If 'A' is encoded as 1 and 'B' as 2, what is the code for 'CAB'?",
+    "text": "Which district has the highest literacy rate in Rajasthan?",
     "options": [
-      "312",
-      "123",
-      "231",
-      "321"
+      "Jaipur",
+      "Jhunjhunu",
+      "Sikar",
+      "Kota"
     ],
-    "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 99 in Paper I of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Standard GK Fact of Rajasthan."
   },
   {
     "id": "e1_p1_q100",
-    "text": "[Q100] What is the capital of Rajasthan?",
+    "text": "Find the next number: 2, 6, 12, 20, ?",
     "options": [
-      "Udaipur",
-      "Jodhpur",
-      "Jaipur",
-      "Kota"
+      "36",
+      "30",
+      "32",
+      "28"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 100 in Paper I of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Standard Aptitude Logic."
   }
 ],
     paper2: [
   {
     "id": "e1_p2_q1",
-    "text": "[Q1] In OOP, what allows an object to take many forms?",
+    "text": "Which paradigm does Quick Sort belong to?",
     "options": [
-      "Encapsulation",
-      "Polymorphism",
-      "Inheritance",
-      "Abstraction"
+      "Greedy",
+      "Dynamic Programming",
+      "Divide and Conquer",
+      "Backtracking"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 1 in Paper II of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Quick Sort uses Divide and Conquer."
   },
   {
     "id": "e1_p2_q2",
-    "text": "[Q2] What does SQL stand for?",
+    "text": "Which paradigm does Dijkstra's belong to?",
     "options": [
-      "Structured Query Language",
-      "Strong Question Language",
-      "Structured Question Language",
-      "System Query Language"
+      "Greedy",
+      "Backtracking",
+      "Dynamic Programming"
     ],
     "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 2 in Paper II of Mock Exam 1."
+    "explanation": "Dijkstra's uses Greedy."
   },
   {
     "id": "e1_p2_q3",
-    "text": "[Q3] Which OSI layer is responsible for logical addressing?",
+    "text": "What is the average time complexity of Quick Sort?",
     "options": [
-      "Data Link Layer",
-      "Network Layer",
-      "Transport Layer",
-      "Session Layer"
+      "O(1)",
+      "O(n^2)",
+      "O(n)",
+      "O(n log n)"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 3 in Paper II of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Quick Sort has time complexity O(n log n)."
   },
   {
     "id": "e1_p2_q4",
-    "text": "[Q4] In an OS, which scheduling algorithm is non-preemptive?",
+    "text": "What is the default port number for FTP?",
     "options": [
-      "Round Robin",
-      "Shortest Remaining Time First",
-      "First Come First Serve",
-      "Multilevel Queue"
+      "22",
+      "25",
+      "8080",
+      "21"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 4 in Paper II of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "FTP uses port 21."
   },
   {
     "id": "e1_p2_q5",
-    "text": "[Q5] What is the main function of a DNS server?",
+    "text": "What is FCFS in Operating Systems?",
     "options": [
-      "Host websites",
-      "Translate domain names to IP addresses",
-      "Provide internet connection",
-      "Secure network traffic"
+      "A hardware component",
+      "A type of network protocol",
+      "Non-preemptive scheduling algorithm based on arrival time",
+      "A file system format"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 5 in Paper II of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "FCFS is defined as: Non-preemptive scheduling algorithm based on arrival time."
   },
   {
     "id": "e1_p2_q6",
-    "text": "[Q6] Which of the following is NOT a fundamental data type in C++?",
+    "text": "Which paradigm does Dijkstra's belong to?",
     "options": [
-      "int",
-      "float",
-      "string",
-      "char"
+      "Backtracking",
+      "Greedy",
+      "Dynamic Programming"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 6 in Paper II of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Dijkstra's uses Greedy."
   },
   {
     "id": "e1_p2_q7",
-    "text": "[Q7] What is the time complexity of searching in a balanced BST?",
+    "text": "What is the average time complexity of Dijkstra's?",
     "options": [
-      "O(1)",
+      "O(V^2)",
       "O(n)",
-      "O(log n)",
-      "O(n log n)"
+      "O(n^2)",
+      "O(1)"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 7 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Dijkstra's has time complexity O(V^2)."
   },
   {
     "id": "e1_p2_q8",
-    "text": "[Q8] Which logic gate outputs 1 only when all inputs are 1?",
+    "text": "What is the average time complexity of Dijkstra's?",
     "options": [
-      "OR",
-      "NAND",
-      "XOR",
-      "AND"
+      "O(V^2)",
+      "O(n^2)",
+      "O(n)",
+      "O(1)"
     ],
-    "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 8 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Dijkstra's has time complexity O(V^2)."
   },
   {
     "id": "e1_p2_q9",
-    "text": "[Q9] Which testing is performed by end-users in a real environment?",
+    "text": "At which OSI layer does HTTP operate?",
     "options": [
-      "Alpha Testing",
-      "Beta Testing",
-      "Unit Testing",
-      "Integration Testing"
+      "Physical",
+      "Application",
+      "Presentation",
+      "Data Link"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 9 in Paper II of Mock Exam 1."
+    "explanation": "HTTP operates at the Application layer."
   },
   {
     "id": "e1_p2_q10",
-    "text": "[Q10] Which sorting algorithm has the best average-case time complexity?",
+    "text": "What is the default port number for FTP?",
     "options": [
-      "Bubble Sort",
-      "Insertion Sort",
-      "Merge Sort",
-      "Selection Sort"
+      "25",
+      "21",
+      "22",
+      "8080"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 10 in Paper II of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "FTP uses port 21."
   },
   {
     "id": "e1_p2_q11",
-    "text": "[Q11] In OOP, what allows an object to take many forms?",
+    "text": "What is Paging in Operating Systems?",
     "options": [
-      "Encapsulation",
-      "Polymorphism",
-      "Inheritance",
-      "Abstraction"
+      "Memory management scheme that eliminates external fragmentation",
+      "A type of network protocol",
+      "A hardware component",
+      "A file system format"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 11 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Paging is defined as: Memory management scheme that eliminates external fragmentation."
   },
   {
     "id": "e1_p2_q12",
-    "text": "[Q12] What does SQL stand for?",
+    "text": "What is Paging in Operating Systems?",
     "options": [
-      "Structured Query Language",
-      "Strong Question Language",
-      "Structured Question Language",
-      "System Query Language"
+      "Memory management scheme that eliminates external fragmentation",
+      "A hardware component",
+      "A type of network protocol",
+      "A file system format"
     ],
     "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 12 in Paper II of Mock Exam 1."
+    "explanation": "Paging is defined as: Memory management scheme that eliminates external fragmentation."
   },
   {
     "id": "e1_p2_q13",
-    "text": "[Q13] Which OSI layer is responsible for logical addressing?",
+    "text": "What is the average time complexity of Bubble Sort?",
     "options": [
-      "Data Link Layer",
-      "Network Layer",
-      "Transport Layer",
-      "Session Layer"
+      "O(1)",
+      "O(n)",
+      "O(n^2)"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 13 in Paper II of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Bubble Sort has time complexity O(n^2)."
   },
   {
     "id": "e1_p2_q14",
-    "text": "[Q14] In an OS, which scheduling algorithm is non-preemptive?",
+    "text": "Which paradigm does Binary Search belong to?",
     "options": [
-      "Round Robin",
-      "Shortest Remaining Time First",
-      "First Come First Serve",
-      "Multilevel Queue"
+      "Dynamic Programming",
+      "Divide and Conquer",
+      "Greedy",
+      "Backtracking"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 14 in Paper II of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Binary Search uses Divide and Conquer."
   },
   {
     "id": "e1_p2_q15",
-    "text": "[Q15] What is the main function of a DNS server?",
+    "text": "At which OSI layer does TCP operate?",
     "options": [
-      "Host websites",
-      "Translate domain names to IP addresses",
-      "Provide internet connection",
-      "Secure network traffic"
+      "Presentation",
+      "Transport",
+      "Data Link",
+      "Physical"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 15 in Paper II of Mock Exam 1."
+    "explanation": "TCP operates at the Transport layer."
   },
   {
     "id": "e1_p2_q16",
-    "text": "[Q16] Which of the following is NOT a fundamental data type in C++?",
+    "text": "At which OSI layer does HTTP operate?",
     "options": [
-      "int",
-      "float",
-      "string",
-      "char"
+      "Presentation",
+      "Physical",
+      "Data Link",
+      "Application"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 16 in Paper II of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "HTTP operates at the Application layer."
   },
   {
     "id": "e1_p2_q17",
-    "text": "[Q17] What is the time complexity of searching in a balanced BST?",
+    "text": "What is the average time complexity of Binary Search?",
     "options": [
       "O(1)",
       "O(n)",
       "O(log n)",
-      "O(n log n)"
+      "O(n^2)"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 17 in Paper II of Mock Exam 1."
+    "explanation": "Binary Search has time complexity O(log n)."
   },
   {
     "id": "e1_p2_q18",
-    "text": "[Q18] Which logic gate outputs 1 only when all inputs are 1?",
+    "text": "At which OSI layer does FTP operate?",
     "options": [
-      "OR",
-      "NAND",
-      "XOR",
-      "AND"
+      "Presentation",
+      "Application",
+      "Data Link",
+      "Physical"
     ],
-    "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 18 in Paper II of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "FTP operates at the Application layer."
   },
   {
     "id": "e1_p2_q19",
-    "text": "[Q19] Which testing is performed by end-users in a real environment?",
+    "text": "Which paradigm does Dijkstra's belong to?",
     "options": [
-      "Alpha Testing",
-      "Beta Testing",
-      "Unit Testing",
-      "Integration Testing"
+      "Greedy",
+      "Backtracking",
+      "Dynamic Programming"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 19 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Dijkstra's uses Greedy."
   },
   {
     "id": "e1_p2_q20",
-    "text": "[Q20] Which sorting algorithm has the best average-case time complexity?",
+    "text": "Which paradigm does Dijkstra's belong to?",
     "options": [
-      "Bubble Sort",
-      "Insertion Sort",
-      "Merge Sort",
-      "Selection Sort"
+      "Backtracking",
+      "Greedy",
+      "Dynamic Programming"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 20 in Paper II of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Dijkstra's uses Greedy."
   },
   {
     "id": "e1_p2_q21",
-    "text": "[Q21] In OOP, what allows an object to take many forms?",
+    "text": "What is the average time complexity of Quick Sort?",
     "options": [
-      "Encapsulation",
-      "Polymorphism",
-      "Inheritance",
-      "Abstraction"
+      "O(n^2)",
+      "O(n log n)",
+      "O(1)",
+      "O(n)"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 21 in Paper II of Mock Exam 1."
+    "explanation": "Quick Sort has time complexity O(n log n)."
   },
   {
     "id": "e1_p2_q22",
-    "text": "[Q22] What does SQL stand for?",
+    "text": "Which paradigm does Dijkstra's belong to?",
     "options": [
-      "Structured Query Language",
-      "Strong Question Language",
-      "Structured Question Language",
-      "System Query Language"
+      "Backtracking",
+      "Greedy",
+      "Dynamic Programming"
     ],
-    "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 22 in Paper II of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Dijkstra's uses Greedy."
   },
   {
     "id": "e1_p2_q23",
-    "text": "[Q23] Which OSI layer is responsible for logical addressing?",
+    "text": "Which paradigm does Merge Sort belong to?",
     "options": [
-      "Data Link Layer",
-      "Network Layer",
-      "Transport Layer",
-      "Session Layer"
+      "Divide and Conquer",
+      "Greedy",
+      "Backtracking",
+      "Dynamic Programming"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 23 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Merge Sort uses Divide and Conquer."
   },
   {
     "id": "e1_p2_q24",
-    "text": "[Q24] In an OS, which scheduling algorithm is non-preemptive?",
+    "text": "What is Paging in Operating Systems?",
     "options": [
-      "Round Robin",
-      "Shortest Remaining Time First",
-      "First Come First Serve",
-      "Multilevel Queue"
+      "Memory management scheme that eliminates external fragmentation",
+      "A hardware component",
+      "A file system format",
+      "A type of network protocol"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 24 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Paging is defined as: Memory management scheme that eliminates external fragmentation."
   },
   {
     "id": "e1_p2_q25",
-    "text": "[Q25] What is the main function of a DNS server?",
+    "text": "Which paradigm does Binary Search belong to?",
     "options": [
-      "Host websites",
-      "Translate domain names to IP addresses",
-      "Provide internet connection",
-      "Secure network traffic"
+      "Divide and Conquer",
+      "Greedy",
+      "Backtracking",
+      "Dynamic Programming"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 25 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Binary Search uses Divide and Conquer."
   },
   {
     "id": "e1_p2_q26",
-    "text": "[Q26] Which of the following is NOT a fundamental data type in C++?",
+    "text": "What is the default port number for HTTPS?",
     "options": [
-      "int",
-      "float",
-      "string",
-      "char"
+      "22",
+      "8080",
+      "443",
+      "25"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 26 in Paper II of Mock Exam 1."
+    "explanation": "HTTPS uses port 443."
   },
   {
     "id": "e1_p2_q27",
-    "text": "[Q27] What is the time complexity of searching in a balanced BST?",
+    "text": "What is Paging in Operating Systems?",
     "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
+      "Memory management scheme that eliminates external fragmentation",
+      "A hardware component",
+      "A file system format",
+      "A type of network protocol"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 27 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Paging is defined as: Memory management scheme that eliminates external fragmentation."
   },
   {
     "id": "e1_p2_q28",
-    "text": "[Q28] Which logic gate outputs 1 only when all inputs are 1?",
+    "text": "At which OSI layer does HTTPS operate?",
     "options": [
-      "OR",
-      "NAND",
-      "XOR",
-      "AND"
+      "Data Link",
+      "Presentation",
+      "Application",
+      "Physical"
     ],
-    "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 28 in Paper II of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "HTTPS operates at the Application layer."
   },
   {
     "id": "e1_p2_q29",
-    "text": "[Q29] Which testing is performed by end-users in a real environment?",
+    "text": "At which OSI layer does HTTPS operate?",
     "options": [
-      "Alpha Testing",
-      "Beta Testing",
-      "Unit Testing",
-      "Integration Testing"
+      "Presentation",
+      "Data Link",
+      "Application",
+      "Physical"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 29 in Paper II of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "HTTPS operates at the Application layer."
   },
   {
     "id": "e1_p2_q30",
-    "text": "[Q30] Which sorting algorithm has the best average-case time complexity?",
+    "text": "What is Semaphore in Operating Systems?",
     "options": [
-      "Bubble Sort",
-      "Insertion Sort",
-      "Merge Sort",
-      "Selection Sort"
+      "A hardware component",
+      "A type of network protocol",
+      "A file system format",
+      "Synchronization tool used to control access to shared resources"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 30 in Paper II of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Semaphore is defined as: Synchronization tool used to control access to shared resources."
   },
   {
     "id": "e1_p2_q31",
-    "text": "[Q31] In OOP, what allows an object to take many forms?",
+    "text": "At which OSI layer does IP operate?",
     "options": [
-      "Encapsulation",
-      "Polymorphism",
-      "Inheritance",
-      "Abstraction"
+      "Network",
+      "Physical",
+      "Data Link",
+      "Presentation"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 31 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "IP operates at the Network layer."
   },
   {
     "id": "e1_p2_q32",
-    "text": "[Q32] What does SQL stand for?",
+    "text": "What is the default port number for HTTP?",
     "options": [
-      "Structured Query Language",
-      "Strong Question Language",
-      "Structured Question Language",
-      "System Query Language"
+      "22",
+      "25",
+      "80",
+      "8080"
     ],
-    "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 32 in Paper II of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "HTTP uses port 80."
   },
   {
     "id": "e1_p2_q33",
-    "text": "[Q33] Which OSI layer is responsible for logical addressing?",
+    "text": "What is the default port number for FTP?",
     "options": [
-      "Data Link Layer",
-      "Network Layer",
-      "Transport Layer",
-      "Session Layer"
+      "21",
+      "25",
+      "22",
+      "8080"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 33 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "FTP uses port 21."
   },
   {
     "id": "e1_p2_q34",
-    "text": "[Q34] In an OS, which scheduling algorithm is non-preemptive?",
+    "text": "At which OSI layer does FTP operate?",
     "options": [
-      "Round Robin",
-      "Shortest Remaining Time First",
-      "First Come First Serve",
-      "Multilevel Queue"
+      "Application",
+      "Data Link",
+      "Presentation",
+      "Physical"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 34 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "FTP operates at the Application layer."
   },
   {
     "id": "e1_p2_q35",
-    "text": "[Q35] What is the main function of a DNS server?",
+    "text": "At which OSI layer does TCP operate?",
     "options": [
-      "Host websites",
-      "Translate domain names to IP addresses",
-      "Provide internet connection",
-      "Secure network traffic"
+      "Data Link",
+      "Presentation",
+      "Physical",
+      "Transport"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 35 in Paper II of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "TCP operates at the Transport layer."
   },
   {
     "id": "e1_p2_q36",
-    "text": "[Q36] Which of the following is NOT a fundamental data type in C++?",
+    "text": "What is FCFS in Operating Systems?",
     "options": [
-      "int",
-      "float",
-      "string",
-      "char"
+      "A hardware component",
+      "A file system format",
+      "A type of network protocol",
+      "Non-preemptive scheduling algorithm based on arrival time"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 36 in Paper II of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "FCFS is defined as: Non-preemptive scheduling algorithm based on arrival time."
   },
   {
     "id": "e1_p2_q37",
-    "text": "[Q37] What is the time complexity of searching in a balanced BST?",
+    "text": "At which OSI layer does HTTP operate?",
     "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
+      "Application",
+      "Physical",
+      "Data Link",
+      "Presentation"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 37 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "HTTP operates at the Application layer."
   },
   {
     "id": "e1_p2_q38",
-    "text": "[Q38] Which logic gate outputs 1 only when all inputs are 1?",
+    "text": "At which OSI layer does HTTP operate?",
     "options": [
-      "OR",
-      "NAND",
-      "XOR",
-      "AND"
+      "Presentation",
+      "Application",
+      "Physical",
+      "Data Link"
     ],
-    "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 38 in Paper II of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "HTTP operates at the Application layer."
   },
   {
     "id": "e1_p2_q39",
-    "text": "[Q39] Which testing is performed by end-users in a real environment?",
+    "text": "What is Paging in Operating Systems?",
     "options": [
-      "Alpha Testing",
-      "Beta Testing",
-      "Unit Testing",
-      "Integration Testing"
+      "A file system format",
+      "A type of network protocol",
+      "A hardware component",
+      "Memory management scheme that eliminates external fragmentation"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 39 in Paper II of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Paging is defined as: Memory management scheme that eliminates external fragmentation."
   },
   {
     "id": "e1_p2_q40",
-    "text": "[Q40] Which sorting algorithm has the best average-case time complexity?",
+    "text": "Which paradigm does Dijkstra's belong to?",
     "options": [
-      "Bubble Sort",
-      "Insertion Sort",
-      "Merge Sort",
-      "Selection Sort"
+      "Greedy",
+      "Dynamic Programming",
+      "Backtracking"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 40 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Dijkstra's uses Greedy."
   },
   {
     "id": "e1_p2_q41",
-    "text": "[Q41] In OOP, what allows an object to take many forms?",
+    "text": "Which paradigm does Dijkstra's belong to?",
     "options": [
-      "Encapsulation",
-      "Polymorphism",
-      "Inheritance",
-      "Abstraction"
+      "Dynamic Programming",
+      "Greedy",
+      "Backtracking"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 41 in Paper II of Mock Exam 1."
+    "explanation": "Dijkstra's uses Greedy."
   },
   {
     "id": "e1_p2_q42",
-    "text": "[Q42] What does SQL stand for?",
+    "text": "Which paradigm does Binary Search belong to?",
     "options": [
-      "Structured Query Language",
-      "Strong Question Language",
-      "Structured Question Language",
-      "System Query Language"
+      "Dynamic Programming",
+      "Divide and Conquer",
+      "Greedy",
+      "Backtracking"
     ],
-    "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 42 in Paper II of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Binary Search uses Divide and Conquer."
   },
   {
     "id": "e1_p2_q43",
-    "text": "[Q43] Which OSI layer is responsible for logical addressing?",
+    "text": "At which OSI layer does FTP operate?",
     "options": [
-      "Data Link Layer",
-      "Network Layer",
-      "Transport Layer",
-      "Session Layer"
+      "Presentation",
+      "Data Link",
+      "Application",
+      "Physical"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 43 in Paper II of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "FTP operates at the Application layer."
   },
   {
     "id": "e1_p2_q44",
-    "text": "[Q44] In an OS, which scheduling algorithm is non-preemptive?",
+    "text": "What is Deadlock in Operating Systems?",
     "options": [
-      "Round Robin",
-      "Shortest Remaining Time First",
-      "First Come First Serve",
-      "Multilevel Queue"
+      "A state where processes are waiting indefinitely for resources",
+      "A hardware component",
+      "A file system format",
+      "A type of network protocol"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 44 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Deadlock is defined as: A state where processes are waiting indefinitely for resources."
   },
   {
     "id": "e1_p2_q45",
-    "text": "[Q45] What is the main function of a DNS server?",
+    "text": "What is the average time complexity of Quick Sort?",
     "options": [
-      "Host websites",
-      "Translate domain names to IP addresses",
-      "Provide internet connection",
-      "Secure network traffic"
+      "O(n^2)",
+      "O(n)",
+      "O(1)",
+      "O(n log n)"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 45 in Paper II of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Quick Sort has time complexity O(n log n)."
   },
   {
     "id": "e1_p2_q46",
-    "text": "[Q46] Which of the following is NOT a fundamental data type in C++?",
+    "text": "What is the default port number for HTTPS?",
     "options": [
-      "int",
-      "float",
-      "string",
-      "char"
+      "25",
+      "443",
+      "22",
+      "8080"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 46 in Paper II of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "HTTPS uses port 443."
   },
   {
     "id": "e1_p2_q47",
-    "text": "[Q47] What is the time complexity of searching in a balanced BST?",
+    "text": "What is Round Robin in Operating Systems?",
     "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
+      "A hardware component",
+      "A type of network protocol",
+      "A file system format",
+      "Preemptive scheduling algorithm using a time quantum"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 47 in Paper II of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Round Robin is defined as: Preemptive scheduling algorithm using a time quantum."
   },
   {
     "id": "e1_p2_q48",
-    "text": "[Q48] Which logic gate outputs 1 only when all inputs are 1?",
+    "text": "Which paradigm does Dijkstra's belong to?",
     "options": [
-      "OR",
-      "NAND",
-      "XOR",
-      "AND"
+      "Dynamic Programming",
+      "Backtracking",
+      "Greedy"
     ],
-    "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 48 in Paper II of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Dijkstra's uses Greedy."
   },
   {
     "id": "e1_p2_q49",
-    "text": "[Q49] Which testing is performed by end-users in a real environment?",
+    "text": "Which paradigm does Merge Sort belong to?",
     "options": [
-      "Alpha Testing",
-      "Beta Testing",
-      "Unit Testing",
-      "Integration Testing"
+      "Greedy",
+      "Divide and Conquer",
+      "Backtracking",
+      "Dynamic Programming"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 49 in Paper II of Mock Exam 1."
+    "explanation": "Merge Sort uses Divide and Conquer."
   },
   {
     "id": "e1_p2_q50",
-    "text": "[Q50] Which sorting algorithm has the best average-case time complexity?",
+    "text": "At which OSI layer does HTTP operate?",
     "options": [
-      "Bubble Sort",
-      "Insertion Sort",
-      "Merge Sort",
-      "Selection Sort"
+      "Presentation",
+      "Physical",
+      "Application",
+      "Data Link"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 50 in Paper II of Mock Exam 1."
+    "explanation": "HTTP operates at the Application layer."
   },
   {
     "id": "e1_p2_q51",
-    "text": "[Q51] In OOP, what allows an object to take many forms?",
+    "text": "What is the average time complexity of Binary Search?",
     "options": [
-      "Encapsulation",
-      "Polymorphism",
-      "Inheritance",
-      "Abstraction"
+      "O(1)",
+      "O(log n)",
+      "O(n^2)",
+      "O(n)"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 51 in Paper II of Mock Exam 1."
+    "explanation": "Binary Search has time complexity O(log n)."
   },
   {
     "id": "e1_p2_q52",
-    "text": "[Q52] What does SQL stand for?",
+    "text": "What is the default port number for HTTPS?",
     "options": [
-      "Structured Query Language",
-      "Strong Question Language",
-      "Structured Question Language",
-      "System Query Language"
+      "443",
+      "25",
+      "8080",
+      "22"
     ],
     "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 52 in Paper II of Mock Exam 1."
+    "explanation": "HTTPS uses port 443."
   },
   {
     "id": "e1_p2_q53",
-    "text": "[Q53] Which OSI layer is responsible for logical addressing?",
+    "text": "What is FCFS in Operating Systems?",
     "options": [
-      "Data Link Layer",
-      "Network Layer",
-      "Transport Layer",
-      "Session Layer"
+      "A type of network protocol",
+      "A file system format",
+      "A hardware component",
+      "Non-preemptive scheduling algorithm based on arrival time"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 53 in Paper II of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "FCFS is defined as: Non-preemptive scheduling algorithm based on arrival time."
   },
   {
     "id": "e1_p2_q54",
-    "text": "[Q54] In an OS, which scheduling algorithm is non-preemptive?",
+    "text": "Which paradigm does Dijkstra's belong to?",
     "options": [
-      "Round Robin",
-      "Shortest Remaining Time First",
-      "First Come First Serve",
-      "Multilevel Queue"
+      "Dynamic Programming",
+      "Backtracking",
+      "Greedy"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 54 in Paper II of Mock Exam 1."
+    "explanation": "Dijkstra's uses Greedy."
   },
   {
     "id": "e1_p2_q55",
-    "text": "[Q55] What is the main function of a DNS server?",
+    "text": "Which paradigm does Merge Sort belong to?",
     "options": [
-      "Host websites",
-      "Translate domain names to IP addresses",
-      "Provide internet connection",
-      "Secure network traffic"
+      "Divide and Conquer",
+      "Backtracking",
+      "Dynamic Programming",
+      "Greedy"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 55 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Merge Sort uses Divide and Conquer."
   },
   {
     "id": "e1_p2_q56",
-    "text": "[Q56] Which of the following is NOT a fundamental data type in C++?",
+    "text": "Which paradigm does Dijkstra's belong to?",
     "options": [
-      "int",
-      "float",
-      "string",
-      "char"
+      "Backtracking",
+      "Dynamic Programming",
+      "Greedy"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 56 in Paper II of Mock Exam 1."
+    "explanation": "Dijkstra's uses Greedy."
   },
   {
     "id": "e1_p2_q57",
-    "text": "[Q57] What is the time complexity of searching in a balanced BST?",
+    "text": "What is the average time complexity of Quick Sort?",
     "options": [
       "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
+      "O(n log n)",
+      "O(n^2)",
+      "O(n)"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 57 in Paper II of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Quick Sort has time complexity O(n log n)."
   },
   {
     "id": "e1_p2_q58",
-    "text": "[Q58] Which logic gate outputs 1 only when all inputs are 1?",
+    "text": "Which paradigm does Binary Search belong to?",
     "options": [
-      "OR",
-      "NAND",
-      "XOR",
-      "AND"
+      "Dynamic Programming",
+      "Backtracking",
+      "Divide and Conquer",
+      "Greedy"
     ],
-    "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 58 in Paper II of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Binary Search uses Divide and Conquer."
   },
   {
     "id": "e1_p2_q59",
-    "text": "[Q59] Which testing is performed by end-users in a real environment?",
+    "text": "What is the default port number for HTTPS?",
     "options": [
-      "Alpha Testing",
-      "Beta Testing",
-      "Unit Testing",
-      "Integration Testing"
+      "8080",
+      "443",
+      "25",
+      "22"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 59 in Paper II of Mock Exam 1."
+    "explanation": "HTTPS uses port 443."
   },
   {
     "id": "e1_p2_q60",
-    "text": "[Q60] Which sorting algorithm has the best average-case time complexity?",
+    "text": "What is the default port number for FTP?",
     "options": [
-      "Bubble Sort",
-      "Insertion Sort",
-      "Merge Sort",
-      "Selection Sort"
+      "22",
+      "21",
+      "25",
+      "8080"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 60 in Paper II of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "FTP uses port 21."
   },
   {
     "id": "e1_p2_q61",
-    "text": "[Q61] In OOP, what allows an object to take many forms?",
+    "text": "What is the average time complexity of Bubble Sort?",
     "options": [
-      "Encapsulation",
-      "Polymorphism",
-      "Inheritance",
-      "Abstraction"
+      "O(n)",
+      "O(n^2)",
+      "O(1)"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 61 in Paper II of Mock Exam 1."
+    "explanation": "Bubble Sort has time complexity O(n^2)."
   },
   {
     "id": "e1_p2_q62",
-    "text": "[Q62] What does SQL stand for?",
+    "text": "Which paradigm does Merge Sort belong to?",
     "options": [
-      "Structured Query Language",
-      "Strong Question Language",
-      "Structured Question Language",
-      "System Query Language"
+      "Backtracking",
+      "Greedy",
+      "Dynamic Programming",
+      "Divide and Conquer"
     ],
-    "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 62 in Paper II of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Merge Sort uses Divide and Conquer."
   },
   {
     "id": "e1_p2_q63",
-    "text": "[Q63] Which OSI layer is responsible for logical addressing?",
+    "text": "Which paradigm does Binary Search belong to?",
     "options": [
-      "Data Link Layer",
-      "Network Layer",
-      "Transport Layer",
-      "Session Layer"
+      "Divide and Conquer",
+      "Greedy",
+      "Dynamic Programming",
+      "Backtracking"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 63 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Binary Search uses Divide and Conquer."
   },
   {
     "id": "e1_p2_q64",
-    "text": "[Q64] In an OS, which scheduling algorithm is non-preemptive?",
+    "text": "Which paradigm does Dijkstra's belong to?",
     "options": [
-      "Round Robin",
-      "Shortest Remaining Time First",
-      "First Come First Serve",
-      "Multilevel Queue"
+      "Dynamic Programming",
+      "Backtracking",
+      "Greedy"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 64 in Paper II of Mock Exam 1."
+    "explanation": "Dijkstra's uses Greedy."
   },
   {
     "id": "e1_p2_q65",
-    "text": "[Q65] What is the main function of a DNS server?",
+    "text": "What is the average time complexity of Dijkstra's?",
     "options": [
-      "Host websites",
-      "Translate domain names to IP addresses",
-      "Provide internet connection",
-      "Secure network traffic"
+      "O(V^2)",
+      "O(1)",
+      "O(n)",
+      "O(n^2)"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 65 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Dijkstra's has time complexity O(V^2)."
   },
   {
     "id": "e1_p2_q66",
-    "text": "[Q66] Which of the following is NOT a fundamental data type in C++?",
+    "text": "What is the average time complexity of Quick Sort?",
     "options": [
-      "int",
-      "float",
-      "string",
-      "char"
+      "O(n)",
+      "O(n log n)",
+      "O(1)",
+      "O(n^2)"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 66 in Paper II of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Quick Sort has time complexity O(n log n)."
   },
   {
     "id": "e1_p2_q67",
-    "text": "[Q67] What is the time complexity of searching in a balanced BST?",
+    "text": "At which OSI layer does HTTP operate?",
     "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
+      "Data Link",
+      "Presentation",
+      "Application",
+      "Physical"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 67 in Paper II of Mock Exam 1."
+    "explanation": "HTTP operates at the Application layer."
   },
   {
     "id": "e1_p2_q68",
-    "text": "[Q68] Which logic gate outputs 1 only when all inputs are 1?",
+    "text": "At which OSI layer does FTP operate?",
     "options": [
-      "OR",
-      "NAND",
-      "XOR",
-      "AND"
+      "Physical",
+      "Presentation",
+      "Application",
+      "Data Link"
     ],
-    "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 68 in Paper II of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "FTP operates at the Application layer."
   },
   {
     "id": "e1_p2_q69",
-    "text": "[Q69] Which testing is performed by end-users in a real environment?",
+    "text": "What is the average time complexity of Merge Sort?",
     "options": [
-      "Alpha Testing",
-      "Beta Testing",
-      "Unit Testing",
-      "Integration Testing"
+      "O(n)",
+      "O(1)",
+      "O(n log n)",
+      "O(n^2)"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 69 in Paper II of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Merge Sort has time complexity O(n log n)."
   },
   {
     "id": "e1_p2_q70",
-    "text": "[Q70] Which sorting algorithm has the best average-case time complexity?",
+    "text": "What is the average time complexity of Dijkstra's?",
     "options": [
-      "Bubble Sort",
-      "Insertion Sort",
-      "Merge Sort",
-      "Selection Sort"
+      "O(n^2)",
+      "O(n)",
+      "O(V^2)",
+      "O(1)"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 70 in Paper II of Mock Exam 1."
+    "explanation": "Dijkstra's has time complexity O(V^2)."
   },
   {
     "id": "e1_p2_q71",
-    "text": "[Q71] In OOP, what allows an object to take many forms?",
+    "text": "Which paradigm does Merge Sort belong to?",
     "options": [
-      "Encapsulation",
-      "Polymorphism",
-      "Inheritance",
-      "Abstraction"
+      "Divide and Conquer",
+      "Backtracking",
+      "Dynamic Programming",
+      "Greedy"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 71 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Merge Sort uses Divide and Conquer."
   },
   {
     "id": "e1_p2_q72",
-    "text": "[Q72] What does SQL stand for?",
+    "text": "What is the average time complexity of Binary Search?",
     "options": [
-      "Structured Query Language",
-      "Strong Question Language",
-      "Structured Question Language",
-      "System Query Language"
+      "O(n)",
+      "O(1)",
+      "O(log n)",
+      "O(n^2)"
     ],
-    "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 72 in Paper II of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Binary Search has time complexity O(log n)."
   },
   {
     "id": "e1_p2_q73",
-    "text": "[Q73] Which OSI layer is responsible for logical addressing?",
+    "text": "At which OSI layer does IP operate?",
     "options": [
-      "Data Link Layer",
-      "Network Layer",
-      "Transport Layer",
-      "Session Layer"
+      "Data Link",
+      "Presentation",
+      "Physical",
+      "Network"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 73 in Paper II of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "IP operates at the Network layer."
   },
   {
     "id": "e1_p2_q74",
-    "text": "[Q74] In an OS, which scheduling algorithm is non-preemptive?",
+    "text": "What is the average time complexity of Bubble Sort?",
     "options": [
-      "Round Robin",
-      "Shortest Remaining Time First",
-      "First Come First Serve",
-      "Multilevel Queue"
+      "O(1)",
+      "O(n^2)",
+      "O(n)"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 74 in Paper II of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Bubble Sort has time complexity O(n^2)."
   },
   {
     "id": "e1_p2_q75",
-    "text": "[Q75] What is the main function of a DNS server?",
+    "text": "What is the average time complexity of Bubble Sort?",
     "options": [
-      "Host websites",
-      "Translate domain names to IP addresses",
-      "Provide internet connection",
-      "Secure network traffic"
+      "O(n^2)",
+      "O(n)",
+      "O(1)"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 75 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Bubble Sort has time complexity O(n^2)."
   },
   {
     "id": "e1_p2_q76",
-    "text": "[Q76] Which of the following is NOT a fundamental data type in C++?",
+    "text": "What is FCFS in Operating Systems?",
     "options": [
-      "int",
-      "float",
-      "string",
-      "char"
+      "A file system format",
+      "Non-preemptive scheduling algorithm based on arrival time",
+      "A type of network protocol",
+      "A hardware component"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 76 in Paper II of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "FCFS is defined as: Non-preemptive scheduling algorithm based on arrival time."
   },
   {
     "id": "e1_p2_q77",
-    "text": "[Q77] What is the time complexity of searching in a balanced BST?",
+    "text": "What is the average time complexity of Quick Sort?",
     "options": [
+      "O(n^2)",
+      "O(n log n)",
       "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
+      "O(n)"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 77 in Paper II of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "Quick Sort has time complexity O(n log n)."
   },
   {
     "id": "e1_p2_q78",
-    "text": "[Q78] Which logic gate outputs 1 only when all inputs are 1?",
+    "text": "Which paradigm does Bubble Sort belong to?",
     "options": [
-      "OR",
-      "NAND",
-      "XOR",
-      "AND"
+      "Greedy",
+      "Dynamic Programming",
+      "Comparison",
+      "Backtracking"
     ],
-    "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 78 in Paper II of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Bubble Sort uses Comparison."
   },
   {
     "id": "e1_p2_q79",
-    "text": "[Q79] Which testing is performed by end-users in a real environment?",
+    "text": "At which OSI layer does IP operate?",
     "options": [
-      "Alpha Testing",
-      "Beta Testing",
-      "Unit Testing",
-      "Integration Testing"
+      "Network",
+      "Data Link",
+      "Physical",
+      "Presentation"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 79 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "IP operates at the Network layer."
   },
   {
     "id": "e1_p2_q80",
-    "text": "[Q80] Which sorting algorithm has the best average-case time complexity?",
+    "text": "What is Deadlock in Operating Systems?",
     "options": [
-      "Bubble Sort",
-      "Insertion Sort",
-      "Merge Sort",
-      "Selection Sort"
+      "A type of network protocol",
+      "A hardware component",
+      "A file system format",
+      "A state where processes are waiting indefinitely for resources"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 80 in Paper II of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Deadlock is defined as: A state where processes are waiting indefinitely for resources."
   },
   {
     "id": "e1_p2_q81",
-    "text": "[Q81] In OOP, what allows an object to take many forms?",
+    "text": "What is the average time complexity of Quick Sort?",
     "options": [
-      "Encapsulation",
-      "Polymorphism",
-      "Inheritance",
-      "Abstraction"
+      "O(n log n)",
+      "O(n)",
+      "O(n^2)",
+      "O(1)"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 81 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Quick Sort has time complexity O(n log n)."
   },
   {
     "id": "e1_p2_q82",
-    "text": "[Q82] What does SQL stand for?",
+    "text": "What is the average time complexity of Quick Sort?",
     "options": [
-      "Structured Query Language",
-      "Strong Question Language",
-      "Structured Question Language",
-      "System Query Language"
+      "O(n log n)",
+      "O(1)",
+      "O(n)",
+      "O(n^2)"
     ],
     "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 82 in Paper II of Mock Exam 1."
+    "explanation": "Quick Sort has time complexity O(n log n)."
   },
   {
     "id": "e1_p2_q83",
-    "text": "[Q83] Which OSI layer is responsible for logical addressing?",
+    "text": "At which OSI layer does TCP operate?",
     "options": [
-      "Data Link Layer",
-      "Network Layer",
-      "Transport Layer",
-      "Session Layer"
+      "Data Link",
+      "Physical",
+      "Transport",
+      "Presentation"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 83 in Paper II of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "TCP operates at the Transport layer."
   },
   {
     "id": "e1_p2_q84",
-    "text": "[Q84] In an OS, which scheduling algorithm is non-preemptive?",
+    "text": "At which OSI layer does FTP operate?",
     "options": [
-      "Round Robin",
-      "Shortest Remaining Time First",
-      "First Come First Serve",
-      "Multilevel Queue"
+      "Data Link",
+      "Presentation",
+      "Application",
+      "Physical"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 84 in Paper II of Mock Exam 1."
+    "explanation": "FTP operates at the Application layer."
   },
   {
     "id": "e1_p2_q85",
-    "text": "[Q85] What is the main function of a DNS server?",
+    "text": "What is the default port number for HTTP?",
     "options": [
-      "Host websites",
-      "Translate domain names to IP addresses",
-      "Provide internet connection",
-      "Secure network traffic"
+      "22",
+      "25",
+      "80",
+      "8080"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 85 in Paper II of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "HTTP uses port 80."
   },
   {
     "id": "e1_p2_q86",
-    "text": "[Q86] Which of the following is NOT a fundamental data type in C++?",
+    "text": "At which OSI layer does TCP operate?",
     "options": [
-      "int",
-      "float",
-      "string",
-      "char"
+      "Data Link",
+      "Transport",
+      "Presentation",
+      "Physical"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 86 in Paper II of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "TCP operates at the Transport layer."
   },
   {
     "id": "e1_p2_q87",
-    "text": "[Q87] What is the time complexity of searching in a balanced BST?",
+    "text": "At which OSI layer does IP operate?",
     "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
+      "Data Link",
+      "Presentation",
+      "Network",
+      "Physical"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 87 in Paper II of Mock Exam 1."
+    "explanation": "IP operates at the Network layer."
   },
   {
     "id": "e1_p2_q88",
-    "text": "[Q88] Which logic gate outputs 1 only when all inputs are 1?",
+    "text": "What is the default port number for FTP?",
     "options": [
-      "OR",
-      "NAND",
-      "XOR",
-      "AND"
+      "21",
+      "8080",
+      "22",
+      "25"
     ],
-    "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 88 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "FTP uses port 21."
   },
   {
     "id": "e1_p2_q89",
-    "text": "[Q89] Which testing is performed by end-users in a real environment?",
+    "text": "What is the average time complexity of Dijkstra's?",
     "options": [
-      "Alpha Testing",
-      "Beta Testing",
-      "Unit Testing",
-      "Integration Testing"
+      "O(1)",
+      "O(V^2)",
+      "O(n^2)",
+      "O(n)"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 89 in Paper II of Mock Exam 1."
+    "explanation": "Dijkstra's has time complexity O(V^2)."
   },
   {
     "id": "e1_p2_q90",
-    "text": "[Q90] Which sorting algorithm has the best average-case time complexity?",
+    "text": "What is the default port number for HTTP?",
     "options": [
-      "Bubble Sort",
-      "Insertion Sort",
-      "Merge Sort",
-      "Selection Sort"
+      "8080",
+      "22",
+      "80",
+      "25"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 90 in Paper II of Mock Exam 1."
+    "explanation": "HTTP uses port 80."
   },
   {
     "id": "e1_p2_q91",
-    "text": "[Q91] In OOP, what allows an object to take many forms?",
+    "text": "What is Semaphore in Operating Systems?",
     "options": [
-      "Encapsulation",
-      "Polymorphism",
-      "Inheritance",
-      "Abstraction"
+      "Synchronization tool used to control access to shared resources",
+      "A file system format",
+      "A type of network protocol",
+      "A hardware component"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 91 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Semaphore is defined as: Synchronization tool used to control access to shared resources."
   },
   {
     "id": "e1_p2_q92",
-    "text": "[Q92] What does SQL stand for?",
+    "text": "Which paradigm does Bubble Sort belong to?",
     "options": [
-      "Structured Query Language",
-      "Strong Question Language",
-      "Structured Question Language",
-      "System Query Language"
+      "Dynamic Programming",
+      "Greedy",
+      "Backtracking",
+      "Comparison"
     ],
-    "correctIndex": 0,
-    "explanation": "This is the detailed explanation for question 92 in Paper II of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Bubble Sort uses Comparison."
   },
   {
     "id": "e1_p2_q93",
-    "text": "[Q93] Which OSI layer is responsible for logical addressing?",
+    "text": "What is the average time complexity of Dijkstra's?",
     "options": [
-      "Data Link Layer",
-      "Network Layer",
-      "Transport Layer",
-      "Session Layer"
+      "O(V^2)",
+      "O(n^2)",
+      "O(n)",
+      "O(1)"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 93 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Dijkstra's has time complexity O(V^2)."
   },
   {
     "id": "e1_p2_q94",
-    "text": "[Q94] In an OS, which scheduling algorithm is non-preemptive?",
+    "text": "What is the average time complexity of Bubble Sort?",
     "options": [
-      "Round Robin",
-      "Shortest Remaining Time First",
-      "First Come First Serve",
-      "Multilevel Queue"
+      "O(n^2)",
+      "O(1)",
+      "O(n)"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 94 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Bubble Sort has time complexity O(n^2)."
   },
   {
     "id": "e1_p2_q95",
-    "text": "[Q95] What is the main function of a DNS server?",
+    "text": "What is Paging in Operating Systems?",
     "options": [
-      "Host websites",
-      "Translate domain names to IP addresses",
-      "Provide internet connection",
-      "Secure network traffic"
+      "A file system format",
+      "Memory management scheme that eliminates external fragmentation",
+      "A hardware component",
+      "A type of network protocol"
     ],
     "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 95 in Paper II of Mock Exam 1."
+    "explanation": "Paging is defined as: Memory management scheme that eliminates external fragmentation."
   },
   {
     "id": "e1_p2_q96",
-    "text": "[Q96] Which of the following is NOT a fundamental data type in C++?",
+    "text": "At which OSI layer does FTP operate?",
     "options": [
-      "int",
-      "float",
-      "string",
-      "char"
+      "Data Link",
+      "Application",
+      "Presentation",
+      "Physical"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 96 in Paper II of Mock Exam 1."
+    "correctIndex": 1,
+    "explanation": "FTP operates at the Application layer."
   },
   {
     "id": "e1_p2_q97",
-    "text": "[Q97] What is the time complexity of searching in a balanced BST?",
+    "text": "What is Round Robin in Operating Systems?",
     "options": [
-      "O(1)",
-      "O(n)",
-      "O(log n)",
-      "O(n log n)"
+      "A hardware component",
+      "A type of network protocol",
+      "A file system format",
+      "Preemptive scheduling algorithm using a time quantum"
     ],
-    "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 97 in Paper II of Mock Exam 1."
+    "correctIndex": 3,
+    "explanation": "Round Robin is defined as: Preemptive scheduling algorithm using a time quantum."
   },
   {
     "id": "e1_p2_q98",
-    "text": "[Q98] Which logic gate outputs 1 only when all inputs are 1?",
+    "text": "Which paradigm does Binary Search belong to?",
     "options": [
-      "OR",
-      "NAND",
-      "XOR",
-      "AND"
+      "Dynamic Programming",
+      "Greedy",
+      "Divide and Conquer",
+      "Backtracking"
     ],
-    "correctIndex": 3,
-    "explanation": "This is the detailed explanation for question 98 in Paper II of Mock Exam 1."
+    "correctIndex": 2,
+    "explanation": "Binary Search uses Divide and Conquer."
   },
   {
     "id": "e1_p2_q99",
-    "text": "[Q99] Which testing is performed by end-users in a real environment?",
+    "text": "Which paradigm does Binary Search belong to?",
     "options": [
-      "Alpha Testing",
-      "Beta Testing",
-      "Unit Testing",
-      "Integration Testing"
+      "Divide and Conquer",
+      "Dynamic Programming",
+      "Backtracking",
+      "Greedy"
     ],
-    "correctIndex": 1,
-    "explanation": "This is the detailed explanation for question 99 in Paper II of Mock Exam 1."
+    "correctIndex": 0,
+    "explanation": "Binary Search uses Divide and Conquer."
   },
   {
     "id": "e1_p2_q100",
-    "text": "[Q100] Which sorting algorithm has the best average-case time complexity?",
+    "text": "Which paradigm does Dijkstra's belong to?",
     "options": [
-      "Bubble Sort",
-      "Insertion Sort",
-      "Merge Sort",
-      "Selection Sort"
+      "Dynamic Programming",
+      "Backtracking",
+      "Greedy"
     ],
     "correctIndex": 2,
-    "explanation": "This is the detailed explanation for question 100 in Paper II of Mock Exam 1."
+    "explanation": "Dijkstra's uses Greedy."
   }
 ]
 };
