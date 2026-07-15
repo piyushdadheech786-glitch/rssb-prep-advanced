@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice Exams - RSSB Prep Advanced</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📝</text></svg>">
+</head>
+<body class="light-theme">
+    <header class="main-header">
+        <div class="logo">
+            <span class="logo-icon">📝</span>
+            <h1>RSSB Prep Advanced</h1>
+        </div>
+        <nav class="main-nav">
+            <a href="index.html" class="nav-btn">Back to Home</a>
+        </nav>
+    </header>
+
+    <main class="practice-main">
+        <!-- Dashboard View -->
+        <section id="exam-dashboard" class="exam-dashboard">
+            <div class="dashboard-header">
+                <h2>Practice Mock Exams</h2>
+                <p>Simulate the real RSSB Senior Computer Instructor exam experience. Each exam contains Paper I (GK/Aptitude) and Paper II (Technical). 120 Minutes per paper, 1/3rd negative marking.</p>
+            </div>
+            
+            <div class="exam-list" id="exam-list">
+                <!-- Exam Cards will be generated here -->
+            </div>
+        </section>
+
+        <!-- Exam UI View -->
+        <section id="exam-interface" class="exam-interface hidden">
+            <div class="exam-header">
+                <h2 id="current-exam-title">Exam 1 - Paper I</h2>
+                <div class="timer-container">
+                    <span class="timer-icon">⏱️</span>
+                    <span id="exam-timer">120:00</span>
+                </div>
+                <button id="btn-submit-exam" class="btn-submit-exam">Submit Exam</button>
+            </div>
+
+            <div class="exam-body">
+                <div class="question-section">
+                    <div class="question-header">
+                        <span id="q-number" class="q-number">Question 1</span>
+                        <span class="marks-info">+1 Marks | -0.33 Marks</span>
+                    </div>
+                    <div id="question-text" class="question-text">
+                        Loading question...
+                    </div>
+                    <div id="options-container" class="options-container">
+                        <!-- Options generated here -->
+                    </div>
+                    <div class="action-buttons">
+                        <button id="btn-prev" class="btn-secondary">Previous</button>
+                        <button id="btn-mark-review" class="btn-warning">Mark for Review</button>
+                        <button id="btn-clear" class="btn-outline">Clear Response</button>
+                        <button id="btn-next" class="btn-primary">Save & Next</button>
+                    </div>
+                </div>
+
+                <div class="palette-section">
+                    <h3>Question Palette</h3>
+                    <div class="palette-legend">
+                        <div class="legend-item"><span class="box answered"></span> Answered</div>
+                        <div class="legend-item"><span class="box not-answered"></span> Not Answered</div>
+                        <div class="legend-item"><span class="box marked"></span> Marked for Review</div>
+                        <div class="legend-item"><span class="box not-visited"></span> Not Visited</div>
+                    </div>
+                    <div id="question-palette" class="question-palette">
+                        <!-- Grid numbers generated here -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Result View -->
+        <section id="exam-result" class="exam-result hidden">
+            <div class="result-card">
+                <h2>Exam Result</h2>
+                <h3 id="result-exam-title">Exam 1</h3>
+                
+                <div class="score-summary">
+                    <div class="score-box total">
+                        <span class="label">Total Score</span>
+                        <span class="value" id="res-total">0/100</span>
+                    </div>
+                    <div class="score-box correct">
+                        <span class="label">Correct (+1)</span>
+                        <span class="value" id="res-correct">0</span>
+                    </div>
+                    <div class="score-box incorrect">
+                        <span class="label">Incorrect (-0.33)</span>
+                        <span class="value" id="res-incorrect">0</span>
+                    </div>
+                    <div class="score-box unattempted">
+                        <span class="label">Unattempted</span>
+                        <span class="value" id="res-unattempted">0</span>
+                    </div>
+                </div>
+                
+                <div class="result-actions">
+                    <button id="btn-view-solutions" class="btn-primary">View Solutions</button>
+                    <button id="btn-back-dashboard" class="btn-secondary">Back to Dashboard</button>
+                </div>
+            </div>
+
+            <!-- Solutions Container (Hidden by default) -->
+            <div id="solutions-container" class="solutions-container hidden">
+                <h3>Solutions & Explanations</h3>
+                <div id="solutions-list"></div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Load Data Files -->
+    <script src="data/exam-1.js"></script>
+    <script src="data/exam-2.js"></script>
+    <script src="data/exam-3.js"></script>
+    <script src="data/exam-4.js"></script>
+    
+    <!-- Load Logic -->
+    <script src="js/practice.js"></script>
+</body>
+</html>
