@@ -3,315 +3,459 @@ window.SUBJECTS['networks'] = {
   id: 'networks',
   name: 'Computer Networks',
   icon: '🌐',
-  description: 'Data communication concepts, OSI/TCP models, and network protocols ko samajhna.',
+  description: 'Complete Computer Networks syllabus covering OSI, TCP/IP, Routing, Subnetting, MAC protocols, and application layers for RSSB Computer Instructor Exam.',
   topics: [
     {
       id: 'evolution-terminologies',
       name: 'Evolution & Network Terminologies',
       theory: `
-        <h3>Evolution of Networking</h3>
-        <p>Networking ki shuruaat 1969 mein <b>ARPANET</b> (Advanced Research Projects Agency Network) se hui thi, jo US Department of Defense ne banaya tha. Ye pehla network tha jisne packet switching ka use kiya tha. Dheere dheere NSFNET aaya aur finally aaj ka <b>Internet</b> bana.</p>
+        <h3>1. Evolution of Computer Networks</h3>
+        <p>Computer Networks ka itihas kaafi purana hai. Network ka basic matlab hai do ya do se zyada computers ko aapas mein connect karna taaki data aur resources share kiye ja sakein.</p>
         
-        <h4>Basic Terminologies</h4>
-        <ul>
-          <li><b>Node:</b> Network mein connected har device (computer, printer) ko node kehte hain.</li>
-          <li><b>Bandwidth:</b> Maximum amount of data jo ek path par travel kar sakta hai. (Measured in bps).</li>
-          <li><b>Latency:</b> Data ko source se destination tak pahunchne mein lagne wala time (delay).</li>
-        </ul>
+        <h4>ARPANET (Advanced Research Projects Agency Network)</h4>
+        <p>Internet ki shuruaat <strong>1969</strong> mein ARPANET se hui thi. Ise US Department of Defense ne banaya tha. ARPANET pehli baar packet switching ka use karta tha. Pehla message "LO" bheja gaya tha (user "LOGIN" type karna chahta tha, par system crash ho gaya).</p>
 
-        <h4>Network Topologies</h4>
-        <p>Topology ka matlab hai network mein computers ka physical ya logical arrangement.</p>
-        <ul>
-          <li><b>Bus Topology:</b> Ek single main cable (backbone) se sab connected hote hain.</li>
-          <li><b>Star Topology:</b> Ek central device (Hub/Switch) hota hai. Sabse zyada use hone wali topology.</li>
-          <li><b>Ring Topology:</b> Har node exactly 2 aur nodes se connected hota hai, ek ring banata hai.</li>
-          <li><b>Mesh Topology:</b> Har node network ke har dusre node se directly connected hota hai (Point-to-point).</li>
-        </ul>
-        
+        <h4>NSFNET (National Science Foundation Network)</h4>
+        <p>1986 mein NSFNET aaya jisne ARPANET se zyada speed aur capacity di. Ise academic aur research institutions ke liye banaya gaya tha. Jab NSFNET aur ARPANET ko combine kiya gaya tab <strong>Internet</strong> (Interconnected Network) ka janam hua.</p>
+
+        <h3>2. Basic Network Terminologies</h3>
+        <p>Exam ke liye network parameters ko samajhna bahut zaroori hai.</p>
+
+        <h4>A. Bandwidth</h4>
+        <p>Bandwidth ka matlab hai network link ki "maximum capacity". Yeh measure karta hai ki ek second mein maximum kitna data transfer ho sakta hai. Iski unit <strong>Bits Per Second (bps)</strong> hoti hai.</p>
+        <div class="tip-box">
+          <div class="tip-title">💡 Yaad Rakho</div>
+          Digital bandwidth ko bps (bits/sec) mein napte hain, jabki analog bandwidth ko Hertz (Hz) mein napte hain.
+        </div>
+
+        <h4>B. Throughput</h4>
+        <p>Bandwidth theoretical capacity hoti hai, jabki <strong>Throughput</strong> actual data transfer rate hai. Throughput hamesha Bandwidth se kam ya barabar hota hai, kyunki network mein collisions, overhead, aur interference hote hain.</p>
         <div class="formula-box">
-          <div class="formula-title">📐 Formula / Key Point</div>
-          Mesh Topology mein total cables (links) ka formula: <code>n(n-1)/2</code> (Jahan n = number of nodes hai)
+          <div class="formula-title">📐 Throughput vs Bandwidth</div>
+          Throughput ≤ Bandwidth
         </div>
-        
-        <div class="tip-box">
-          <div class="tip-title">💡 Yaad Rakho</div>
-          Star topology sabse reliable aur easy to troubleshoot hai, kyunki ek cable kharab hone se sirf wahi computer affect hota hai, poora network nahi.
-        </div>
-        
-        <h4>Example (Worked Out)</h4>
-        <p><b>Question:</b> Agar ek fully connected mesh topology mein 6 computers hain, toh kitne links chahiye?</p>
-        <p><b>Solution:</b> Formula is n(n-1)/2. <br/> Here n = 6. <br/> Links = 6 * (6 - 1) / 2 = (6 * 5) / 2 = 30 / 2 = 15 cables.</p>
-      `
-    },
-    {
-      id: 'transmission-media',
-      name: 'Transmission Media',
-      theory: `
-        <h3>Transmission Media</h3>
-        <p>Data ko ek jagah se dusri jagah bhejne ke medium ko transmission media kehte hain. Ye do types ka hota hai:</p>
-        
-        <h4>1. Guided Media (Wired)</h4>
-        <p>Isme data ek physical wire ke through travel karta hai.</p>
-        <ul>
-          <li><b>Twisted Pair Cable:</b> Do copper wires ek dusre par twist kiye hote hain (taaki crosstalk kam ho). Ex: UTP (CAT5, CAT6), STP. LANs mein sabse common hai.</li>
-          <li><b>Coaxial Cable:</b> Isme ek inner copper conductor aur ek outer braided shield hoti hai. TV cables aur purane LANs mein use hota tha.</li>
-          <li><b>Fiber Optic Cable:</b> Glass ya plastic threads use hote hain. Data light signals ke form mein travel karta hai. Ye <i>Total Internal Reflection (TIR)</i> ke principle par kaam karta hai. Sabse fast aur secure hai.</li>
-        </ul>
 
-        <h4>2. Unguided Media (Wireless)</h4>
-        <p>Isme data electromagnetic waves ke form mein hawa (air) ke through bheja jata hai.</p>
-        <ul>
-          <li><b>Radio Waves:</b> Omnidirectional hoti hain (har disha mein travel karti hain). FM radio, TV mein use hoti hain.</li>
-          <li><b>Microwaves:</b> Unidirectional hoti hain (Line-of-Sight). Mobile networks aur satellite communication mein use hoti hain.</li>
-          <li><b>Infrared:</b> Short distance ke liye (Line-of-Sight). TV remote, wireless mouse mein use hota hai. Walls ko cross nahi kar sakti.</li>
-        </ul>
-        
-        <div class="warning-box">
-          <div class="tip-title">⚠️ Exam Trap</div>
-          Question aata hai ki kaunsa media walls ko penetrate nahi kar sakta? Answer is <b>Infrared</b>.
-        </div>
-        
-        <table class="comparison-table">
-          <tr><th>Feature</th><th>Twisted Pair</th><th>Coaxial Cable</th><th>Fiber Optic</th></tr>
-          <tr><td>Cost</td><td>Low</td><td>Medium</td><td>High</td></tr>
-          <tr><td>Bandwidth</td><td>Low</td><td>Medium</td><td>Very High</td></tr>
-          <tr><td>Signal Form</td><td>Electrical</td><td>Electrical</td><td>Light (Optical)</td></tr>
-        </table>
-      `
-    },
-    {
-      id: 'network-devices',
-      name: 'Network Devices',
-      theory: `
-        <h3>Hardware Network Devices</h3>
-        <p>Networking devices ka kaam network mein computers ko connect karna aur data ko forward karna hai.</p>
-        
-        <ul>
-          <li><b>Repeater (Layer 1):</b> Weak signals ko regenerate (amplify) karta hai taaki wo lambi distance travel kar sakein.</li>
-          <li><b>Hub (Layer 1):</b> Multiple devices ko connect karta hai. Ye ek 'dumb device' hai kyunki ye incoming data ko har port par broadcast kar deta hai (no filtering).</li>
-          <li><b>Switch (Layer 2):</b> Hub ka smart version. Ye MAC address table (CAM table) maintain karta hai aur data sirf usi device ko bhejta hai jiske liye wo intended hai (Unicast).</li>
-          <li><b>Bridge (Layer 2):</b> Do same type ke LANs ko connect karta hai aur MAC address read karke traffic ko filter karta hai.</li>
-          <li><b>Router (Layer 3):</b> Do alag-alag networks (jaise LAN aur WAN) ko connect karta hai. Ye IP address read karta hai aur best path (routing) decide karta hai data packets bhejane ke liye.</li>
-          <li><b>Gateway (All Layers):</b> Do bilkul different protocols wale networks ko connect karne ke liye protocol converter ka kaam karta hai.</li>
-        </ul>
-        
-        <div class="tip-box">
-          <div class="tip-title">💡 Yaad Rakho</div>
-          <b>Hub</b> ek single collision domain aur single broadcast domain banata hai. <br>
-          <b>Switch</b> har port par alag collision domain banata hai, par broadcast domain ek hi hota hai (unless VLAN use karein). <br>
-          <b>Router</b> har port par alag broadcast domain aur alag collision domain banata hai.
-        </div>
-      `
-    },
-    {
-      id: 'osi-tcpip',
-      name: 'OSI Model vs TCP/IP',
-      theory: `
-        <h3>OSI Reference Model</h3>
-        <p>Open Systems Interconnection (OSI) ek 7-layer theoretical model hai (ISO dwara banaya gaya) jo samajhne mein madad karta hai ki network data kaise travel karta hai.</p>
-        
+        <h4>C. Latency (Delay)</h4>
+        <p>Source se destination tak packet pahunchne mein jo total time lagta hai, use Latency kehte hain. Iske 4 main components hote hain:</p>
         <ol>
-          <li><b>Physical Layer (L1):</b> Bits ko electrical/optical signals mein convert karna. (Cables, Hub, Repeater). Data unit: <b>Bits</b>.</li>
-          <li><b>Data Link Layer (L2):</b> Node-to-node delivery, MAC addressing, Error detection (CRC). Data unit: <b>Frames</b>.</li>
-          <li><b>Network Layer (L3):</b> Routing aur Logical (IP) addressing. Source to destination delivery. Data unit: <b>Packets</b>.</li>
-          <li><b>Transport Layer (L4):</b> End-to-end delivery, Process-to-process communication, Error recovery, Flow control (TCP/UDP). Data unit: <b>Segments / Datagrams</b>.</li>
-          <li><b>Session Layer (L5):</b> Connections establish, maintain aur terminate karna (Authentication, Dialog control).</li>
-          <li><b>Presentation Layer (L6):</b> Data formatting, Encryption, Decryption, Compression (JPEG, ASCII).</li>
-          <li><b>Application Layer (L7):</b> User interface aur network applications (HTTP, FTP, SMTP).</li>
+          <li><strong>Transmission Delay:</strong> Packet ko link par push karne mein laga time.</li>
+          <li><strong>Propagation Delay:</strong> Signal ko link ke through travel karne mein laga time.</li>
+          <li><strong>Queuing Delay:</strong> Router ke buffer mein wait karne ka time.</li>
+          <li><strong>Processing Delay:</strong> Router dwara packet header check karne aur route decide karne ka time.</li>
         </ol>
 
-        <h4>TCP/IP Model</h4>
-        <p>Ye practical model hai jo actual Internet mein use hota hai. Isme commonly 4 layers mani jaati hain (kabhi-kabhi 5 depending on author, but standard is 4 for DOD model).</p>
-        
-        <table class="comparison-table">
-          <tr><th>OSI Model (7 Layers)</th><th>TCP/IP Model (4 Layers)</th></tr>
-          <tr><td>Application, Presentation, Session</td><td>Application Layer</td></tr>
-          <tr><td>Transport Layer</td><td>Transport Layer</td></tr>
-          <tr><td>Network Layer</td><td>Internet Layer</td></tr>
-          <tr><td>Data Link, Physical Layer</td><td>Network Access (Link) Layer</td></tr>
-        </table>
-        
-        <div class="warning-box">
-          <div class="tip-title">⚠️ Exam Trap</div>
-          OSI Layers ko bottom se top yaad rakhein (Layer 1 to Layer 7). Shortcut trick: <b>P</b>lease <b>D</b>o <b>N</b>ot <b>T</b>hrow <b>S</b>ausage <b>P</b>izza <b>A</b>way.
-        </div>
-      `
-    },
-    {
-      id: 'multiplexing',
-      name: 'Multiplexing Techniques',
-      theory: `
-        <h3>Multiplexing Kya Hai?</h3>
-        <p>Multiplexing (MUX) ek technique hai jisme multiple analog ya digital signals ko combine karke ek single medium (link) ke through bheja jata hai. Isse bandwidth ka better utilization hota hai. Receiving end pe Demultiplexer (DEMUX) use hota hai inko wapas alag karne ke liye.</p>
-        
-        <h4>Types of Multiplexing</h4>
-        <ul>
-          <li><b>Frequency Division Multiplexing (FDM):</b> Analog signal technique hai. Total bandwidth ko chote-chote frequency bands mein divide kar dete hain. (Example: Radio stations, Cable TV).</li>
-          <li><b>Wavelength Division Multiplexing (WDM):</b> Ye FDM ka hi optical version hai jo Fiber Optic cables mein use hota hai. Alag-alag data streams ko alag-alag color (wavelength) ki light mein bhejte hain.</li>
-          <li><b>Time Division Multiplexing (TDM):</b> Digital signal technique hai. Poori bandwidth har user ko milti hai lekin ek fixed time slot ke liye. Ye aage 2 type ka hota hai:
-            <ul>
-              <li><b>Synchronous TDM:</b> Har sender ko ek fixed time slot milta hai, chahe uske paas data ho ya na ho (bandwidth waste ho sakti hai).</li>
-              <li><b>Asynchronous (Statistical) TDM:</b> Time slots dynamically assign hote hain sirf un devices ko jinke paas bhejne ke liye data hota hai (better efficiency).</li>
-            </ul>
-          </li>
-        </ul>
-        
-        <pre>
-[S1] ---\\
-[S2] ----> [ MUX ] ===== High Capacity Link ===== [ DEMUX ] ---> [R1, R2, R3]
-[S3] ---/
-        </pre>
-      `
-    },
-    {
-      id: 'mac-protocols',
-      name: 'MAC Protocols (ALOHA, CSMA)',
-      theory: `
-        <h3>Medium Access Control (MAC) Protocols</h3>
-        <p>Jab multiple devices ek common medium (jaise ek single cable ya hawa) par data bhejna chahte hain, toh collisions se bachne ke liye MAC protocols (Data Link layer ka sublayer) ka use hota hai.</p>
-        
-        <h4>Random Access Protocols</h4>
-        <p>Koi bhi device kisi bhi waqt transmit kar sakta hai, isliye collision ka chance hota hai.</p>
-        
-        <ul>
-          <li><b>Pure ALOHA:</b> Jab bhi device ke paas data ho, turant bhej do. Agar collision hua, toh random time wait karke wapas bhejo. 
-          <br><i>Max Efficiency: 18.4%</i></li>
-          
-          <li><b>Slotted ALOHA:</b> Time ko slots mein divide kiya gaya. Data sirf slot ke starting (beginning) mein bheja ja sakta hai. 
-          <br><i>Max Efficiency: 36.8% (Pure ALOHA se double)</i></li>
-          
-          <li><b>CSMA (Carrier Sense Multiple Access):</b> "Listen before talk". Data bhejne se pehle medium ko check (sense) karo. Agar khali hai tabhi bhejo.</li>
-          
-          <li><b>CSMA/CD (Collision Detection):</b> Wired LANs (Ethernet) mein use hota hai. Bhejte waqt bhi sense karta hai, agar collision detect hua, toh bhejna rok kar ek 'jam signal' bhejta hai.</li>
-          
-          <li><b>CSMA/CA (Collision Avoidance):</b> Wireless LANs (Wi-Fi) mein use hota hai, kyunki wireless mein collision detect karna mushkil hai. Isme collision avoid karne ke liye RTS/CTS (Request To Send / Clear To Send) mechanism use hota hai.</li>
-        </ul>
-        
         <div class="formula-box">
-          <div class="formula-title">📐 Key Point</div>
-          Slotted ALOHA ki efficiency (36.8%) Pure ALOHA (18.4%) se exactly double hoti hai. Ye direct question exam mein aata hai.
+          <div class="formula-title">📐 Delay Formulas</div>
+          <strong>Transmission Delay (Tt)</strong> = Data Size (L) / Bandwidth (B)<br>
+          <strong>Propagation Delay (Tp)</strong> = Distance (d) / Velocity of signal (v)<br>
+          <strong>Total Latency</strong> = Tt + Tp + Tq + Tproc
         </div>
+
+        <h4>D. Jitter</h4>
+        <p>Jitter ka matlab hai "Variation in delay". Agar packets alag-alag delay ke sath destination par pahunch rahe hain, toh use jitter kehte hain. Voice aur Video calls ke liye Jitter minimum hona chahiye, warna aawaz kat-kat ke aayegi.</p>
+
+        <h4>Example (Solved): Delay Calculation</h4>
+        <p><strong>Question:</strong> Ek packet ka size 1000 Bytes hai. Bandwidth 1 Mbps hai. Distance 2000 km hai, aur speed of light in link 2 x 10^8 m/s hai. Total delay nikaliye (ignore queue/processing).</p>
+        <p><strong>Step 1:</strong> Transmission Delay (Tt)<br>
+        L = 1000 Bytes = 8000 bits.<br>
+        B = 1 Mbps = 10^6 bps.<br>
+        Tt = 8000 / 10^6 = 0.008 sec = 8 ms.</p>
+        
+        <p><strong>Step 2:</strong> Propagation Delay (Tp)<br>
+        d = 2000 km = 2 x 10^6 m.<br>
+        v = 2 x 10^8 m/s.<br>
+        Tp = (2 x 10^6) / (2 x 10^8) = 0.01 sec = 10 ms.</p>
+
+        <p><strong>Answer:</strong> Total Delay = 8 ms + 10 ms = 18 ms.</p>
       `
     },
     {
-      id: 'ieee-802',
-      name: 'IEEE 802.x LAN Standards',
+      id: 'transmission-devices',
+      name: 'Transmission Media & Network Devices',
       theory: `
-        <h3>IEEE 802 Standards</h3>
-        <p>IEEE ne LAN aur MAN technologies ke liye kuch standards define kiye hain, jinhe 802 committee standards kehte hain.</p>
-        
-        <table class="comparison-table">
-          <tr><th>Standard</th><th>Technology Name</th><th>Use / Features</th></tr>
-          <tr><td><b>IEEE 802.1</b></td><td>Higher Layer LAN Protocols</td><td>Bridging, Spanning Tree Protocol (STP)</td></tr>
-          <tr><td><b>IEEE 802.3</b></td><td>Ethernet</td><td>Wired LANs, CSMA/CD use karta hai.</td></tr>
-          <tr><td><b>IEEE 802.4</b></td><td>Token Bus</td><td>Bus topology with Token passing (Obsolete)</td></tr>
-          <tr><td><b>IEEE 802.5</b></td><td>Token Ring</td><td>Ring topology with Token passing (IBM LANs)</td></tr>
-          <tr><td><b>IEEE 802.11</b></td><td>Wireless LAN (Wi-Fi)</td><td>Wireless, CSMA/CA use karta hai.</td></tr>
-          <tr><td><b>IEEE 802.15</b></td><td>Wireless PAN (Bluetooth)</td><td>Short range personal networks (WPAN)</td></tr>
-          <tr><td><b>IEEE 802.16</b></td><td>Broadband Wireless (WiMAX)</td><td>Long distance wireless networks</td></tr>
-        </table>
-        
-        <div class="tip-box">
-          <div class="tip-title">💡 Yaad Rakho</div>
-          Sabse zyada pooche jane wale standards hain <b>802.3 (Ethernet)</b> aur <b>802.11 (Wi-Fi)</b>.
-        </div>
-      `
-    },
-    {
-      id: 'ip-protocol',
-      name: 'IP Protocol, Addressing & Subnetting',
-      theory: `
-        <h3>Internet Protocol (IP)</h3>
-        <p>Network layer par packet ki routing aur logical addressing ka kaam IP (Internet Protocol) karta hai. Ye connectionless aur unreliable (best-effort delivery) protocol hai.</p>
-        
-        <h4>IPv4 vs IPv6</h4>
+        <h3>1. Transmission Media</h3>
+        <p>Data ko ek jagah se dusri jagah bhejne ke liye physical path ko transmission media kehte hain. Yeh 2 type ke hote hain:</p>
+
+        <h4>A. Guided (Wired) Media</h4>
+        <p>Yahan signal ek physical wire ke andar guide hokar chalta hai.</p>
         <ul>
-          <li><b>IPv4:</b> 32-bit address hota hai, 4 octets mein divided (ex: 192.168.1.1). Total addresses = 2^32.</li>
-          <li><b>IPv6:</b> 128-bit address hota hai, 8 groups of hexadecimal digits mein divided (taaki IP address shortage solve ho sake).</li>
-        </ul>
-        
-        <h4>IPv4 Classes</h4>
-        <p>IP addresses ko Class A, B, C, D aur E mein divide kiya gaya hai based on unki starting bit/range.</p>
-        <table class="comparison-table">
-          <tr><th>Class</th><th>First Octet Range</th><th>Default Subnet Mask</th><th>Use</th></tr>
-          <tr><td><b>A</b></td><td>1 to 126</td><td>255.0.0.0</td><td>Very large networks</td></tr>
-          <tr><td><b>B</b></td><td>128 to 191</td><td>255.255.0.0</td><td>Medium networks</td></tr>
-          <tr><td><b>C</b></td><td>192 to 223</td><td>255.255.255.0</td><td>Small LANs</td></tr>
-          <tr><td><b>D</b></td><td>224 to 239</td><td>N/A</td><td>Multicasting</td></tr>
-          <tr><td><b>E</b></td><td>240 to 255</td><td>N/A</td><td>Research/Experimental</td></tr>
-        </table>
-        <i>Note: 127.x.x.x loopback (testing) ke liye reserve hota hai (e.g. 127.0.0.1).</i>
-        
-        <h4>Subnetting Calculation</h4>
-        <p>Ek bade network ko chhote networks (subnets) mein todna subnetting kehlata hai.</p>
-        <div class="formula-box">
-          <div class="formula-title">📐 Formula</div>
-          Number of usable hosts per subnet = <b>2<sup>n</sup> - 2</b> <br>
-          (Jahan n = host bits. -2 isliye karte hain kyunki pehla address Network ID aur last address Broadcast ID hota hai).
-        </div>
-        
-        <h4>Example (Worked Out)</h4>
-        <p><b>Question:</b> Agar subnet mask 255.255.255.224 hai (Class C mein /27), toh per subnet kitne hosts honge?</p>
-        <p><b>Solution:</b> /27 ka matlab 27 bits network ki hain. Host bits (n) = 32 - 27 = 5 bits. <br/>
-        Usable hosts = 2<sup>5</sup> - 2 = 32 - 2 = 30 hosts.</p>
-      `
-    },
-    {
-      id: 'transport-layer',
-      name: 'TCP & UDP (Transport Layer)',
-      theory: `
-        <h3>Transport Layer Protocols</h3>
-        <p>Transport layer do main protocols use karti hai: TCP aur UDP. Inka primary kaam port numbers (0 se 65535) ke through correct application tak data pahunchana (Process-to-Process delivery) hai.</p>
-        
-        <h4>1. TCP (Transmission Control Protocol)</h4>
-        <ul>
-          <li><b>Connection-Oriented:</b> Data bhejne se pehle connection establish hota hai (3-way handshake: SYN, SYN-ACK, ACK).</li>
-          <li><b>Reliable:</b> Data delivery ki guarantee hoti hai. Error control, flow control (sliding window), aur acknowledgements use karta hai.</li>
-          <li><b>Slow:</b> Overhead zyada hone ki wajah se thoda slow hota hai.</li>
-          <li><b>Use case:</b> Web browsing (HTTP/HTTPS), Email (SMTP), File Transfer (FTP).</li>
+          <li><strong>Twisted Pair Cable:</strong> Dono wires ko ek dusre ke sath twist kiya jata hai taaki <em>Crosstalk (electromagnetic interference)</em> kam ho. Iske do types hain: UTP (Unshielded) aur STP (Shielded - extra foil layer).</li>
+          <li><strong>Coaxial Cable:</strong> Isme ek central copper conductor hota hai, jiske upar insulator, phir metal shield, aur plastic cover hota hai. TV cables aur early Ethernet mein use hota tha.</li>
+          <li><strong>Fiber Optic Cable:</strong> Ye light pulses ke through data bhejta hai. Yeh <strong>Total Internal Reflection (TIR)</strong> ke principle par kaam karta hai. Ye sabse fast aur secure media hai. Types: Single-mode (long distance) aur Multi-mode (short distance).</li>
         </ul>
 
-        <h4>2. UDP (User Datagram Protocol)</h4>
+        <h4>B. Unguided (Wireless) Media</h4>
+        <p>Isme data air ya vacuum ke through electromagnetic waves ke form mein travel karta hai.</p>
         <ul>
-          <li><b>Connectionless:</b> Bina connection banaye sidhe data packets (datagrams) bhej deta hai.</li>
-          <li><b>Unreliable:</b> Koi acknowledgement nahi, koi guarantee nahi ki data pahuchega, packet loss ho sakta hai.</li>
-          <li><b>Fast:</b> Overhead kam hai isliye bahut fast hai.</li>
-          <li><b>Use case:</b> Video streaming, Online Gaming, Voice calls (VoIP), DNS queries.</li>
+          <li><strong>Radio Waves:</strong> Omnidirectional (har disha mein failti hain), deewar cross kar sakti hain. Example: FM Radio, AM.</li>
+          <li><strong>Microwaves:</strong> Unidirectional (line-of-sight required), deewar asani se cross nahi kar sakti. Example: Satellite communication, Cellular phones.</li>
+          <li><strong>Infrared:</strong> Short range, line of sight strict hai, aur solid objects cross nahi kar sakti. Example: TV Remote.</li>
         </ul>
-        
+
+        <h3>2. Network Devices</h3>
+        <p>Network devices devices ko interconnect karne ka kaam aate hain. Har device ek specific OSI layer par kaam karta hai.</p>
+
+        <table class="comparison-table">
+          <tr>
+            <th>Device</th>
+            <th>OSI Layer</th>
+            <th>Description & Features</th>
+          </tr>
+          <tr>
+            <td>Repeater</td>
+            <td>Layer 1 (Physical)</td>
+            <td>Weak signal ko regenerate/amplify karta hai taaki distance badhayi ja sake. Filter nahi karta.</td>
+          </tr>
+          <tr>
+            <td>Hub</td>
+            <td>Layer 1 (Physical)</td>
+            <td>Multiport repeater. Ye broadcast device hai. Isme collision chances bahut high hote hain.</td>
+          </tr>
+          <tr>
+            <td>Bridge</td>
+            <td>Layer 2 (Data Link)</td>
+            <td>MAC address padhta hai aur traffic filter karta hai. Collision domain ko divide karta hai.</td>
+          </tr>
+          <tr>
+            <td>Switch</td>
+            <td>Layer 2 (Data Link)</td>
+            <td>Multiport bridge. Ye MAC table (CAM table) maintain karta hai. Unicast transmission karta hai.</td>
+          </tr>
+          <tr>
+            <td>Router</td>
+            <td>Layer 3 (Network)</td>
+            <td>IP address ke basis par packet route karta hai. Broadcast domain ko divide karta hai.</td>
+          </tr>
+          <tr>
+            <td>Gateway</td>
+            <td>All Layers (Application)</td>
+            <td>Do completely different architecture wale networks ko jodne ka kaam karta hai. Protocol converter bhi kehte hain.</td>
+          </tr>
+        </table>
+
         <div class="warning-box">
-          <div class="tip-title">⚠️ Exam Trap</div>
-          Agar question mein poochein "Which transport protocol is best for live video streaming?", to answer <b>UDP</b> hoga kyunki wahan speed zyada important hai reliability (thoda frame loss chalega) se.
+          <div class="tip-title">⚠️ Exam Trap: Collision vs Broadcast Domain</div>
+          <p><strong>Hub:</strong> 1 Collision Domain, 1 Broadcast Domain.<br>
+          <strong>Switch (N ports):</strong> N Collision Domains, 1 Broadcast Domain.<br>
+          <strong>Router (N ports):</strong> N Collision Domains, N Broadcast Domains.</p>
         </div>
       `
     },
     {
-      id: 'application-layer',
-      name: 'Application Layer Protocols & DNS',
+      id: 'osi-tcp-ip',
+      name: 'OSI Model & TCP/IP Model',
       theory: `
-        <h3>Application Layer Protocols</h3>
-        <p>Application layer user-facing applications ko network access deti hai. Yaha bahut saare protocols aur unke specific port numbers use hote hain jo exam ke liye bahut important hain.</p>
+        <h3>1. The OSI Model (Open Systems Interconnection)</h3>
+        <p>ISO ne 1984 mein OSI model banaya. Yeh ek 7-layer theoretical reference model hai. Ise yaad rakhne ka tareeka: <strong>A</strong>ll <strong>P</strong>eople <strong>S</strong>eem <strong>T</strong>o <strong>N</strong>eed <strong>D</strong>ata <strong>P</strong>rocessing (Top to Bottom: Application, Presentation, Session, Transport, Network, Data Link, Physical).</p>
+
+        <h4>Layer 1: Physical Layer</h4>
+        <ul>
+          <li><strong>Unit of Data:</strong> Bits</li>
+          <li><strong>Role:</strong> Raw bits ko physical medium (cable/air) par transmit karna.</li>
+          <li><strong>Functions:</strong> Line coding, Modulation, Synchronization of bits, Topology define karna.</li>
+        </ul>
+
+        <h4>Layer 2: Data Link Layer (DLL)</h4>
+        <ul>
+          <li><strong>Unit of Data:</strong> Frames</li>
+          <li><strong>Role:</strong> Node-to-node delivery ensure karna.</li>
+          <li><strong>Functions:</strong> Framing, Physical addressing (MAC address), Error control (CRC/Checksum), Flow control, Access control (CSMA/CD).</li>
+          <li><strong>Sublayers:</strong> MAC (Media Access Control) & LLC (Logical Link Control).</li>
+        </ul>
+
+        <h4>Layer 3: Network Layer</h4>
+        <ul>
+          <li><strong>Unit of Data:</strong> Packets / Datagrams</li>
+          <li><strong>Role:</strong> Host-to-host delivery aur best path selection.</li>
+          <li><strong>Functions:</strong> Logical addressing (IP address), Routing, Fragmentation.</li>
+        </ul>
+
+        <h4>Layer 4: Transport Layer</h4>
+        <ul>
+          <li><strong>Unit of Data:</strong> Segments (TCP) / User Datagrams (UDP)</li>
+          <li><strong>Role:</strong> Process-to-process delivery (Port numbers). "Heart of OSI".</li>
+          <li><strong>Functions:</strong> Segmentation, Connection multiplexing, Reliable delivery (TCP), Flow & Congestion control.</li>
+        </ul>
+
+        <h4>Layer 5: Session Layer</h4>
+        <ul>
+          <li><strong>Role:</strong> Connections ko establish, maintain, aur terminate karna.</li>
+          <li><strong>Functions:</strong> Dialog control (Half/Full duplex), Synchronization (Checkpoints add karna taaki crash hone par resume ho sake).</li>
+        </ul>
+
+        <h4>Layer 6: Presentation Layer</h4>
+        <ul>
+          <li><strong>Role:</strong> Data ka syntax aur semantics handle karna. "Syntax Layer".</li>
+          <li><strong>Functions:</strong> Translation (ASCII to EBCDIC), Encryption/Decryption, Compression.</li>
+        </ul>
+
+        <h4>Layer 7: Application Layer</h4>
+        <ul>
+          <li><strong>Role:</strong> User ke liye network services provide karna.</li>
+          <li><strong>Functions:</strong> File transfer (FTP), Email (SMTP), Web browsing (HTTP).</li>
+        </ul>
+
+        <h3>2. TCP/IP Model</h3>
+        <p>TCP/IP practical model hai jo Internet mein actually use hota hai. Pehle isme 4 layers thi, par modern version (Forouzan) mein 5 layers hain.</p>
         
-        <h4>Important Protocols & Port Numbers</h4>
         <table class="comparison-table">
-          <tr><th>Protocol</th><th>Port</th><th>Full Form & Use</th></tr>
-          <tr><td><b>FTP</b></td><td>20, 21</td><td>File Transfer Protocol (Files upload/download)</td></tr>
-          <tr><td><b>SSH</b></td><td>22</td><td>Secure Shell (Secure remote login)</td></tr>
-          <tr><td><b>Telnet</b></td><td>23</td><td>Telecommunication Network (Unsecure remote login)</td></tr>
-          <tr><td><b>SMTP</b></td><td>25</td><td>Simple Mail Transfer Protocol (Email bhejne ke liye)</td></tr>
-          <tr><td><b>DNS</b></td><td>53</td><td>Domain Name System</td></tr>
-          <tr><td><b>HTTP</b></td><td>80</td><td>Hyper Text Transfer Protocol (Web browsing)</td></tr>
-          <tr><td><b>POP3</b></td><td>110</td><td>Post Office Protocol v3 (Email receive karne ke liye)</td></tr>
-          <tr><td><b>HTTPS</b></td><td>443</td><td>HTTP Secure (Encrypted web browsing)</td></tr>
+          <tr>
+            <th>OSI Layer</th>
+            <th>TCP/IP Layer (Original 4-Layer)</th>
+            <th>Protocols Used</th>
+          </tr>
+          <tr>
+            <td>Application, Presentation, Session</td>
+            <td>Application Layer</td>
+            <td>HTTP, FTP, SMTP, DNS, DHCP</td>
+          </tr>
+          <tr>
+            <td>Transport</td>
+            <td>Transport Layer</td>
+            <td>TCP, UDP</td>
+          </tr>
+          <tr>
+            <td>Network</td>
+            <td>Internet Layer</td>
+            <td>IP, ICMP, ARP, OSPF</td>
+          </tr>
+          <tr>
+            <td>Data Link, Physical</td>
+            <td>Network Access (Link) Layer</td>
+            <td>Ethernet, Wi-Fi, PPP</td>
+          </tr>
+        </table>
+
+        <div class="tip-box">
+          <div class="tip-title">💡 Encapsulation & Decapsulation</div>
+          Sender side par data upar se neeche aata hai aur har layer apna <strong>Header</strong> add karti hai (Encapsulation). Receiver side par data neeche se upar jata hai aur headers remove hote hain (Decapsulation).
+        </div>
+      `
+    },
+    {
+      id: 'multiplexing-mac',
+      name: 'Multiplexing & MAC Protocols',
+      theory: `
+        <h3>1. Multiplexing Techniques</h3>
+        <p>Jab medium ki bandwidth ek single signal ki zarurat se zyada hoti hai, toh medium ko multiple signals ke beech share kiya jata hai. Ise Multiplexing kehte hain. Device ko <strong>MUX</strong> (Multiplexer) kehte hain.</p>
+
+        <ul>
+          <li><strong>FDM (Frequency Division Multiplexing):</strong> Analog technique. Total bandwidth ko chote-chote frequency bands mein divide kiya jata hai. Guards bands diye jate hain taaki interference na ho. Ex: Radio, TV broadcasting.</li>
+          <li><strong>WDM (Wavelength Division Multiplexing):</strong> Ye FDM ka hi form hai par <strong>Fiber Optic cables</strong> ke liye. Alag-alag wavelengths (colors) ki light ko ek sath bheja jata hai.</li>
+          <li><strong>TDM (Time Division Multiplexing):</strong> Digital technique. Pura bandwidth ek signal ko milta hai, par fixed "Time Slots" ke liye.
+            <ul>
+              <li><em>Synchronous TDM:</em> Har sender ko fixed time slot milta hai, chahe uske paas data ho ya nahi. (Wastage of bandwidth).</li>
+              <li><em>Statistical (Asynchronous) TDM:</em> Time slots sirf unko milte hain jinke paas data hai. Dynamic allocation hoti hai.</li>
+            </ul>
+          </li>
+          <li><strong>CDM (Code Division Multiplexing):</strong> Sabhi users ek hi time aur ek hi frequency use karte hain, par unhe unique "Orthogonal Codes" diye jate hain. Ex: 3G CDMA networks.</li>
+        </ul>
+
+        <h3>2. Multiple Access (MAC) Protocols</h3>
+        <p>Jab multiple nodes ek common channel share karte hain, toh collision hota hai. Is collision ko handle karne ke protocols Data Link Layer ke MAC sublayer mein aate hain.</p>
+
+        <h4>A. ALOHA Protocol</h4>
+        <p>1970s mein University of Hawaii ne banaya tha.</p>
+        <ul>
+          <li><strong>Pure ALOHA:</strong> Koi bhi station kabhi bhi data bhej sakta hai. Agar collision hua, toh random time wait karke dobara bhejenge. <em>Max Efficiency = 18.4%</em>. Vulnerable time = 2 * Tt.</li>
+          <li><strong>Slotted ALOHA:</strong> Time ko slots mein divide kar diya. Station sirf slot ki shuruaat mein hi data bhej sakta hai. Collision kam ho gaya. <em>Max Efficiency = 36.8%</em>. Vulnerable time = Tt.</li>
+        </ul>
+
+        <h4>B. CSMA (Carrier Sense Multiple Access)</h4>
+        <p>"Sense before transmit". Station pehle medium check karta hai ki koi aur toh nahi bhej raha.</p>
+        <ul>
+          <li><strong>1-persistent:</strong> Medium busy hai toh continuously sense karta rahega. Jaise hi idle hoga, turant 100% probability ke sath bhej dega. (Highest chance of collision).</li>
+          <li><strong>Non-persistent:</strong> Medium busy hai toh random time ke liye so jayega, phir check karega. (Efficiency acchi, par delay zyada).</li>
+          <li><strong>p-persistent:</strong> (Slotted channels mein). Idle hone par 'p' probability ke sath bhejega, '1-p' probability se next slot ka wait karega.</li>
+        </ul>
+
+        <h4>C. CSMA/CD (Collision Detection)</h4>
+        <p>Ethernet (LAN) mein use hota hai. Agar bhejte waqt collision detect hua, toh transmission rok diya jata hai aur <strong>Jam Signal</strong> bheja jata hai. Station random backoff algorithm use karke wait karta hai.</p>
+        <div class="formula-box">
+          <div class="formula-title">📐 CSMA/CD Constraint</div>
+          Collision detect karne ke liye Sender ko utni der tak frame bhejna padega jitni der mein signal jakar wapas aaye (Round Trip Time).<br>
+          <strong>Transmission Time (Tt) ≥ 2 * Propagation Time (Tp)</strong><br>
+          Minimum Frame Size (L) = 2 * Tp * Bandwidth
+        </div>
+
+        <h4>D. CSMA/CA (Collision Avoidance)</h4>
+        <p>Wireless networks (Wi-Fi 802.11) mein CSMA/CD kaam nahi karta (Hidden Terminal Problem ki wajah se). Isliye hum Collision Avoidance use karte hain (RTS/CTS mechanism). Station pehle Request To Send (RTS) bhejta hai, aur Access Point Clear To Send (CTS) bhejta hai, uske baad data bheja jata hai.</p>
+      `
+    },
+    {
+      id: 'lan-technologies',
+      name: 'LAN Technologies (Ethernet, WiFi)',
+      theory: `
+        <h3>1. Ethernet (IEEE 802.3)</h3>
+        <p>Ethernet sabse popular LAN technology hai. Yeh Bus aur Star topology use karti hai aur CSMA/CD MAC protocol par based hai.</p>
+
+        <h4>Ethernet Frame Format</h4>
+        <ul>
+          <li><strong>Preamble (7 Bytes):</strong> Synchronization ke liye use hota hai (10101010 pattern).</li>
+          <li><strong>SFD - Start Frame Delimiter (1 Byte):</strong> Frame ki shuruaat batata hai (10101011).</li>
+          <li><strong>Destination MAC (6 Bytes):</strong> Receiver ka hardware address.</li>
+          <li><strong>Source MAC (6 Bytes):</strong> Sender ka hardware address.</li>
+          <li><strong>Type/Length (2 Bytes):</strong> Batata hai ki upper layer protocol konsa hai (e.g., IPv4 ya IPv6).</li>
+          <li><strong>Data Payload (46 to 1500 Bytes):</strong> Actual data. Agar 46 bytes se kam hai, toh 'padding' add ki jati hai taaki minimum 46 bytes ban jaye (jo minimum frame size 64 bytes ke constraint ko pura kare).</li>
+          <li><strong>FCS - Frame Check Sequence (4 Bytes):</strong> CRC-32 (Cyclic Redundancy Check) error detection ke liye.</li>
+        </ul>
+        <div class="warning-box">
+          <div class="tip-title">⚠️ Size Limits</div>
+          Minimum Ethernet Frame Size = 64 Bytes (without Preamble/SFD).<br>
+          Maximum Ethernet Frame Size = 1518 Bytes (without Preamble/SFD).
+        </div>
+
+        <h3>2. Token Ring (IEEE 802.5)</h3>
+        <p>Is topology mein stations ring mein connected hote hain. Ek special frame jise <strong>Token</strong> kehte hain, ring mein ghoomta rehta hai.</p>
+        <p>Jis station ko data bhejna hota hai, wo Token capture karta hai, apna data attach karta hai aur aage bhejta hai. Collision ka koi chance nahi hota (Collision-free protocol). Ise IBM ne develop kiya tha.</p>
+
+        <h3>3. Wireless LAN / Wi-Fi (IEEE 802.11)</h3>
+        <p>Wi-Fi radio waves ka use karta hai. Iska MAC protocol CSMA/CA hai.</p>
+        <h4>Wi-Fi Architecture</h4>
+        <ul>
+          <li><strong>Station (STA):</strong> Koi bhi wireless device (laptop, phone).</li>
+          <li><strong>BSS (Basic Service Set):</strong> Ek Access Point (AP) aur usse connected sabhi STAs ka group. (Jaise aapke ghar ka router).</li>
+          <li><strong>ESS (Extended Service Set):</strong> Jab multiple BSS ko ek wired network (Distribution System) se joda jata hai taaki bada area cover ho (Jaise college campus Wi-Fi).</li>
+        </ul>
+      `
+    },
+    {
+      id: 'ip-routing',
+      name: 'IP Protocol, Subnetting & Routing',
+      theory: `
+        <h3>1. IPv4 Addressing</h3>
+        <p>IPv4 addresses 32-bit long hote hain. Inhe 4 octets mein likha jata hai (Dot-decimal notation). Example: 192.168.1.1</p>
+        
+        <h4>Classful Addressing</h4>
+        <table class="comparison-table">
+          <tr><th>Class</th><th>Leading Bits</th><th>Range (1st Octet)</th><th>Default Subnet Mask</th><th>Use</th></tr>
+          <tr><td>Class A</td><td>0...</td><td>0 - 127 (1-126 usable)</td><td>255.0.0.0 (/8)</td><td>Very Large Networks</td></tr>
+          <tr><td>Class B</td><td>10...</td><td>128 - 191</td><td>255.255.0.0 (/16)</td><td>Medium Networks</td></tr>
+          <tr><td>Class C</td><td>110...</td><td>192 - 223</td><td>255.255.255.0 (/24)</td><td>Small Networks (LAN)</td></tr>
+          <tr><td>Class D</td><td>1110...</td><td>224 - 239</td><td>N/A</td><td>Multicasting</td></tr>
+          <tr><td>Class E</td><td>1111...</td><td>240 - 255</td><td>N/A</td><td>Research / Military</td></tr>
         </table>
         
-        <h4>DNS (Domain Name System)</h4>
-        <p>DNS ko "Internet ka Phonebook" kaha jata hai. Ye human-readable domain names (jaise google.com) ko machine-readable IP addresses (jaise 142.250.190.46) mein convert (resolve) karta hai.</p>
-        <p><b>Note:</b> DNS query by default Transport layer pe <b>UDP</b> port 53 ka use karti hai for speed, par agar response bada ho to TCP ka use karti hai.</p>
-        
         <div class="tip-box">
-          <div class="tip-title">💡 Yaad Rakho</div>
-          SMTP sirf mail "Bhejne" (Push) ke liye hota hai. Mail "Receive" (Pull) karne ke liye POP3 ya IMAP ka use hota hai.
+          <div class="tip-title">💡 Special IPs</div>
+          <strong>127.x.x.x:</strong> Loopback address (localhost), testing ke liye.<br>
+          <strong>0.0.0.0:</strong> Default route.<br>
+          <strong>255.255.255.255:</strong> Limited Broadcast address.
+        </div>
+
+        <h3>2. Subnetting & CIDR</h3>
+        <p>Subnetting ka matlab hai ek bade network ko chote-chote sub-networks mein todna. Iske liye hum Host bits ko "borrow" karke Network bits banate hain.</p>
+        
+        <h4>Classless Inter-Domain Routing (CIDR)</h4>
+        <p>Ise "Slash Notation" bhi kehte hain, jaise 192.168.1.0/26. Yahan /26 ka matlab hai ki 26 bits Network+Subnet ke liye hain, aur remaining 32-26 = 6 bits Host ke liye hain.</p>
+        
+        <h4>Example: Subnet Calculation</h4>
+        <p><strong>Q: 192.168.1.0/26 network mein kitne subnets aur valid hosts per subnet honge?</strong></p>
+        <p><strong>Step 1:</strong> Ye Class C address hai. Default bits = 24. Yahan /26 hai. Borrowed bits = 26 - 24 = 2 bits.<br>
+        Number of Subnets = 2^2 = 4 subnets.</p>
+        <p><strong>Step 2:</strong> Remaining Host bits (h) = 32 - 26 = 6 bits.<br>
+        Total Hosts per subnet = 2^6 = 64.<br>
+        <strong>Valid Hosts per subnet = 2^h - 2</strong> = 64 - 2 = 62 hosts. (Pehla IP Network ID aur aakhiri IP Broadcast ID hota hai).</p>
+
+        <h3>3. IPv6</h3>
+        <p>IPv4 addresses khatam ho gaye the, isliye IPv6 aaya. Yeh <strong>128-bit</strong> ka address hai, jise Hexadecimal format mein likha jata hai, separated by colons (:).</p>
+        <p>Example: 2001:0db8:85a3:0000:0000:8a2e:0370:7334</p>
+        <p>Isme IPSec in-built hota hai, aur header fixed size (40 Bytes) ka hota hai (Fragmentation routers nahi karte, sirf source karta hai).</p>
+
+        <h3>4. Routing Protocols (Network Layer)</h3>
+        <p>Routers best path find karne ke liye algorithms use karte hain.</p>
+        <ul>
+          <li><strong>Distance Vector Routing (DVR):</strong> Yeh <strong>Bellman-Ford Algorithm</strong> par based hai. Har router apna pura routing table sirf apne "neighbors" ko bhejta hai. RIP (Routing Information Protocol) iska example hai. Isme <em>Count-to-Infinity problem</em> aati hai (routing loop).</li>
+          <li><strong>Link State Routing (LSR):</strong> Yeh <strong>Dijkstra’s Algorithm</strong> par based hai. Har router apne neighbors ki link-state info pure network mein "flood" karta hai. Har router ke paas network ka pura map hota hai, phir wo shortest path nikalta hai. OSPF (Open Shortest Path First) iska example hai. Isme loops ki problem nahi hoti.</li>
+        </ul>
+      `
+    },
+    {
+      id: 'tcp-udp',
+      name: 'Transport Layer: TCP & UDP',
+      theory: `
+        <h3>1. TCP (Transmission Control Protocol)</h3>
+        <p>TCP ek connection-oriented, reliable, aur byte-stream protocol hai.</p>
+        
+        <h4>TCP Features:</h4>
+        <ul>
+          <li><strong>Reliability:</strong> Har packet ka acknowledgment (ACK) aata hai. Agar ACK nahi aaya, toh packet retransmit hota hai.</li>
+          <li><strong>3-Way Handshake:</strong> Connection establish karne ka tarika.
+            <ol>
+              <li>Client -> Server: SYN (Synchronize) bhejta hai.</li>
+              <li>Server -> Client: SYN + ACK bhejta hai.</li>
+              <li>Client -> Server: ACK bhejta hai. Connection established!</li>
+            </ol>
+          </li>
+          <li><strong>TCP Header:</strong> Standard size 20 Bytes, Max size 60 Bytes. Source Port (16-bit) aur Destination Port (16-bit) hote hain.</li>
+        </ul>
+
+        <h4>Flow Control vs Congestion Control</h4>
+        <p><strong>Flow Control:</strong> Receiver sender ko bolta hai ki "Dheere bhejo, meri capacity full ho rahi hai". TCP <em>Sliding Window Protocol</em> use karta hai (Window Size header field me jata hai).</p>
+        <p><strong>Congestion Control:</strong> Network (routers) bolta hai ki "Traffic zyada hai, dheere bhejo". TCP 3 phases use karta hai:
+          <ol>
+            <li><em>Slow Start:</em> Window size exponentially badhta hai (1, 2, 4, 8...).</li>
+            <li><em>Congestion Avoidance (AIMD):</em> Threshold aane ke baad linearly badhta hai (Add 1).</li>
+            <li><em>Congestion Detection:</em> Packet drop hone par window size aadha ya reset (1) ho jata hai.</li>
+          </ol>
+        </p>
+
+        <h3>2. UDP (User Datagram Protocol)</h3>
+        <p>UDP connectionless aur unreliable protocol hai. Isme na handshake hota hai, na ACK aati hai. Data bhej diya, pahuncha ya nahi, UDP ko farak nahi padta.</p>
+        
+        <h4>UDP Features:</h4>
+        <ul>
+          <li><strong>Speed:</strong> Kyunki overhead nahi hai, ye TCP se fast hai.</li>
+          <li><strong>UDP Header:</strong> Sirf 8 Bytes ka hota hai. (Source port, Dest port, Length, Checksum).</li>
+          <li><strong>Use cases:</strong> Video streaming, VoIP, Online Gaming, DNS queries (Jahan speed accuracy se zyada important hai).</li>
+        </ul>
+
+        <table class="comparison-table">
+          <tr><th>Feature</th><th>TCP</th><th>UDP</th></tr>
+          <tr><td>Connection Type</td><td>Connection-Oriented</td><td>Connectionless</td></tr>
+          <tr><td>Reliability</td><td>High (Guaranteed Delivery)</td><td>Low (Best Effort)</td></tr>
+          <tr><td>Header Size</td><td>20-60 Bytes</td><td>8 Bytes</td></tr>
+          <tr><td>Overhead & Speed</td><td>High Overhead, Slower</td><td>Low Overhead, Faster</td></tr>
+          <tr><td>Usage</td><td>HTTP, FTP, SMTP, SSH</td><td>DNS, DHCP, VoIP, TFTP</td></tr>
+        </table>
+      `
+    },
+    {
+      id: 'app-dns',
+      name: 'Application Layer & DNS',
+      theory: `
+        <h3>1. DNS (Domain Name System)</h3>
+        <p>Humans ke liye IP addresses (142.250.192.46) yaad rakhna mushkil hai. Isliye hum Domain Names (google.com) use karte hain. DNS ka kaam hai <strong>Domain name ko IP address mein translate karna</strong>. Isliye ise "Phonebook of the Internet" bhi kehte hain.</p>
+        
+        <h4>DNS Architecture (Hierarchy)</h4>
+        <p>DNS ek inverted tree structure follow karta hai.</p>
+        <ul>
+          <li><strong>Root Server:</strong> Tree ka top level. Poore world mein 13 logical root servers hain (A to M). Ye top-level domains ke addresses jante hain.</li>
+          <li><strong>Top-Level Domain (TLD) Server:</strong> Ye extensions ko handle karte hain. Jaise .com, .org, .edu, .in. Har extension ka apna TLD server hota hai.</li>
+          <li><strong>Authoritative Name Server:</strong> Ye actual server hai jiske paas us domain (e.g., example.com) ka final IP address ka record (A Record) hota hai.</li>
+        </ul>
+
+        <h4>DNS Resolution Process</h4>
+        <p>Jab aap browser mein website type karte hain, toh IP kaise milta hai?</p>
+        <ol>
+          <li>Browser pehle apne local cache aur OS (hosts file) mein check karta hai.</li>
+          <li>Agar nahi mila, toh query <strong>ISP ke Local DNS Resolver</strong> ko jati hai.</li>
+          <li><strong>Recursive Query:</strong> Aapka computer resolver se kehta hai "Mujhe final IP laake do, chahe tumhe kitni bhi mehnat karni pade."</li>
+          <li><strong>Iterative Query:</strong> Resolver root server ke paas jata hai. Root server usko TLD ka address de deta hai. Phir resolver TLD ke paas jata hai, jo Authoritative ka address de deta hai. Resolver khud baar-baar query bhej raha hai (iterative).</li>
+          <li>Aakhir mein resolver ko IP milta hai aur wo browser ko return kar deta hai (aur cache me save kar leta hai).</li>
+        </ol>
+
+        <div class="tip-box">
+          <div class="tip-title">💡 Important Application Protocols & Ports</div>
+          <ul>
+            <li><strong>HTTP / HTTPS:</strong> Port 80 / 443 (Web browsing)</li>
+            <li><strong>FTP:</strong> Port 20 (Data), Port 21 (Control)</li>
+            <li><strong>SMTP:</strong> Port 25 (Mail send)</li>
+            <li><strong>POP3 / IMAP:</strong> Port 110 / 143 (Mail receive)</li>
+            <li><strong>DNS:</strong> Port 53 (Uses both UDP and TCP)</li>
+            <li><strong>DHCP:</strong> Port 67 (Server), 68 (Client) - Auto IP assign karna.</li>
+            <li><strong>Telnet / SSH:</strong> Port 23 / 22 (Remote login)</li>
+          </ul>
         </div>
       `
     }
@@ -320,223 +464,306 @@ window.SUBJECTS['networks'] = {
     {
       id: 1,
       topic: 'evolution-terminologies',
-      question: 'Duniya ka sabse pehla packet switching network kaunsa tha?',
-      options: ['ARPANET', 'NSFNET', 'INTERNET', 'USNET'],
-      correct: 0,
-      explanation: 'ARPANET (Advanced Research Projects Agency Network) 1969 mein banaya gaya tha aur ye pehla network tha jisne packet switching concept ka use kiya tha. Baaki baad mein aaye.'
+      question: 'Which of the following was the first operational computer network that implemented packet switching?',
+      options: ['NSFNET', 'ARPANET', 'ETHERNET', 'TELNET'],
+      correct: 1,
+      explanation: 'ARPANET was developed by the US DoD in 1969 and was the first to implement packet switching. NSFNET aaya baad mein, aur Ethernet LAN technology hai.'
     },
     {
       id: 2,
       topic: 'evolution-terminologies',
-      question: 'Ek fully connected Mesh Topology jismein 8 nodes hain, usme kitne physical links ki zarurat hogi?',
-      options: ['8', '28', '56', '64'],
-      correct: 1,
-      explanation: 'Mesh topology mein links ka formula n(n-1)/2 hota hai. Yahan n = 8 hai. To 8*(8-1)/2 = (8*7)/2 = 56/2 = 28 links chahiye honge.'
+      question: 'The maximum theoretical amount of data that can be transmitted over a network in a given amount of time is called:',
+      options: ['Throughput', 'Latency', 'Bandwidth', 'Jitter'],
+      correct: 2,
+      explanation: 'Theoretical maximum capacity ko Bandwidth kehte hain. Actual data rate ko Throughput kehte hain.'
     },
     {
       id: 3,
       topic: 'evolution-terminologies',
-      question: 'Kaunsi topology mein ek central controller ya hub hota hai jisse sabhi devices connected hote hain?',
-      options: ['Bus Topology', 'Ring Topology', 'Star Topology', 'Mesh Topology'],
+      question: 'If a packet size is 1000 bits and the link bandwidth is 10 kbps, what is the Transmission Delay?',
+      options: ['10 seconds', '1 second', '0.1 seconds', '0.01 seconds'],
       correct: 2,
-      explanation: 'Star Topology mein ek central device (hub ya switch) hota hai jo sabhi nodes ko connect karta hai. Bus mein ek backbone cable hoti hai, Ring mein circular chain, aur Mesh mein sab ek dusre se direct connected hote hain.'
+      explanation: 'Transmission Delay = Length / Bandwidth = 1000 bits / (10 * 10^3 bps) = 1000 / 10000 = 0.1 seconds.'
     },
     {
       id: 4,
-      topic: 'transmission-media',
-      question: 'Fiber Optic Cable data transmit karne ke liye kis principle ka use karti hai?',
-      options: ['Electromagnetic Interference', 'Total Internal Reflection', 'Dispersion', 'Refraction'],
+      topic: 'evolution-terminologies',
+      question: 'The variation in packet arrival time is referred to as:',
+      options: ['Attenuation', 'Jitter', 'Throughput', 'Propagation Delay'],
       correct: 1,
-      explanation: 'Fiber Optic cable light signals ka use karti hai jo Total Internal Reflection (TIR) ke principle par core ke andar travel karte hain, bina loss ke.'
+      explanation: 'Delay ki variation ko Jitter kehte hain, jo streaming aur VoIP ke liye problem create karta hai.'
     },
     {
       id: 5,
-      topic: 'transmission-media',
-      question: 'Inmein se kaunsa wireless transmission media solid objects (walls) ko cross nahi kar sakta?',
-      options: ['Radio Waves', 'Microwaves', 'Infrared', 'Wi-Fi'],
-      correct: 2,
-      explanation: 'Infrared (IR) ek short-range communication wave hai (jaise TV remote) jo solid objects ya walls ko cross nahi kar sakti. Radio aur microwaves easily cross kar sakti hain.'
+      topic: 'transmission-devices',
+      question: 'Which principle is responsible for the transmission of optical signals through a Fiber Optic Cable?',
+      options: ['Total Internal Reflection', 'Electromagnetic Interference', 'Refraction Indexing', 'Crosstalk Cancellation'],
+      correct: 0,
+      explanation: 'Fiber optics kaam karti hai Total Internal Reflection (TIR) pe, jisse light wire ke andar hi bounce karti rehti hai.'
     },
     {
       id: 6,
-      topic: 'network-devices',
-      question: 'Kaunsa network device OSI model ki Network Layer (Layer 3) par kaam karta hai?',
-      options: ['Hub', 'Switch', 'Router', 'Repeater'],
-      correct: 2,
-      explanation: 'Router Layer 3 (Network Layer) device hai jo IP addresses ke basis par packets ko route karta hai. Hub aur Repeater Layer 1 par, aur Switch Layer 2 par kaam karta hai.'
+      topic: 'transmission-devices',
+      question: 'Unshielded Twisted Pair (UTP) cables are twisted together primarily to:',
+      options: ['Increase the tensile strength of the cable', 'Reduce electromagnetic interference (crosstalk)', 'Reduce the size of the cable', 'Increase the speed of light in the cable'],
+      correct: 1,
+      explanation: 'Twisting se crosstalk (adjacent wires ka interference) aur external electromagnetic interference kam hota hai.'
     },
     {
       id: 7,
-      topic: 'network-devices',
-      question: 'Ek 24-port Switch mein kitne collision domains aur broadcast domains hote hain (agar VLAN nahi banaya gaya ho)?',
-      options: ['1 Collision Domain, 1 Broadcast Domain', '24 Collision Domains, 1 Broadcast Domain', '24 Collision Domains, 24 Broadcast Domains', '1 Collision Domain, 24 Broadcast Domains'],
-      correct: 1,
-      explanation: 'Switch ka har port ek alag collision domain banata hai (so 24 collision domains). Lekin default roop se ek switch single broadcast domain mein aata hai.'
+      topic: 'transmission-devices',
+      question: 'At which OSI layer does a conventional network Hub operate?',
+      options: ['Physical Layer', 'Data Link Layer', 'Network Layer', 'Transport Layer'],
+      correct: 0,
+      explanation: 'Hub ek Physical layer (Layer 1) device hai. Ye signals ko amplify aur broadcast karta hai (multiport repeater), isme koi intelligence nahi hoti.'
     },
     {
       id: 8,
-      topic: 'osi-tcpip',
-      question: 'OSI model ki 7 layers ko sahi kram (bottom to top) mein lagayein:',
-      options: [
-        'Physical, Data Link, Network, Transport, Session, Presentation, Application',
-        'Physical, Network, Data Link, Transport, Session, Presentation, Application',
-        'Application, Presentation, Session, Transport, Network, Data Link, Physical',
-        'Physical, Data Link, Network, Session, Transport, Presentation, Application'
-      ],
-      correct: 0,
-      explanation: 'Sahi order (Layer 1 se Layer 7) hai: Physical -> Data Link -> Network -> Transport -> Session -> Presentation -> Application. Shortcut: Please Do Not Throw Sausage Pizza Away.'
+      topic: 'transmission-devices',
+      question: 'A network Switch breaks up _________ domains but does NOT break up _________ domains.',
+      options: ['Broadcast, Collision', 'Collision, Broadcast', 'Routing, Collision', 'MAC, Broadcast'],
+      correct: 1,
+      explanation: 'Switch har port ke liye ek alag Collision domain banata hai, par by default sabhi ports ek hi Broadcast domain mein hote hain.'
     },
     {
       id: 9,
-      topic: 'osi-tcpip',
-      question: 'Data encryption, decryption aur compression OSI model ki kis layer ka function hai?',
-      options: ['Application Layer', 'Presentation Layer', 'Session Layer', 'Transport Layer'],
-      correct: 1,
-      explanation: 'Presentation Layer (Layer 6) data ko present karne ka kaam karti hai, jisme formatting, encryption, decryption aur compression shamil hote hain.'
+      topic: 'osi-tcp-ip',
+      question: 'In the OSI reference model, which layer is responsible for translating data into a standard format, encryption, and compression?',
+      options: ['Application Layer', 'Session Layer', 'Presentation Layer', 'Transport Layer'],
+      correct: 2,
+      explanation: 'Presentation layer (Layer 6) syntax aur semantics handle karti hai, including Translation, Encryption, and Compression.'
     },
     {
       id: 10,
-      topic: 'osi-tcpip',
-      question: 'Network layer par data ki unit ko kya kaha jata hai?',
-      options: ['Frame', 'Packet', 'Segment', 'Bit'],
-      correct: 1,
-      explanation: 'Physical layer pe Bits, Data Link layer pe Frames, Network layer pe Packets, aur Transport layer pe Segments kaha jata hai.'
+      topic: 'osi-tcp-ip',
+      question: 'Which layer of the OSI model ensures reliable, end-to-end (process-to-process) data delivery?',
+      options: ['Network Layer', 'Data Link Layer', 'Session Layer', 'Transport Layer'],
+      correct: 3,
+      explanation: 'Transport layer (Layer 4) process-to-process delivery (via port numbers) aur reliability (TCP) ensure karti hai.'
     },
     {
       id: 11,
-      topic: 'multiplexing',
-      question: 'Kaunsi multiplexing technique specifically Fiber Optic Cables ke liye use hoti hai?',
-      options: ['TDM', 'FDM', 'WDM', 'CDMA'],
+      topic: 'osi-tcp-ip',
+      question: 'What is the Protocol Data Unit (PDU) at the Network Layer of the OSI model?',
+      options: ['Frame', 'Segment', 'Packet', 'Bit'],
       correct: 2,
-      explanation: 'Wavelength Division Multiplexing (WDM) fiber optics mein use hoti hai, jisme alag-alag data streams ko alag wavelength (color) ki light banakar ek hi cable mein bheja jata hai.'
+      explanation: 'Physical = Bits, Data Link = Frames, Network = Packets/Datagrams, Transport = Segments.'
     },
     {
       id: 12,
-      topic: 'mac-protocols',
-      question: 'Pure ALOHA ki maximum efficiency (throughput) kitni hoti hai?',
-      options: ['18.4%', '36.8%', '50%', '100%'],
+      topic: 'osi-tcp-ip',
+      question: 'How many layers does the original TCP/IP reference model have?',
+      options: ['4', '5', '6', '7'],
       correct: 0,
-      explanation: 'Pure ALOHA ki max efficiency (1/2e) lagbhag 18.4% hoti hai. Jabki Slotted ALOHA ki max efficiency uski double (1/e) ya 36.8% hoti hai.'
+      explanation: 'Original TCP/IP model mein 4 layers thi: Application, Transport, Internet, aur Network Access. (Modern hybrid mein 5 hoti hain, par original pucha hai toh 4 aayega).'
     },
     {
       id: 13,
-      topic: 'mac-protocols',
-      question: 'Wi-Fi (Wireless LAN) mein collision ko handle karne ke liye kaunsa MAC protocol use kiya jata hai?',
-      options: ['CSMA/CD', 'CSMA/CA', 'Slotted ALOHA', 'Token Passing'],
+      topic: 'multiplexing-mac',
+      question: 'Which multiplexing technique assigns entirely different frequency bands to each signal?',
+      options: ['TDM', 'FDM', 'WDM', 'CDM'],
       correct: 1,
-      explanation: 'Wireless network mein collision detect karna mushkil hai isliye Collision Avoidance (CA) use hota hai. CSMA/CD wired Ethernet mein use hota hai.'
+      explanation: 'FDM (Frequency Division Multiplexing) bandwidth ko alag-alag frequency bands mein divide karta hai. Radio/TV iska example hai.'
     },
     {
       id: 14,
-      topic: 'ieee-802',
-      question: 'IEEE 802.3 standard kis networking technology se related hai?',
-      options: ['Wi-Fi', 'Token Ring', 'Ethernet', 'Bluetooth'],
-      correct: 2,
-      explanation: 'IEEE 802.3 Ethernet (wired LAN) ka standard hai. 802.11 Wi-Fi ka, aur 802.15 Bluetooth (WPAN) ka standard hai.'
+      topic: 'multiplexing-mac',
+      question: 'What is the maximum theoretical efficiency of Pure ALOHA?',
+      options: ['18.4%', '36.8%', '50%', '100%'],
+      correct: 0,
+      explanation: 'Pure ALOHA ki max efficiency 1/2e hoti hai, jo approximately 18.4% hoti hai. Slotted ALOHA ki 36.8% (1/e) hoti hai.'
     },
     {
       id: 15,
-      topic: 'ieee-802',
-      question: 'Bluetooth ya Wireless Personal Area Network (WPAN) ke liye kaunsa IEEE standard define kiya gaya hai?',
-      options: ['IEEE 802.11', 'IEEE 802.15', 'IEEE 802.16', 'IEEE 802.3'],
-      correct: 1,
-      explanation: 'IEEE 802.15 WPAN (Bluetooth) ke liye use hota hai. 802.16 WiMAX ke liye aur 802.11 Wi-Fi ke liye hota hai.'
+      topic: 'multiplexing-mac',
+      question: 'In CSMA/CD, the minimum frame size equation is:',
+      options: ['Length = Propagation Time / Bandwidth', 'Length = Transmission Time * Bandwidth', 'Length = 2 * Propagation Time * Bandwidth', 'Length = Propagation Time * Bandwidth / 2'],
+      correct: 2,
+      explanation: 'CSMA/CD mein collision detect karne ke liye Sender ko kam se kam RTT (2*Tp) time tak data bhejna zaruri hai. So, Transmission Time (Length/Bandwidth) = 2*Tp, which means Length = 2 * Tp * Bandwidth.'
     },
     {
       id: 16,
-      topic: 'ip-protocol',
-      question: 'IPv6 address ki length (size) kitne bits ki hoti hai?',
-      options: ['32 bits', '64 bits', '128 bits', '256 bits'],
-      correct: 2,
-      explanation: 'IPv4 ki length 32 bits hoti hai, jabki naye IPv6 ki length 128 bits hoti hai jo hexadecimal format mein likhi jati hai.'
+      topic: 'multiplexing-mac',
+      question: 'Which multiple access protocol uses Request to Send (RTS) and Clear to Send (CTS) frames to address the hidden terminal problem?',
+      options: ['CSMA/CD', 'CSMA/CA', 'Slotted ALOHA', 'Token Passing'],
+      correct: 1,
+      explanation: 'Wireless networks (Wi-Fi) mein collision detection kaam nahi karta, isliye CSMA/CA (Avoidance) use hota hai, jisme RTS/CTS frames bheje jate hain.'
     },
     {
       id: 17,
-      topic: 'ip-protocol',
-      question: 'Ek Class C IP address ka default subnet mask kya hota hai?',
-      options: ['255.0.0.0', '255.255.0.0', '255.255.255.0', '255.255.255.255'],
-      correct: 2,
-      explanation: 'Class C mein pehle 3 octets Network IDs hote hain, isliye iska default mask 255.255.255.0 hota hai. Class A ka 255.0.0.0 aur Class B ka 255.255.0.0 hota hai.'
+      topic: 'lan-technologies',
+      question: 'What is the minimum payload size of an Ethernet IEEE 802.3 frame?',
+      options: ['64 Bytes', '46 Bytes', '1500 Bytes', '1518 Bytes'],
+      correct: 1,
+      explanation: 'Ethernet ka minimum *total* frame size 64 bytes hota hai. Header/Trailer (18 bytes) hata ke, minimum payload (data) size 46 bytes hona zaroori hai. Agar kam hai, toh padding add hoti hai.'
     },
     {
       id: 18,
-      topic: 'ip-protocol',
-      question: 'IP address 127.0.0.1 kis purpose ke liye reserve rakha gaya hai?',
-      options: ['Multicasting', 'Broadcasting', 'Loopback Testing', 'Default Gateway'],
-      correct: 2,
-      explanation: '127.x.x.x network Localhost ya Loopback testing (NIC card testing) ke liye reserve hota hai. Iska data computer se bahar nahi jata.'
+      topic: 'lan-technologies',
+      question: 'What is the size of the MAC (Media Access Control) address?',
+      options: ['32 bits', '48 bits', '64 bits', '128 bits'],
+      correct: 1,
+      explanation: 'MAC address 48 bits (6 Bytes) ka physical address hota hai, jise Hexadecimal me likha jata hai.'
     },
     {
       id: 19,
-      topic: 'ip-protocol',
-      question: 'Agar aapke subnet mein host bit ki sankhya (n) 4 hai, to aapko kitne usable host addresses milenge?',
-      options: ['16', '14', '12', '8'],
-      correct: 1,
-      explanation: 'Usable hosts ka formula 2^n - 2 hota hai. Yahan n = 4. To 2^4 = 16. Usme se 2 minus karenge (Network ID aur Broadcast ID ke liye). Result = 14 hosts.'
+      topic: 'lan-technologies',
+      question: 'Which IEEE standard defines the Token Ring LAN technology?',
+      options: ['IEEE 802.3', 'IEEE 802.11', 'IEEE 802.5', 'IEEE 802.15'],
+      correct: 2,
+      explanation: 'IEEE 802.3 is Ethernet, 802.11 is Wi-Fi, 802.5 is Token Ring, and 802.15 is Bluetooth/PAN.'
     },
     {
       id: 20,
-      topic: 'transport-layer',
-      question: 'Video streaming ya online gaming jaisi applications jahan speed important hoti hai wahan kaunsa protocol prefer kiya jata hai?',
-      options: ['TCP', 'UDP', 'HTTP', 'FTP'],
+      topic: 'ip-routing',
+      question: 'Which of the following is a valid Class B IP address?',
+      options: ['10.1.1.1', '172.16.5.1', '192.168.1.1', '224.0.0.5'],
       correct: 1,
-      explanation: 'UDP ek connectionless aur fast protocol hai jisme overhead kam hota hai. Live streaming mein thoda packet loss chal sakta hai, but delay (TCP ka handshake delay) nahi chal sakta, isliye UDP use hota hai.'
+      explanation: 'Class A (0-127), Class B (128-191), Class C (192-223), Class D (224-239). 172 falls in Class B.'
     },
     {
       id: 21,
-      topic: 'transport-layer',
-      question: 'TCP protocol mein connection establish karne ke liye kaunsa mechanism use hota hai?',
-      options: ['2-way handshake', '3-way handshake', 'Sliding Window', 'Token Passing'],
-      correct: 1,
-      explanation: 'TCP ek reliable connection banane ke liye 3-way handshake (SYN, SYN-ACK, ACK) use karta hai communication shuru karne se pehle.'
+      topic: 'ip-routing',
+      question: 'What is the default subnet mask for a Class C IP address?',
+      options: ['255.0.0.0', '255.255.0.0', '255.255.255.0', '255.255.255.255'],
+      correct: 2,
+      explanation: 'Class C network mein pehle 24 bits network ke aur 8 bits host ke hote hain, isliye default mask 255.255.255.0 hota hai.'
     },
     {
       id: 22,
-      topic: 'application-layer',
-      question: 'DNS (Domain Name System) server commonly kaunsa port number use karta hai?',
-      options: ['Port 80', 'Port 21', 'Port 53', 'Port 25'],
-      correct: 2,
-      explanation: 'DNS by default Port 53 ka use karta hai. Port 80 HTTP ke liye, Port 21 FTP ke liye aur Port 25 SMTP ke liye hota hai.'
+      topic: 'ip-routing',
+      question: 'How many valid host IP addresses are available in a /28 subnet?',
+      options: ['16', '14', '32', '30'],
+      correct: 1,
+      explanation: 'In /28, remaining host bits = 32 - 28 = 4. Total hosts = 2^4 = 16. Valid hosts = 16 - 2 = 14 (1 network ID, 1 broadcast ID minus kar diya).'
     },
     {
       id: 23,
-      topic: 'application-layer',
-      question: 'Website URLs (domain names) ko unke IP address mein convert karne ka kaam kaunsa system karta hai?',
-      options: ['DHCP', 'DNS', 'ARP', 'NAT'],
+      topic: 'ip-routing',
+      question: 'Which routing protocol algorithm is susceptible to the "count-to-infinity" problem?',
+      options: ['Link State Routing', 'Distance Vector Routing', 'Path Vector Routing', 'Dijkstra Algorithm'],
       correct: 1,
-      explanation: 'DNS (Domain Name System) ek phonebook ki tarah kaam karta hai jo readable domain (jaise google.com) ko IP address (jaise 142.250.x.x) mein map karta hai. DHCP IP assign karta hai, aur ARP IP se MAC nikalta hai.'
+      explanation: 'Distance Vector Routing (Bellman-Ford based) mein count-to-infinity problem hoti hai (routing loop), jabki Link State mein ye problem nahi hoti.'
     },
     {
       id: 24,
-      topic: 'network-devices',
-      question: 'Alag-alag protocols aur architecture wale do completely different networks ko connect karne ke liye kis device ka use hota hai?',
-      options: ['Bridge', 'Switch', 'Router', 'Gateway'],
-      correct: 3,
-      explanation: 'Gateway ek protocol converter ke roop mein kaam karta hai aur OSI model ki sari layers par operate kar sakta hai. Ye dissimilar networks ko connect karta hai.'
+      topic: 'ip-routing',
+      question: 'The size of an IPv6 address is:',
+      options: ['32 bits', '64 bits', '128 bits', '256 bits'],
+      correct: 2,
+      explanation: 'IPv6 address 128 bits ka hota hai aur ise hexadecimal format mein colon (:) se separate karke likhte hain.'
     },
     {
       id: 25,
-      topic: 'application-layer',
-      question: 'Email bhejne (Push karne) ke liye inmein se kis protocol ka use hota hai?',
-      options: ['POP3', 'IMAP', 'SMTP', 'FTP'],
-      correct: 2,
-      explanation: 'SMTP (Simple Mail Transfer Protocol) ka use email send (push) karne ke liye hota hai. Email server se receive (pull) karne ke liye POP3 ya IMAP ka use hota hai.'
+      topic: 'ip-routing',
+      question: 'Which special IP address is reserved for loopback testing of the local network stack?',
+      options: ['0.0.0.0', '127.0.0.1', '255.255.255.255', '169.254.0.1'],
+      correct: 1,
+      explanation: '127.0.0.0 to 127.255.255.255 range loopback ke liye reserve hai. 127.0.0.1 normally localhost ko refer karta hai.'
     },
     {
       id: 26,
-      topic: 'mac-protocols',
-      question: 'MAC Address (Media Access Control address) kitne bits ka hota hai?',
-      options: ['32 bits', '48 bits', '64 bits', '128 bits'],
+      topic: 'tcp-udp',
+      question: 'In the TCP 3-way handshake, what is the correct sequence of packets exchanged between a client and a server?',
+      options: ['SYN, ACK, SYN-ACK', 'SYN, SYN-ACK, ACK', 'SYN, FIN, ACK', 'ACK, SYN-ACK, SYN'],
       correct: 1,
-      explanation: 'MAC address 48 bits (ya 6 bytes) ka physical address hota hai jo NIC (Network Interface Card) par hardcoded hota hai. Ye hexadecimal format mein likha jata hai.'
+      explanation: 'TCP connection establish karne ke liye pehle client SYN bhejta hai, server SYN-ACK wapas bhejta hai, aur finally client ACK bhejta hai.'
     },
     {
       id: 27,
-      topic: 'ip-protocol',
-      question: 'Class D IP address ka primary use kya hai?',
-      options: ['Small LANs', 'Multicasting', 'Loopback testing', 'Experimental use'],
+      topic: 'tcp-udp',
+      question: 'Which of the following fields is present in the TCP header but NOT in the UDP header?',
+      options: ['Source Port', 'Destination Port', 'Checksum', 'Sequence Number'],
+      correct: 3,
+      explanation: 'UDP header me sirf 4 fields hote hain: Source Port, Dest Port, Length, Checksum. TCP connection-oriented hai, isme Sequence number, Acknowledgment number, Window size aadi fields hote hain.'
+    },
+    {
+      id: 28,
+      topic: 'tcp-udp',
+      question: 'What is the primary mechanism used by TCP for Flow Control?',
+      options: ['Slow Start', 'Additive Increase Multiplicative Decrease', 'Sliding Window', 'Stop and Wait'],
+      correct: 2,
+      explanation: 'TCP Flow Control ke liye Sliding Window protocol use karta hai, jisme receiver bata deta hai ki uski "Window Size" (buffer capacity) kitni bachi hai.'
+    },
+    {
+      id: 29,
+      topic: 'tcp-udp',
+      question: 'During TCP Congestion Control, the "Slow Start" phase increases the congestion window size:',
+      options: ['Linearly', 'Exponentially', 'By 1 for every packet sent', 'It keeps it constant'],
       correct: 1,
-      explanation: 'Class D addresses (224.0.0.0 se 239.255.255.255 tak) ko Multicasting ke liye reserve rakha gaya hai (ek host se multiple specific hosts ko data bhejna).'
+      explanation: 'Slow start phase mein window size exponentially badhti hai (1, 2, 4, 8...). Naam slow hai par growth fast hoti hai threshold tak pahunchne ke liye.'
+    },
+    {
+      id: 30,
+      topic: 'tcp-udp',
+      question: 'Which application protocol is most likely to use UDP over TCP?',
+      options: ['HTTP', 'SMTP', 'FTP', 'DNS'],
+      correct: 3,
+      explanation: 'DNS queries ke liye UDP ka use hota hai kyunki wo choti hoti hain aur fast response chahiye hota hai. Baki sabhi (HTTP, SMTP, FTP) reliability ke liye TCP use karte hain.'
+    },
+    {
+      id: 31,
+      topic: 'app-dns',
+      question: 'What is the standard well-known port number used by DNS?',
+      options: ['21', '25', '53', '80'],
+      correct: 2,
+      explanation: 'DNS port 53 use karta hai. Port 21 FTP, 25 SMTP, aur 80 HTTP ke liye hai.'
+    },
+    {
+      id: 32,
+      topic: 'app-dns',
+      question: 'Which level in the DNS hierarchy is represented by ".com", ".org", and ".net"?',
+      options: ['Root servers', 'Top-Level Domain (TLD) servers', 'Authoritative Name servers', 'Local DNS resolvers'],
+      correct: 1,
+      explanation: '.com, .org wagera Top-Level Domains (TLD) kehlate hain aur inko TLD servers handle karte hain.'
+    },
+    {
+      id: 33,
+      topic: 'app-dns',
+      question: 'In which DNS query resolution method does the resolver communicate directly with multiple servers (Root, TLD, Authoritative) one after the other?',
+      options: ['Recursive Query', 'Iterative Query', 'Inverse Query', 'Reverse Query'],
+      correct: 1,
+      explanation: 'Iterative query mein resolver khud alag-alag servers (Root -> TLD -> Authoritative) ke paas jata hai IP nikalne ke liye. Recursive mein wo ye bojh kisi aur (jaise ISP DNS) pe daal deta hai.'
+    },
+    {
+      id: 34,
+      topic: 'lan-technologies',
+      question: 'Which of the following 802 standards relates to Wireless LANs (WiFi)?',
+      options: ['802.3', '802.5', '802.11', '802.15'],
+      correct: 2,
+      explanation: 'IEEE 802.11 Wi-Fi ka standard hai.'
+    },
+    {
+      id: 35,
+      topic: 'ip-routing',
+      question: 'In a Subnet Mask of 255.255.255.224, how many bits are used for the Network and Subnet combined?',
+      options: ['24', '26', '27', '28'],
+      correct: 2,
+      explanation: '224 in binary is 11100000 (3 bits). 255.255.255 is 24 bits. Total 1s = 24 + 3 = 27. Ise /27 subnet mask kehte hain.'
+    },
+    {
+      id: 36,
+      topic: 'transmission-devices',
+      question: 'Which device operates at all layers of the OSI model and acts as a protocol converter between dissimilar networks?',
+      options: ['Router', 'Switch', 'Gateway', 'Bridge'],
+      correct: 2,
+      explanation: 'Gateway ek aisa device ya software node hai jo completely different architectures (e.g. OSI to TCP/IP) wale networks ko connect karta hai, isliye ye all layers pe work karta hai.'
+    },
+    {
+      id: 37,
+      topic: 'evolution-terminologies',
+      question: 'If a router receives a packet and takes 2 milliseconds to decide the output port by looking at the routing table, this delay is known as:',
+      options: ['Transmission Delay', 'Propagation Delay', 'Queuing Delay', 'Processing Delay'],
+      correct: 3,
+      explanation: 'Router ke CPU dvara packet ka header padhne aur routing table check karne mein lagne wale time ko Processing Delay kehte hain.'
+    },
+    {
+      id: 38,
+      topic: 'app-dns',
+      question: 'Dynamic Host Configuration Protocol (DHCP) uses which port numbers for server and client communications?',
+      options: ['20 and 21', '67 and 68', '110 and 143', '161 and 162'],
+      correct: 1,
+      explanation: 'DHCP UDP ports 67 (Server) aur 68 (Client) use karta hai automatic IP configuration ke liye.'
     }
   ]
 };
