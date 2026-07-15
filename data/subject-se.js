@@ -3,519 +3,541 @@ window.SUBJECTS['se'] = {
   id: 'se',
   name: 'Software Engineering',
   icon: '📐',
-  description: 'Learn SDLC, SRS, DFDs, Testing, aur Software Project Management ko easy Hinglish mein.',
+  description: 'SDLC, Software Models, SRS, DFD, Testing, Project Management — complete coverage',
   topics: [
     {
-      id: 'sdlc-phases',
-      name: 'Phases of SDLC',
+      id: 'sdlc',
+      name: 'Software Development Life Cycle (SDLC)',
       theory: `
-        <h3>Software Development Life Cycle (SDLC)</h3>
-        <p>SDLC ek step-by-step process hai jo software industry mein high-quality software design, develop aur test karne ke liye use hota hai. Iska main aim hota hai customer expectations ko meet karna within time and cost estimates.</p>
-        
-        <h4>Phases of SDLC</h4>
+        <h3>SDLC kya hai?</h3>
+        <p>SDLC (Software Development Life Cycle) ek systematic process hai jo software ke planning se leke maintenance tak ke saare steps define karta hai. Ye ensure karta hai ki high-quality software time pe aur budget mein deliver ho.</p>
+
+        <h4>SDLC ke Phases:</h4>
+        <ol>
+          <li><strong>Requirement Gathering & Analysis:</strong> Client se milke samajhna ki software kya karna chahiye. Output: SRS (Software Requirement Specification) document.</li>
+          <li><strong>System Design:</strong> Architecture, modules, data flow, database design — sab plan karna. Output: HLD (High Level Design) aur LLD (Low Level Design) documents.</li>
+          <li><strong>Implementation/Coding:</strong> Actual code likhna based on design documents. Developers coding karte hain.</li>
+          <li><strong>Testing:</strong> Bugs dhundhna aur fix karna. Unit testing, Integration testing, System testing, Acceptance testing.</li>
+          <li><strong>Deployment:</strong> Software ko production environment mein release karna.</li>
+          <li><strong>Maintenance:</strong> Bugs fix karna, updates dena, enhancements karna. Ye sabse lamba phase hota hai.</li>
+        </ol>
+
+        <h4>SDLC Models:</h4>
+
+        <p><strong>1. Waterfall Model (Classical/Linear Sequential):</strong></p>
         <ul>
-          <li><strong>1. Requirement Gathering & Analysis:</strong> Kya banana hai? Customer se requirements li jaati hain. Feasibility study hoti hai.</li>
-          <li><strong>2. Design:</strong> Kaise banana hai? High-level aur Low-level design (Architecture, UI/UX, Database schema).</li>
-          <li><strong>3. Implementation/Coding:</strong> Actual code likhna. Developers apna jaadu dikhate hain.</li>
-          <li><strong>4. Testing:</strong> Jo banaya hai wo sahi chal raha hai ya nahi? Bugs find aur fix karna.</li>
-          <li><strong>5. Deployment:</strong> Software ko real environment (production) mein dalna.</li>
-          <li><strong>6. Maintenance:</strong> Future updates, bug fixes, aur improvements.</li>
+          <li>Phases ek ke baad ek sequentially hote hain — previous phase complete hone ke baad hi next start hota hai.</li>
+          <li>Koi backtracking nahi — ek baar phase complete, toh wapas nahi jaate.</li>
+          <li><strong>Advantages:</strong> Simple, easy to understand, well-documented.</li>
+          <li><strong>Disadvantages:</strong> No flexibility, late feedback, high risk — agar requirement galat samjhi toh end mein pata chalega.</li>
+          <li><strong>Best for:</strong> Small projects with well-defined, stable requirements.</li>
         </ul>
 
-        <h4>Popular SDLC Models</h4>
-        <p>Waterfall, Spiral, Agile, V-Model, aur Iterative models commonly use hote hain.</p>
-        
+        <p><strong>2. Iterative/Incremental Model:</strong></p>
+        <ul>
+          <li>Software ko chote-chote increments mein develop karte hain. Har increment ek usable version deliver karta hai.</li>
+          <li><strong>Advantages:</strong> Early delivery, feedback milta rehta hai, risk kam.</li>
+        </ul>
+
+        <p><strong>3. Spiral Model (Boehm, 1988):</strong></p>
+        <ul>
+          <li>Risk-driven model. Har iteration (spiral) mein 4 quadrants hote hain: Planning → Risk Analysis → Engineering → Evaluation.</li>
+          <li><strong>Key Feature:</strong> Risk analysis har phase mein hoti hai — isliye ye high-risk, large projects ke liye best hai.</li>
+          <li><strong>Disadvantages:</strong> Expensive, risk analysis ke liye expertise chahiye.</li>
+        </ul>
+
+        <p><strong>4. V-Model (Verification & Validation):</strong></p>
+        <ul>
+          <li>Waterfall ka extension — har development phase ke corresponding ek testing phase hota hai.</li>
+          <li>Requirements → Acceptance Testing, System Design → System Testing, Module Design → Integration Testing, Coding → Unit Testing.</li>
+          <li><strong>Key Feature:</strong> Testing early plan hoti hai (test planning development ke saath).</li>
+        </ul>
+
+        <p><strong>5. Agile Model:</strong></p>
+        <ul>
+          <li>Iterative + Incremental + Flexible. Customer feedback ke basis pe continuously adapt karte hain.</li>
+          <li><strong>Agile Manifesto Values:</strong> Individuals & interactions > processes & tools; Working software > comprehensive documentation; Customer collaboration > contract negotiation; Responding to change > following a plan.</li>
+          <li><strong>Popular Agile Methodologies:</strong> Scrum, Kanban, XP (Extreme Programming).</li>
+          <li><strong>Scrum:</strong> Sprints (2-4 week iterations), Daily standup, Product backlog, Sprint review.</li>
+        </ul>
+
+        <p><strong>6. Prototype Model:</strong></p>
+        <ul>
+          <li>Pehle ek prototype (working model) banate hain jo user ko dikhate hain. Feedback ke baad refine karte hain.</li>
+          <li><strong>Best for:</strong> Jab requirements clear nahi hain.</li>
+          <li><strong>Types:</strong> Throwaway prototype (use karke discard) vs Evolutionary prototype (refine karke final product banao).</li>
+        </ul>
+
+        <p><strong>7. RAD (Rapid Application Development):</strong></p>
+        <ul>
+          <li>Fast development with minimal planning. Reusable components aur visual tools use karta hai.</li>
+          <li>Phases: Requirements → User Design → Construction → Cutover.</li>
+        </ul>
+
         <table class="comparison-table">
-          <tr><th>Feature</th><th>Waterfall Model</th><th>Agile Model</th></tr>
-          <tr><td>Flexibility</td><td>Rigid (Changes allow nahi hote easily)</td><td>Highly flexible (Welcome changes)</td></tr>
-          <tr><td>Delivery</td><td>End mein ek sath</td><td>Sprints mein iterative delivery</td></tr>
-          <tr><td>Best For</td><td>Small projects, clear requirements</td><td>Large, evolving projects</td></tr>
+          <tr><th>Model</th><th>Best For</th><th>Risk Handling</th><th>Flexibility</th></tr>
+          <tr><td>Waterfall</td><td>Small, well-defined projects</td><td>Low</td><td>No</td></tr>
+          <tr><td>Spiral</td><td>Large, high-risk projects</td><td>Excellent</td><td>High</td></tr>
+          <tr><td>V-Model</td><td>Safety-critical systems</td><td>Medium</td><td>No</td></tr>
+          <tr><td>Agile</td><td>Dynamic requirements, web apps</td><td>Good</td><td>Very High</td></tr>
+          <tr><td>Prototype</td><td>Unclear requirements</td><td>Medium</td><td>High</td></tr>
+          <tr><td>RAD</td><td>Quick delivery needed</td><td>Low</td><td>Medium</td></tr>
         </table>
-        
-        <div class="tip-box">
-          <div class="tip-title">💡 Yaad Rakho</div>
-          Spiral Model specifically <strong>Risk Analysis</strong> ke liye best hota hai. Exam mein risk management ka naam aaye toh Spiral tick karna!
-        </div>
-        
+
         <div class="warning-box">
           <div class="tip-title">⚠️ Exam Trap</div>
-          "Feasibility Study" kis phase mein aati hai? Ye Requirement Analysis phase ka hi ek part hai jismein check karte hain ki project financially aur technically possible hai ya nahi.
+          Spiral Model = Risk-driven (ye sabse common exam question hai!). V-Model = Testing ke saath development parallel plan hoti hai. Waterfall = No backtracking.
         </div>
-        
-        <h4>Example (Worked Out)</h4>
-        <p><strong>Scenario:</strong> Ek nayi WhatsApp jaisi chat app banani hai.</p>
-        <p><strong>Step-by-step SDLC:</strong></p>
-        <ul>
-          <li><em>Requirement:</em> Texting, media share, end-to-end encryption chahiye.</li>
-          <li><em>Design:</em> Screens kaise dikhengi, database mein messages kaise store honge.</li>
-          <li><em>Coding:</em> Java/Kotlin aur Node.js mein code likhna.</li>
-          <li><em>Testing:</em> Fake users bana kar check karna ki message deliver ho rahe hain.</li>
-          <li><em>Deployment:</em> Play Store par app publish karna.</li>
-        </ul>
       `
     },
     {
       id: 'srs',
-      name: 'Software Requirements Specification (SRS)',
+      name: 'SRS & System Modeling',
       theory: `
-        <h3>Software Requirements Specification (SRS)</h3>
-        <p>SRS ek document hai jo software ki saari zarooraton ko detail mein likhta hai. Ye customer aur development team ke beech ek 'agreement' ya contract ki tarah kaam karta hai.</p>
-        
-        <h4>Characteristics of a Good SRS</h4>
-        <p>Ek acche SRS document mein IEEE standard (830) ke hisaab se ye khoobiyan honi chahiye:</p>
+        <h3>Software Requirement Specification (SRS)</h3>
+        <p>SRS document software ke liye ek <strong>complete description</strong> hai — kya karna hai, kaise behave karna hai, constraints kya hain — sab kuch likha hota hai. Ye development team aur client ke beech ka agreement hai.</p>
+
+        <h4>SRS mein kya hota hai:</h4>
         <ul>
-          <li><strong>Correct:</strong> Jo customer ko chahiye, wahi likha ho.</li>
-          <li><strong>Unambiguous:</strong> Koi double meaning na ho. Har line clear ho.</li>
-          <li><strong>Complete:</strong> Saari functionality aur constraints covered hon.</li>
-          <li><strong>Consistent:</strong> Apas mein koi contradictions na hon (e.g., ek jagah password 8 chars, dusri jagah 6 chars na likha ho).</li>
-          <li><strong>Modifiable:</strong> Changes easily kiye ja sakein.</li>
-          <li><strong>Traceable:</strong> Har requirement ka origin pata ho aur uske aage ka development track ho sake.</li>
+          <li><strong>Functional Requirements:</strong> System kya karega — features, inputs, outputs, behavior (e.g., "User login kar sake", "Report generate ho").</li>
+          <li><strong>Non-Functional Requirements:</strong> Quality attributes — performance, security, reliability, usability, scalability (e.g., "Page 2 seconds mein load ho", "99.9% uptime").</li>
+          <li><strong>Constraints:</strong> Technical, budget, timeline, regulatory limitations.</li>
         </ul>
 
-        <h4>Types of Requirements</h4>
+        <h4>Good SRS ki Properties (IEEE 830):</h4>
+        <ul>
+          <li><strong>Correct</strong> — Har requirement accurate ho</li>
+          <li><strong>Unambiguous</strong> — Sirf ek hi interpretation possible ho</li>
+          <li><strong>Complete</strong> — Koi requirement chhooti na rahe</li>
+          <li><strong>Consistent</strong> — Requirements ek doosre se contradict na karein</li>
+          <li><strong>Verifiable</strong> — Test kiya ja sake ki requirement meet ho rahi hai ya nahi</li>
+          <li><strong>Traceable</strong> — Har requirement ko trace kar sakein design, code, test mein</li>
+          <li><strong>Modifiable</strong> — Asani se change kar sakein</li>
+        </ul>
+
+        <h3>System Modeling Tools:</h3>
+        <h4>Data Flow Diagram (DFD):</h4>
+        <p>DFD system mein data ka flow dikhata hai — data kahan se aata hai, kahan process hota hai, kahan store hota hai, kahan jata hai.</p>
         <table class="comparison-table">
-          <tr><th>Functional Requirements</th><th>Non-Functional Requirements (NFR)</th></tr>
-          <tr><td>System ko <em>kya</em> karna chahiye.</td><td>System ko <em>kaise</em> perform karna chahiye.</td></tr>
-          <tr><td>Examples: Login functionality, payment processing, sending email.</td><td>Examples: Performance, Security, Scalability, Reliability.</td></tr>
+          <tr><th>Symbol</th><th>Name</th><th>Description</th></tr>
+          <tr><td>Rectangle</td><td>External Entity</td><td>System ke bahar ka source/destination (e.g., Customer, Admin)</td></tr>
+          <tr><td>Circle/Rounded Rectangle</td><td>Process</td><td>Data pe action hoti hai (e.g., Validate, Calculate)</td></tr>
+          <tr><td>Open Rectangle (two lines)</td><td>Data Store</td><td>Data storage (e.g., Database, File)</td></tr>
+          <tr><td>Arrow</td><td>Data Flow</td><td>Direction of data movement</td></tr>
         </table>
-        
+
+        <h4>DFD Levels:</h4>
+        <ul>
+          <li><strong>Level 0 (Context Diagram):</strong> Poora system ek single process ke roop mein. External entities dikhaata hai.</li>
+          <li><strong>Level 1:</strong> Main processes break kiye jaate hain.</li>
+          <li><strong>Level 2, 3...:</strong> Further decomposition — processes aur detail mein break hote hain.</li>
+        </ul>
+
         <div class="tip-box">
-          <div class="tip-title">💡 Yaad Rakho</div>
-          Non-functional requirements aksar system ki "Quality Attributes" ko define karti hain (e.g., system 2 seconds mein load hona chahiye).
+          <div class="tip-title">💡 DFD Rules</div>
+          <ul>
+            <li>Do external entities directly ek doosre se data exchange nahi kar sakte (process ke through jaana chahiye).</li>
+            <li>Do data stores directly ek doosre ko data nahi bhej sakte.</li>
+            <li>Har process mein minimum ek input aur ek output hona chahiye.</li>
+          </ul>
         </div>
-        
-        <div class="warning-box">
-          <div class="tip-title">⚠️ Exam Trap</div>
-          Exam mein puchte hain ki "Maintainability" kis type ki requirement hai. Ye Functional nahi, balki Non-Functional Requirement hai.
-        </div>
-        
-        <h4>Example (Worked Out)</h4>
-        <p><strong>Library Management System ki Requirements:</strong></p>
-        <ul>
-          <li><strong>Functional:</strong> Librarian naya book add kar sake. Student book issue history dekh sake.</li>
-          <li><strong>Non-Functional:</strong> App 500 concurrent users ko bina crash hue handle kare (Performance). Passwords encrypted store hon (Security).</li>
-        </ul>
       `
     },
     {
-      id: 'system-modeling',
-      name: 'System Modeling (UML)',
-      theory: `
-        <h3>System Modeling & UML</h3>
-        <p>Code likhne se pehle system ka blueprint banana System Modeling kehlata hai. Iske liye sabse popular language <strong>UML (Unified Modeling Language)</strong> hai.</p>
-        
-        <h4>Types of UML Diagrams</h4>
-        <p>UML diagrams mainly do categories mein divided hain: <strong>Structural</strong> aur <strong>Behavioral</strong>.</p>
-        
-        <ul>
-          <li><strong>Structural Diagrams (Static view):</strong> System ka structure dikhate hain.
-            <ul>
-              <li><strong>Class Diagram:</strong> Object-oriented design ki jaan. Classes, attributes, methods aur unke relationships (inheritance, association) dikhata hai.</li>
-              <li><strong>Component Diagram:</strong> Software components kaise connected hain.</li>
-              <li><strong>Deployment Diagram:</strong> Hardware nodes aur undeployed software.</li>
-            </ul>
-          </li>
-          <li><strong>Behavioral Diagrams (Dynamic view):</strong> System ka behavior/flow dikhate hain.
-            <ul>
-              <li><strong>Use Case Diagram:</strong> Actors aur unke interactions (Use cases) dikhata hai. System <em>kya</em> karega from user's perspective.</li>
-              <li><strong>Sequence Diagram:</strong> Objects ke beech messages ka time-ordered sequence.</li>
-              <li><strong>Activity Diagram:</strong> Flowchart jaisa hota hai, ek activity se dusri tak ka control flow.</li>
-              <li><strong>State Chart Diagram:</strong> Ek object ke alag-alag states aur transitions dikhata hai.</li>
-            </ul>
-          </li>
-        </ul>
-        
-        <div class="tip-box">
-          <div class="tip-title">💡 Yaad Rakho</div>
-          UML mein <code>&lt;&lt;include&gt;&gt;</code> ka matlab hai mandatory relationship (e.g., Login is included in Withdraw Money), aur <code>&lt;&lt;extend&gt;&gt;</code> ka matlab hai optional behavior (e.g., Print Receipt extends Withdraw Money).
-        </div>
-        
-        <h4>Example (Worked Out)</h4>
-        <p><strong>ATM System Use Case Analysis:</strong></p>
-        <ul>
-          <li><strong>Actors:</strong> Customer, Bank Admin, Bank Server.</li>
-          <li><strong>Use Cases:</strong> Check Balance, Withdraw Cash, Deposit Cash.</li>
-          <li><strong>Relationships:</strong> 'Withdraw Cash' use case hamesha 'Authenticate User' (Login) ko <em>include</em> karega, kyunki bina pin dale paise nahi nikal sakte.</li>
-        </ul>
-      `
-    },
-    {
-      id: 'dfd',
-      name: 'Data Flow Diagrams (DFDs)',
-      theory: `
-        <h3>Data Flow Diagrams (DFD)</h3>
-        <p>DFD ek graphical representation hai jo dikhata hai ki information (data) system mein kaise flow karti hai. Ye batata hai data kahan se aata hai, kahan process hota hai, aur kahan store hota hai.</p>
-        
-        <h4>Components of DFD</h4>
-        <ul>
-          <li><strong>Process (Circle ya Bubble):</strong> Data ko transform karta hai (e.g., "Calculate Salary").</li>
-          <li><strong>Data Flow (Arrow):</strong> Data kis direction mein ja raha hai.</li>
-          <li><strong>Data Store (Open Rectangle / Parallel lines):</strong> Data kahan save hota hai (e.g., Database, File).</li>
-          <li><strong>External Entity (Rectangle):</strong> System ke bahar ki cheezein jo data deti hain ya leti hain (e.g., User, Sensor, Another System).</li>
-        </ul>
-        
-        <h4>Levels of DFD</h4>
-        <ul>
-          <li><strong>Level 0 DFD (Context Diagram):</strong> Pura system as a single process (1 bubble) dikhaya jata hai. Internal details hide hoti hain.</li>
-          <li><strong>Level 1 DFD:</strong> Level 0 process ko main sub-processes mein break kiya jata hai.</li>
-          <li><strong>Level 2 DFD:</strong> Level 1 ki aur detailed processes.</li>
-        </ul>
-        
-        <div class="warning-box">
-          <div class="tip-title">⚠️ Exam Trap</div>
-          DFD mein kabhi bhi Control Flow (loops, if-else conditions) nahi dikhate. DFD sirf DATA ka flow dikhata hai. Control flow ke liye Flowchart use hota hai.
-        </div>
-        
-        <table class="comparison-table">
-          <tr><th>Rule</th><th>Valid / Invalid</th></tr>
-          <tr><td>Entity se Entity direct data flow</td><td>❌ Invalid (Bich mein process hona zaroori hai)</td></tr>
-          <tr><td>Data store se Data store direct flow</td><td>❌ Invalid</td></tr>
-          <tr><td>Entity se Data store direct flow</td><td>❌ Invalid</td></tr>
-          <tr><td>Process to Process</td><td>✅ Valid</td></tr>
-        </table>
-        
-        <h4>Example (Worked Out)</h4>
-        <p><strong>Food Delivery App (Level 0 DFD):</strong></p>
-        <p>External Entities: Customer, Restaurant, Delivery Boy.</p>
-        <p>Central Process: "Food Ordering System".</p>
-        <p>Flow: Customer -&gt; (Order Info) -&gt; System -&gt; (Order Details) -&gt; Restaurant.</p>
-        <p>Yahan sirf external entities aur central system ka interaction dikhega.</p>
-      `
-    },
-    {
-      id: 'software-testing',
+      id: 'testing',
       name: 'Software Testing',
       theory: `
-        <h3>Software Testing</h3>
-        <p>Testing ka maqsad ye find karna hai ki software mein errors/bugs toh nahi hain aur kya wo requirements ko meet karta hai.</p>
-        
-        <h4>Verification vs Validation (V&V)</h4>
-        <table class="comparison-table">
-          <tr><th>Verification</th><th>Validation</th></tr>
-          <tr><td>"Are we building the product right?"</td><td>"Are we building the right product?"</td></tr>
-          <tr><td>Process ko check karta hai (Reviews, Walkthroughs, Inspections).</td><td>Actual software ko test karta hai (Execution).</td></tr>
-          <tr><td>Dynamic execution of code not required.</td><td>Requires execution of code.</td></tr>
-        </table>
-        
-        <h4>Testing Techniques</h4>
-        <ul>
-          <li><strong>Black Box Testing:</strong> Tester ko internal code/logic ka kuch nahi pata hota. Sirf input deta hai aur output check karta hai. Techniques: Boundary Value Analysis (BVA), Equivalence Partitioning.</li>
-          <li><strong>White Box Testing (Glass Box):</strong> Tester ko internal code pata hota hai. Techniques: Statement coverage, Branch coverage, Path coverage. Cyclomatic Complexity yahan kaam aati hai.</li>
-        </ul>
-        
-        <h4>Levels of Testing</h4>
+        <h3>Software Testing kya hai?</h3>
+        <p>Testing ek process hai jisme hum software mein bugs, defects, aur errors dhundhte hain. Goal ye hai ki software expected results de aur quality standards meet kare.</p>
+
+        <h4>Testing Levels:</h4>
         <ol>
-          <li><strong>Unit Testing:</strong> Sabse chota part (function/module) developer khud test karta hai.</li>
-          <li><strong>Integration Testing:</strong> Modules ko jod kar test karna ki mil kar theek se kaam kar rahe hain ya nahi (Top-down, Bottom-up).</li>
-          <li><strong>System Testing:</strong> Pure complete system ko as a whole test karna (Black box testing ka part).</li>
-          <li><strong>Acceptance Testing:</strong> Customer/User end mein test karta hai.
-            <ul>
-              <li><strong>Alpha Testing:</strong> Developer ki site par hoti hai.</li>
-              <li><strong>Beta Testing:</strong> Real environment mein real users (customers) karte hain.</li>
-            </ul>
-          </li>
+          <li><strong>Unit Testing:</strong> Individual modules/functions test karna. Developer karta hai. Sabse pehle hoti hai.</li>
+          <li><strong>Integration Testing:</strong> Modules ko combine karke test karna — interfaces sahi kaam kar rahe hain ya nahi. Types: Big Bang, Top-Down, Bottom-Up, Sandwich/Hybrid.</li>
+          <li><strong>System Testing:</strong> Poora system as a whole test karna against SRS. Independent test team karta hai.</li>
+          <li><strong>Acceptance Testing:</strong> Client/user test karta hai — software requirements meet kar raha hai ya nahi. Alpha (in-house) aur Beta (select users ke paas).</li>
         </ol>
-        
+
+        <h4>Testing Types:</h4>
+        <table class="comparison-table">
+          <tr><th>White Box (Structural)</th><th>Black Box (Functional)</th><th>Grey Box</th></tr>
+          <tr><td>Internal code structure test hoti hai</td><td>Sirf input/output test hota hai, code nahi dekhte</td><td>Partial knowledge of code</td></tr>
+          <tr><td>Developer karta hai</td><td>Tester karta hai</td><td>Both</td></tr>
+          <tr><td>Techniques: Statement Coverage, Branch Coverage, Path Coverage, Loop Testing</td><td>Techniques: Equivalence Partitioning, Boundary Value Analysis (BVA), Decision Table, State Transition</td><td>Mix of both</td></tr>
+        </table>
+
+        <h4>White Box Testing Techniques:</h4>
+        <ul>
+          <li><strong>Statement Coverage:</strong> Har line of code kam se kam ek baar execute ho. Formula: (Executed statements / Total statements) × 100%</li>
+          <li><strong>Branch/Decision Coverage:</strong> Har branch (if-else ka true & false dono) kam se kam ek baar execute ho.</li>
+          <li><strong>Path Coverage:</strong> Sabhi possible execution paths test karna. Most thorough but most expensive.</li>
+          <li><strong>Cyclomatic Complexity (McCabe):</strong> V(G) = E - N + 2P, where E=edges, N=nodes, P=connected components. Ye minimum test cases batata hai jo path coverage ke liye chahiye.</li>
+        </ul>
+
         <div class="formula-box">
-          <div class="formula-title">📐 Cyclomatic Complexity Formula</div>
-          V(G) = E - N + 2
-          <br>
-          (E = Edges, N = Nodes in Control Flow Graph)
+          <div class="formula-title">📐 Cyclomatic Complexity Formulas</div>
+          V(G) = E - N + 2 (for single component graph)<br>
+          V(G) = Number of decision points + 1<br>
+          V(G) = Number of regions in the flow graph
         </div>
-        
-        <h4>Example (Worked Out)</h4>
-        <p><strong>Boundary Value Analysis (BVA):</strong></p>
-        <p>Agar password length 6 se 12 characters ki allow karni hai.</p>
-        <p>BVA ke hisaab se hum boundaries par test karenge: Min, Min-1, Min+1, Max, Max-1, Max+1.</p>
-        <p>Test values: 5, 6, 7, 11, 12, 13. (Kyunki sabse zyada bugs boundary limits par hi aate hain).</p>
+
+        <h4>Black Box Testing Techniques:</h4>
+        <ul>
+          <li><strong>Equivalence Partitioning:</strong> Input domain ko valid aur invalid partitions mein divide karo. Har partition se ek test case enough hai.</li>
+          <li><strong>Boundary Value Analysis (BVA):</strong> Boundaries pe test karo (min, min+1, max-1, max) kyunki most bugs boundaries pe hote hain.</li>
+          <li><strong>Decision Table Testing:</strong> Complex business rules ke liye combinations test karna.</li>
+        </ul>
+
+        <h4>Other Important Testing Types:</h4>
+        <ul>
+          <li><strong>Regression Testing:</strong> Code change ke baad purane test cases dobara run karna — kahi naya change purane features na tod de.</li>
+          <li><strong>Smoke Testing:</strong> Initial testing — basic functions kaam kar rahe hain ya nahi (build stable hai ya nahi).</li>
+          <li><strong>Sanity Testing:</strong> Specific bug fix ke baad wo particular area test karna.</li>
+          <li><strong>Performance Testing:</strong> Load Testing (expected load), Stress Testing (beyond capacity), Volume Testing (large data).</li>
+          <li><strong>Security Testing:</strong> Vulnerabilities dhundhna.</li>
+        </ul>
+
+        <div class="warning-box">
+          <div class="tip-title">⚠️ Exam Trap</div>
+          Alpha Testing = Developer's site pe users karte hain (controlled environment).<br>
+          Beta Testing = User's site pe users karte hain (real environment).<br>
+          Ye exam mein aksar confuse karte hain!
+        </div>
       `
     },
     {
-      id: 'spm',
+      id: 'project-management',
       name: 'Software Project Management',
       theory: `
-        <h3>Software Project Management (SPM)</h3>
-        <p>SPM deal karta hai project planning, scheduling, cost estimation, aur risk management se. Goal hai project ko time, budget, aur quality ke andar deliver karna.</p>
-        
-        <h4>Cost & Effort Estimation</h4>
-        <p>Size estimation ke liye KLOC (Kilo Lines of Code) ya Function Point (FP) metric use hota hai.</p>
-        
-        <h5>COCOMO Model (Constructive Cost Model)</h5>
-        <p>Boehm ne diya tha. Ye project ko 3 categories mein divide karta hai:</p>
+        <h3>Software Project Management</h3>
+        <p>Project management ka goal hai ki software project ko successfully deliver karna — on time, within budget, with quality.</p>
+
+        <h4>Project Planning Activities:</h4>
         <ul>
-          <li><strong>Organic:</strong> Chota project, experienced team (e.g., Simple payroll system).</li>
-          <li><strong>Semi-detached:</strong> Medium project, mixed experience team (e.g., Database system).</li>
-          <li><strong>Embedded:</strong> Bahut complex, tight constraints (e.g., Flight control software).</li>
+          <li><strong>Estimation:</strong> Size, effort, cost, time estimate karna.</li>
+          <li><strong>Scheduling:</strong> Tasks ko timeline pe plan karna.</li>
+          <li><strong>Risk Management:</strong> Risks identify, analyze, aur mitigate karna.</li>
+          <li><strong>Quality Assurance:</strong> Quality standards define aur enforce karna.</li>
         </ul>
-        
+
+        <h4>Effort Estimation Techniques:</h4>
+        <p><strong>1. Lines of Code (LOC):</strong> Code ki lines se size estimate karna.</p>
+        <p><strong>2. Function Point Analysis (FPA):</strong> Software ki functionality ke basis pe size estimate karna, language independent. External Inputs, External Outputs, External Inquiries, Internal Logical Files, External Interface Files count karte hain.</p>
+        <p><strong>3. COCOMO (COnstructive COst MOdel) — by Barry Boehm:</strong></p>
+        <ul>
+          <li><strong>Basic COCOMO:</strong> Effort = a × (KLOC)^b. Three modes — Organic (small team, simple), Semi-detached (medium), Embedded (complex, tight constraints).</li>
+          <li><strong>Intermediate COCOMO:</strong> Basic + cost drivers (reliability, complexity, experience, etc.).</li>
+          <li><strong>Detailed COCOMO:</strong> Phase-wise estimation.</li>
+        </ul>
+
         <div class="formula-box">
-          <div class="formula-title">📐 Basic COCOMO Formula</div>
-          Effort (E) = a * (KLOC)^b  [Person-Months]
-          <br>
-          Development Time (D) = c * (E)^d  [Months]
-          <br>
-          <small>Values of a, b, c, d fix hoti hain depending on organic, semi-detached, ya embedded.</small>
+          <div class="formula-title">📐 Basic COCOMO Formulas</div>
+          <strong>Organic:</strong> Effort = 2.4 × (KLOC)^1.05, Time = 2.5 × (Effort)^0.38<br>
+          <strong>Semi-detached:</strong> Effort = 3.0 × (KLOC)^1.12, Time = 2.5 × (Effort)^0.35<br>
+          <strong>Embedded:</strong> Effort = 3.6 × (KLOC)^1.20, Time = 2.5 × (Effort)^0.32
         </div>
-        
-        <h4>Project Scheduling</h4>
+
+        <h4>Scheduling Tools:</h4>
         <ul>
-          <li><strong>Gantt Chart:</strong> Ek bar chart hota hai jo project schedule dikhata hai (Start and finish dates of elements).</li>
-          <li><strong>PERT / CPM:</strong> Network diagrams. <em>Critical Path</em> sabse lamba path hota hai network mein, jo project ka minimum completion time batata hai. Agar critical path delay hua, toh pura project delay hoga.</li>
+          <li><strong>Gantt Chart:</strong> Bar chart jo tasks ka time duration dikhata hai. Simple, visual, easy to understand. Limitation: task dependencies clearly nahi dikhata.</li>
+          <li><strong>PERT (Program Evaluation and Review Technique):</strong> Network diagram — activities as nodes/arrows. Probabilistic time estimates use karta hai (Optimistic, Most Likely, Pessimistic).</li>
+          <li><strong>CPM (Critical Path Method):</strong> Longest path in the network = Critical Path. Ye minimum project duration batata hai. Activities on critical path mein delay = project delay.</li>
         </ul>
-        
+
+        <div class="formula-box">
+          <div class="formula-title">📐 PERT Expected Time</div>
+          Expected Time (TE) = (Optimistic + 4 × Most Likely + Pessimistic) / 6<br>
+          Variance = ((Pessimistic - Optimistic) / 6)²
+        </div>
+
+        <h4>Software Quality Models:</h4>
+        <ul>
+          <li><strong>CMM/CMMI (Capability Maturity Model Integration):</strong> 5 levels — Initial (1), Managed (2), Defined (3), Quantitatively Managed (4), Optimizing (5).</li>
+          <li><strong>ISO 9001:</strong> Quality management system standard.</li>
+          <li><strong>Six Sigma:</strong> Quality improvement methodology — DMAIC (Define, Measure, Analyze, Improve, Control).</li>
+        </ul>
+
+        <h4>Coupling & Cohesion:</h4>
+        <table class="comparison-table">
+          <tr><th>Coupling (Module Dependency)</th><th>Cohesion (Module Internal Strength)</th></tr>
+          <tr><td>Modules ke beech ki dependency ka measure</td><td>Ek module ke andar elements kitne related hain</td></tr>
+          <tr><td><strong>LOW coupling = GOOD</strong></td><td><strong>HIGH cohesion = GOOD</strong></td></tr>
+          <tr><td>Types (Low→High): Data → Stamp → Control → External → Common → Content</td><td>Types (Low→High): Coincidental → Logical → Temporal → Procedural → Communicational → Sequential → Functional</td></tr>
+        </table>
+
         <div class="tip-box">
           <div class="tip-title">💡 Yaad Rakho</div>
-          <strong>Risk Management</strong> ke 3 main steps hote hain: Risk Identification, Risk Analysis, aur Risk Mitigation.
+          Good software design = LOW Coupling + HIGH Cohesion. "Low Co, High Co" yaad rakho. Functional cohesion best hai, Coincidental worst. Data coupling best hai, Content coupling worst.
         </div>
-        
-        <h4>Example (Worked Out)</h4>
-        <p><strong>Basic COCOMO Calculation:</strong></p>
-        <p>Project size = 32 KLOC. Organic mode hai (constants: a=2.4, b=1.05).</p>
-        <p>Effort = 2.4 * (32)^1.05 = 2.4 * 38.35 = ~92 Person-Months.</p>
-        <p>Iska matlab ek insaan ko akele ye banane mein 92 mahine lagenge, ya 10 logo ko lagbhag 9.2 mahine.</p>
       `
     }
   ],
   questions: [
     {
-      id: 1,
-      topic: 'sdlc-phases',
-      question: 'Which of the following SDLC models is best suited for projects where requirements are highly uncertain and risk is high?',
-      options: ['Waterfall Model', 'Spiral Model', 'Iterative Model', 'V-Model'],
+      id: 1, topic: 'sdlc',
+      question: 'Which SDLC model is best suited for projects where requirements are well-defined and unlikely to change?',
+      options: ['Agile Model', 'Spiral Model', 'Waterfall Model', 'Prototype Model'],
+      correct: 2,
+      explanation: 'Waterfall Model best hai jab requirements stable aur well-defined hain, kyunki isme ek baar phase complete hone ke baad wapas nahi jaate.'
+    },
+    {
+      id: 2, topic: 'sdlc',
+      question: 'The Spiral Model is primarily driven by:',
+      options: ['Customer feedback', 'Risk analysis', 'Code reuse', 'Rapid prototyping'],
       correct: 1,
-      explanation: 'Spiral model mein Risk Analysis ka ek alag phase hota hai har loop/spiral mein. Isliye highly risky aur uncertain requirements wale projects ke liye ye sabse best hai. Waterfall clear requirements ke liye hota hai.'
+      explanation: 'Spiral Model ek risk-driven model hai. Har iteration mein risk analysis hoti hai, isliye ye large aur high-risk projects ke liye best hai.'
     },
     {
-      id: 2,
-      topic: 'sdlc-phases',
-      question: 'In the Software Development Life Cycle, during which phase is the "Feasibility Study" primarily conducted?',
-      options: ['System Design', 'Requirement Analysis', 'Coding', 'Testing'],
+      id: 3, topic: 'sdlc',
+      question: 'In the V-Model, which testing phase corresponds to the System Design phase?',
+      options: ['Unit Testing', 'Integration Testing', 'System Testing', 'Acceptance Testing'],
+      correct: 2,
+      explanation: 'V-Model mein har development phase ki ek corresponding testing phase hoti hai. System Design → System Testing, Module Design → Integration Testing, Coding → Unit Testing, Requirements → Acceptance Testing.'
+    },
+    {
+      id: 4, topic: 'sdlc',
+      question: 'Which of the following is NOT a principle of the Agile Manifesto?',
+      options: ['Individuals and interactions over processes and tools', 'Working software over comprehensive documentation', 'Following a plan over responding to change', 'Customer collaboration over contract negotiation'],
+      correct: 2,
+      explanation: 'Agile Manifesto kehta hai "Responding to change over following a plan" — matlab change ko welcome karo, rigid plan follow mat karo. Option C iska ulta hai.'
+    },
+    {
+      id: 5, topic: 'sdlc',
+      question: 'The RAD (Rapid Application Development) model emphasizes:',
+      options: ['Thorough documentation and planning', 'Extremely short development cycles using reusable components', 'Extensive risk analysis in every iteration', 'Strict sequential phase execution'],
       correct: 1,
-      explanation: 'Requirement Analysis phase mein hi Feasibility study ki jaati hai taaki pata chal sake ki project financially, technically aur operationally feasible (possible) hai ya nahi.'
+      explanation: 'RAD model ka focus fast development hai — reusable components, visual tools, aur minimal planning ke saath. Short development cycles (60-90 days) mein deliver karna goal hai.'
     },
     {
-      id: 3,
-      topic: 'sdlc-phases',
-      question: 'Which SDLC model promotes continuous iteration of development and testing throughout the software development lifecycle of the project?',
-      options: ['Agile Model', 'Waterfall Model', 'Big Bang Model', 'RAD Model'],
-      correct: 0,
-      explanation: 'Agile Model continuous iteration aur rapid delivery par focus karta hai. Sprints ke through development aur testing sath-sath chalti hai.'
-    },
-    {
-      id: 4,
-      topic: 'sdlc-phases',
-      question: 'The phase in which the system is actually deployed in the real user environment is called:',
-      options: ['Implementation', 'Integration', 'Deployment', 'Maintenance'],
-      correct: 2,
-      explanation: 'Deployment phase mein ready software ko production environment mein user ke liye release/install kiya jata hai. Implementation ka matlab coding hota hai.'
-    },
-    {
-      id: 5,
-      topic: 'sdlc-phases',
-      question: 'What is a major drawback of the Waterfall Model?',
-      options: ['It is very complex to understand', 'It cannot accommodate changes in requirements easily', 'It does not have a testing phase', 'It is only for very large projects'],
+      id: 6, topic: 'sdlc',
+      question: 'In Scrum (Agile), a time-boxed iteration of 2-4 weeks is called a:',
+      options: ['Milestone', 'Sprint', 'Phase', 'Build'],
       correct: 1,
-      explanation: 'Waterfall model rigid hota hai. Ek baar phase khatam hone ke baad piche jana mushkil hota hai, isliye requirement changes ko handle karna bahut costly aur difficult hota hai.'
+      explanation: 'Scrum mein ek iteration ko Sprint kehte hain, jo typically 2-4 weeks ki hoti hai. Har Sprint ke end mein ek potentially shippable product increment deliver hota hai.'
     },
     {
-      id: 6,
-      topic: 'srs',
-      question: 'Which of the following is an example of a Non-Functional Requirement (NFR)?',
-      options: ['The system should allow users to reset their password', 'The system should generate a monthly sales report', 'The system should load the dashboard within 2 seconds', 'The admin can add new employees to the database'],
+      id: 7, topic: 'sdlc',
+      question: 'Which SDLC model creates a working model of the system early on to clarify requirements?',
+      options: ['Waterfall', 'Spiral', 'Prototype', 'V-Model'],
       correct: 2,
-      explanation: '"System should load within 2 seconds" ek Performance metric hai jo Non-Functional Requirement (NFR) mein aati hai. Baaki sab Functional Requirements hain (system kya karega).'
+      explanation: 'Prototype Model mein pehle ek working model (prototype) banate hain jo client ko dikhate hain. Isse requirements clear hoti hain. Unclear requirements ke liye best hai.'
     },
     {
-      id: 7,
-      topic: 'srs',
-      question: 'An SRS document is said to be _________ if no two of its requirements conflict with each other.',
-      options: ['Complete', 'Unambiguous', 'Consistent', 'Verifiable'],
+      id: 8, topic: 'srs',
+      question: 'Which of the following is a Non-Functional Requirement?',
+      options: ['The system shall allow user login', 'The system shall generate monthly reports', 'The system shall respond within 2 seconds', 'The system shall send email notifications'],
       correct: 2,
-      explanation: 'Consistent ka matlab hota hai contradictions na hona. Agar ek line mein password min 8 char hai aur dusri mein 6 char, toh SRS inconsistent hai.'
+      explanation: 'Response time ek performance attribute hai — ye Non-Functional Requirement hai. Functional requirements define karte hain ki system KYA karega, Non-functional batate hain ki KITNA achha karega (performance, security, reliability).'
     },
     {
-      id: 8,
-      topic: 'srs',
-      question: 'IEEE Standard for Software Requirements Specification (SRS) is:',
-      options: ['IEEE 829', 'IEEE 830', 'IEEE 1012', 'IEEE 1058'],
+      id: 9, topic: 'srs',
+      question: 'A Context Diagram (Level 0 DFD) shows the system as:',
+      options: ['Multiple detailed processes with data stores', 'A single process with external entities and data flows', 'Only the database schema', 'The physical architecture of the system'],
       correct: 1,
-      explanation: 'IEEE 830 standard specifically Software Requirements Specification (SRS) ke structure aur characteristics ke liye define kiya gaya hai.'
+      explanation: 'Context Diagram (Level 0 DFD) poora system ek single process circle ke roop mein dikhata hai, uske saath external entities (sources/destinations) aur data flows dikhata hai. Koi data store nahi hota Level 0 mein.'
     },
     {
-      id: 9,
-      topic: 'srs',
-      question: 'Which characteristic of an SRS ensures that a requirement has only one interpretation?',
-      options: ['Correctness', 'Completeness', 'Unambiguous', 'Traceability'],
+      id: 10, topic: 'srs',
+      question: 'In a DFD, data cannot flow directly between:',
+      options: ['A process and an external entity', 'A process and a data store', 'Two external entities', 'An external entity and a data store through a process'],
       correct: 2,
-      explanation: 'Unambiguous matlab koi double meaning na hona. Har reader (developer, tester, client) ko requirement ka ek hi meaning samajh aana chahiye.'
+      explanation: 'DFD rules ke according, do external entities ke beech direct data flow NAHI ho sakta — data hamesha ek process ke through jaana chahiye. Similarly, do data stores ke beech bhi direct flow nahi ho sakta.'
     },
     {
-      id: 10,
-      topic: 'system-modeling',
-      question: 'In UML, which diagram is used to represent the static structure of the system by showing system classes and their relationships?',
-      options: ['Activity Diagram', 'Class Diagram', 'Sequence Diagram', 'Use Case Diagram'],
+      id: 11, topic: 'srs',
+      question: 'According to IEEE 830 standard, which of the following is NOT a desirable property of SRS?',
+      options: ['Unambiguous', 'Consistent', 'Implementation-specific', 'Verifiable'],
+      correct: 2,
+      explanation: 'SRS implementation-independent hona chahiye — ye batana chahiye ki KYA karna hai, KAISE nahi. Implementation-specific hona ek defect hai SRS mein.'
+    },
+    {
+      id: 12, topic: 'testing',
+      question: 'Cyclomatic complexity of a program with 15 edges, 12 nodes, and 1 connected component is:',
+      options: ['3', '4', '5', '6'],
+      correct: 2,
+      explanation: 'Cyclomatic Complexity V(G) = E - N + 2P = 15 - 12 + 2(1) = 5. Ye minimum number of independent paths batata hai jo test karne chahiye.'
+    },
+    {
+      id: 13, topic: 'testing',
+      question: 'Which testing technique focuses on testing values at the boundaries of equivalence classes?',
+      options: ['Equivalence Partitioning', 'Boundary Value Analysis', 'Decision Table Testing', 'State Transition Testing'],
       correct: 1,
-      explanation: 'Class Diagram ek structural diagram hai jo classes, unke attributes, methods aur relationships (like inheritance) ko statically dikhata hai.'
+      explanation: 'Boundary Value Analysis (BVA) boundary values pe focus karta hai (min, min+1, max-1, max) kyunki statistically most errors boundaries pe hote hain.'
     },
     {
-      id: 11,
-      topic: 'system-modeling',
-      question: 'Which UML diagram emphasizes the time-ordering of messages between objects?',
-      options: ['State Chart Diagram', 'Component Diagram', 'Sequence Diagram', 'Activity Diagram'],
+      id: 14, topic: 'testing',
+      question: 'Which type of testing is performed after a code change to ensure existing functionality is not broken?',
+      options: ['Smoke Testing', 'Sanity Testing', 'Regression Testing', 'Exploratory Testing'],
       correct: 2,
-      explanation: 'Sequence Diagram behavioral category ka part hai aur ye dikhata hai ki objects ek dusre se over time (chronological order) kaise interact/communicate karte hain.'
+      explanation: 'Regression Testing ensures ki naye code changes purane (already working) features ko break nahi karte. Purane test cases dobara run kiye jaate hain.'
     },
     {
-      id: 12,
-      topic: 'system-modeling',
-      question: 'In a Use Case diagram, an actor represents:',
-      options: ['Only a human user', 'A class in the system', 'Any external entity that interacts with the system', 'A software subsystem'],
-      correct: 2,
-      explanation: 'Actor zaroori nahi ki human ho. Wo koi dusra system, hardware device, ya timer bhi ho sakta hai jo system ke bahar hai aur usse interact karta hai.'
-    },
-    {
-      id: 13,
-      topic: 'system-modeling',
-      question: 'What does the <code>&lt;&lt;extend&gt;&gt;</code> stereotype mean in a Use Case diagram?',
-      options: ['A mandatory part of the base use case', 'An optional or exceptional behavior of the base use case', 'An inheritance relationship between actors', 'None of the above'],
+      id: 15, topic: 'testing',
+      question: 'Alpha testing is performed at:',
+      options: ['The user\'s site by end users', 'The developer\'s site by a select group of users', 'The testing lab by the QA team only', 'After the software is released to the public'],
       correct: 1,
-      explanation: '<code>&lt;&lt;extend&gt;&gt;</code> batata hai ki ek use case dusre base use case ka optional ya conditional behavior add karta hai (e.g., Print Receipt optional hai Withdraw Cash mein).'
+      explanation: 'Alpha Testing developer ki site pe hoti hai — select users ya internal testers controlled environment mein test karte hain. Beta Testing user ki site pe hoti hai real environment mein.'
     },
     {
-      id: 14,
-      topic: 'dfd',
-      question: 'Which of the following is NOT a valid component of a Data Flow Diagram (DFD)?',
-      options: ['Data Store', 'Process', 'Control Flow', 'External Entity'],
-      correct: 2,
-      explanation: 'DFD mein sirf Data ka flow hota hai. Control Flow (jaise if-else, loops) DFD mein dikhana galat hai, uske liye flowcharts use hote hain.'
-    },
-    {
-      id: 15,
-      topic: 'dfd',
-      question: 'A Level 0 DFD is also known as:',
-      options: ['Detailed DFD', 'Context Diagram', 'System Architecture Diagram', 'Entity Relationship Diagram'],
+      id: 16, topic: 'testing',
+      question: 'White box testing is also known as:',
+      options: ['Functional testing', 'Structural testing', 'Behavioral testing', 'Acceptance testing'],
       correct: 1,
-      explanation: 'Level 0 DFD ko Context Diagram kehte hain kyunki ye pure system ko as a single process dikhata hai uske external environment (entities) ke context mein.'
+      explanation: 'White box testing ko Structural testing, Glass box testing, ya Clear box testing bhi kehte hain kyunki ismein internal code structure visible hoti hai aur ussi ko test karte hain.'
     },
     {
-      id: 16,
-      topic: 'dfd',
-      question: 'According to DFD rules, which of the following data flows is strictly prohibited?',
-      options: ['From Process to Data Store', 'From External Entity to Process', 'From Data Store to Data Store', 'From Process to Process'],
-      correct: 2,
-      explanation: 'Data store khud se data transfer nahi kar sakte. Data flow hamesha kisi Process ke through hi hona chahiye (Data Store -&gt; Process -&gt; Data Store).'
-    },
-    {
-      id: 17,
-      topic: 'dfd',
-      question: 'In a DFD, a rectangle symbol is typically used to represent:',
-      options: ['Process', 'Data Store', 'External Entity', 'Data Flow'],
-      correct: 2,
-      explanation: 'Standard DFD notations (Gane & Sarson / Yourdon & DeMarco) mein External Entity ko square/rectangle se represent karte hain. Process ke liye circle/bubble hota hai.'
-    },
-    {
-      id: 18,
-      topic: 'software-testing',
-      question: '"Are we building the right product?" - This question is answered during:',
-      options: ['Verification', 'Validation', 'Debugging', 'Maintenance'],
+      id: 17, topic: 'testing',
+      question: 'Which testing level combines individual modules and tests them as a group?',
+      options: ['Unit Testing', 'Integration Testing', 'System Testing', 'Acceptance Testing'],
       correct: 1,
-      explanation: 'Validation ensure karta hai ki actual software customer ki zarurat (requirements) poori kar raha hai ("Are we building the right product?"). Verification process check karta hai ("Are we building the product right?").'
+      explanation: 'Integration Testing mein individual modules combine karke group mein test karte hain — interfaces aur data flow between modules verify karte hain.'
     },
     {
-      id: 19,
-      topic: 'software-testing',
-      question: 'Which of the following is a Black Box Testing technique?',
-      options: ['Statement Coverage', 'Cyclomatic Complexity', 'Boundary Value Analysis', 'Path Coverage'],
+      id: 18, topic: 'testing',
+      question: 'Statement coverage measures:',
+      options: ['Whether all branches in the code are executed', 'Whether all statements are executed at least once', 'Whether all paths through the code are tested', 'Whether all functions are called'],
+      correct: 1,
+      explanation: 'Statement Coverage ensure karta hai ki har executable statement code mein kam se kam ek baar execute ho. Formula: (Executed statements / Total statements) × 100%.'
+    },
+    {
+      id: 19, topic: 'project-management',
+      question: 'In the COCOMO model, "Organic" mode is used for:',
+      options: ['Complex projects with tight constraints', 'Small teams working on well-understood applications', 'Medium-sized projects with mixed experience teams', 'Projects with unstable requirements'],
+      correct: 1,
+      explanation: 'COCOMO Organic mode choti, simple projects ke liye hai jaha experienced small teams kaam karti hain aur requirements well-understood hoti hain.'
+    },
+    {
+      id: 20, topic: 'project-management',
+      question: 'The critical path in a project network diagram represents:',
+      options: ['The shortest path through the network', 'The path with the most resources', 'The longest path, determining minimum project duration', 'The path with the highest risk'],
       correct: 2,
-      explanation: 'Boundary Value Analysis (BVA) ek black-box testing technique hai. Statement, Path coverage aur Cyclomatic complexity White Box testing se related hain jahan code dekha jata hai.'
+      explanation: 'Critical Path wo LONGEST path hai network diagram mein. Ye minimum project duration determine karta hai. Critical path pe kisi bhi activity mein delay = poore project mein delay.'
     },
     {
-      id: 20,
-      topic: 'software-testing',
-      question: 'Beta testing is typically performed by:',
-      options: ['Independent testing team in the development environment', 'The developers of the software', 'End users at their own site/environment', 'Quality Assurance team before release'],
+      id: 21, topic: 'project-management',
+      question: 'In PERT, if the optimistic time is 2 days, most likely time is 5 days, and pessimistic time is 14 days, the expected time is:',
+      options: ['5 days', '6 days', '7 days', '8 days'],
+      correct: 1,
+      explanation: 'PERT Expected Time = (O + 4M + P) / 6 = (2 + 4×5 + 14) / 6 = (2 + 20 + 14) / 6 = 36/6 = 6 days.'
+    },
+    {
+      id: 22, topic: 'project-management',
+      question: 'Which type of cohesion is the BEST (most desirable)?',
+      options: ['Logical Cohesion', 'Temporal Cohesion', 'Functional Cohesion', 'Sequential Cohesion'],
       correct: 2,
-      explanation: 'Beta testing software ko live hone se theek pehle real end-users ke dwara unke real environment mein ki jati hai (e.g., Beta versions of apps). Alpha testing developer site par hoti hai.'
+      explanation: 'Functional Cohesion best hai — module ek single, well-defined function perform karta hai. Worst = Coincidental Cohesion (unrelated elements).'
     },
     {
-      id: 21,
-      topic: 'software-testing',
-      question: 'What is the Cyclomatic Complexity of a program with 8 edges and 6 nodes in its control flow graph?',
-      options: ['4', '5', '6', '2'],
-      correct: 0,
-      explanation: 'Cyclomatic Complexity ka formula hai V(G) = Edges - Nodes + 2. Yahan E=8, N=6. So V(G) = 8 - 6 + 2 = 4.'
-    },
-    {
-      id: 22,
-      topic: 'software-testing',
-      question: 'Testing individual components or modules of a software independently is known as:',
-      options: ['Integration Testing', 'System Testing', 'Acceptance Testing', 'Unit Testing'],
+      id: 23, topic: 'project-management',
+      question: 'Which type of coupling is the WORST (least desirable)?',
+      options: ['Data Coupling', 'Stamp Coupling', 'Control Coupling', 'Content Coupling'],
       correct: 3,
-      explanation: 'Sabse basic level par jab ek akela function ya module isolate karke test hota hai usko Unit Testing kehte hain. Ye generally developers khud karte hain.'
+      explanation: 'Content Coupling worst hai — ek module directly doosre module ke internal data ya code ko modify karta hai. Best = Data Coupling (sirf simple data parameters pass hote hain).'
     },
     {
-      id: 23,
-      topic: 'spm',
-      question: 'In the COCOMO model, a project that is relatively small, with well-understood requirements and an experienced team, is classified as:',
-      options: ['Embedded', 'Semi-detached', 'Organic', 'Iterative'],
+      id: 24, topic: 'project-management',
+      question: 'CMMI Level 3 is known as:',
+      options: ['Initial', 'Managed', 'Defined', 'Quantitatively Managed'],
       correct: 2,
-      explanation: 'Organic mode chote aur simple projects ke liye hota hai jahan team experienced hoti hai. Embedded mode complex aur strict constraint wale projects ke liye hota hai.'
+      explanation: 'CMMI levels: Level 1 = Initial, Level 2 = Managed, Level 3 = Defined (standard processes organization-wide defined hain), Level 4 = Quantitatively Managed, Level 5 = Optimizing.'
     },
     {
-      id: 24,
-      topic: 'spm',
-      question: 'In Project Scheduling, the longest path through a network diagram that determines the minimum project duration is called the:',
-      options: ['Slack Path', 'Critical Path', 'PERT Path', 'Milestone Path'],
-      correct: 1,
-      explanation: 'Critical Path network (CPM/PERT) ka sabse lamba path hota hai. Is path par aane wale tasks mein delay ka matlab hai pure project ke schedule mein delay hona (Slack = 0).'
-    },
-    {
-      id: 25,
-      topic: 'spm',
-      question: 'Which metric is primarily used in the basic COCOMO model to estimate effort?',
-      options: ['Function Points (FP)', 'Lines of Code (KLOC)', 'Number of Classes', 'Number of Use Cases'],
-      correct: 1,
-      explanation: 'Basic COCOMO model mein effort calculate karne ke liye size of software use hota hai, jo KLOC (Kilo Lines Of Code) mein measure kiya jata hai.'
-    },
-    {
-      id: 26,
-      topic: 'spm',
-      question: 'A bar chart that shows the start and finish dates of the terminal elements and summary elements of a project is a:',
-      options: ['PERT Chart', 'Use Case Diagram', 'Gantt Chart', 'Control Flow Graph'],
+      id: 25, topic: 'project-management',
+      question: 'Function Point Analysis is a measure of:',
+      options: ['Lines of code in the program', 'The number of functions in the program', 'The functionality delivered to the user, independent of technology', 'The execution time of the program'],
       correct: 2,
-      explanation: 'Gantt chart ek horizontal bar chart hota hai jo project schedule, tasks ki start/end dates aur dependencies ko visually track karne ke kaam aata hai.'
+      explanation: 'FPA software ki size ko functionality ke basis pe estimate karta hai — ye technology/language independent hai. LOC count nahi karta, balki External Inputs, Outputs, Inquiries, Files count karta hai.'
     },
     {
-      id: 27,
-      topic: 'spm',
-      question: 'Which is NOT a core step in the Risk Management process?',
-      options: ['Risk Identification', 'Risk Mitigation', 'Risk Analysis', 'Risk Coding'],
+      id: 26, topic: 'testing',
+      question: 'Which of the following is a Black Box testing technique?',
+      options: ['Statement Coverage', 'Branch Coverage', 'Path Testing', 'Equivalence Partitioning'],
       correct: 3,
-      explanation: 'Risk Management mein 3 main steps aate hain: Risk ko Identify karna, usko Analyze karna (impact aur probability), aur phir Risk ko Mitigate (kam ya khatam) karna. "Risk Coding" jaisa kuch nahi hota.'
+      explanation: 'Equivalence Partitioning ek Black Box technique hai — input domain ko valid/invalid classes mein divide karta hai bina code dekhke. Statement, Branch, aur Path coverage sab White Box techniques hain.'
     },
     {
-      id: 28,
-      topic: 'system-modeling',
-      question: 'In Object-Oriented Modeling, which concept allows a new class to inherit attributes and methods from an existing class?',
-      options: ['Polymorphism', 'Encapsulation', 'Inheritance', 'Abstraction'],
-      correct: 2,
-      explanation: 'Inheritance wo mechanism hai jismein ek child class parent class ke features (attributes aur methods) ko inherit/reuse karti hai, isse code reusability badhti hai.'
+      id: 27, topic: 'sdlc',
+      question: 'Which phase of SDLC is typically the LONGEST in duration?',
+      options: ['Requirements Analysis', 'Design', 'Testing', 'Maintenance'],
+      correct: 3,
+      explanation: 'Maintenance phase sabse lamba hota hai — typically software ki total cost ka 60-80% maintenance mein jata hai (bug fixes, updates, enhancements, adaptations).'
     },
     {
-      id: 29,
-      topic: 'dfd',
-      question: 'When decomposing a Level 0 DFD into a Level 1 DFD, the rule that inputs and outputs must remain consistent between the levels is called:',
-      options: ['Balancing', 'Decomposition', 'Abstraction', 'Normalization'],
-      correct: 0,
-      explanation: 'Balancing ka matlab hota hai ki parent DFD aur child DFD ke external inputs aur outputs same hone chahiye, taaki system boundary change na ho.'
-    },
-    {
-      id: 30,
-      topic: 'sdlc-phases',
-      question: 'Which of the following is NOT a phase of the standard Software Development Life Cycle (SDLC)?',
-      options: ['Requirement Analysis', 'Hardware Assembly', 'Design', 'Maintenance'],
+      id: 28, topic: 'testing',
+      question: 'Top-Down integration testing uses ______ to simulate lower-level modules that are not yet developed.',
+      options: ['Drivers', 'Stubs', 'Proxies', 'Mocks'],
       correct: 1,
-      explanation: 'SDLC purely software ki life cycle hoti hai (Requirements, Design, Coding, Testing, Deployment, Maintenance). Hardware assembly iska part nahi hai.'
+      explanation: 'Top-Down integration mein upper modules pehle test hote hain. Lower modules jo abhi ready nahi hain unke liye STUBS (dummy modules) use karte hain. Bottom-Up mein DRIVERS use hote hain.'
+    },
+    {
+      id: 29, topic: 'srs',
+      question: 'Feasibility study in software engineering evaluates:',
+      options: ['Only technical feasibility', 'Only economic feasibility', 'Technical, economic, and operational feasibility', 'Only legal feasibility'],
+      correct: 2,
+      explanation: 'Feasibility study teen aspects evaluate karti hai: Technical (kya technically possible hai?), Economic (kya budget mein hai?), aur Operational (kya organization use kar payegi?). Legal feasibility bhi dekhi jati hai.'
+    },
+    {
+      id: 30, topic: 'project-management',
+      question: 'A Gantt chart is primarily used for:',
+      options: ['Risk analysis', 'Project scheduling and tracking', 'Cost estimation', 'Requirements gathering'],
+      correct: 1,
+      explanation: 'Gantt Chart ek bar chart hai jo project schedule dikhata hai — tasks kab start honge, kab khatam honge, overlap kaha hai. Simple aur visual scheduling tool hai.'
+    },
+    {
+      id: 31, topic: 'testing',
+      question: 'The testing technique where only the basic and critical functionalities of an application are tested is called:',
+      options: ['Regression Testing', 'Smoke Testing', 'Stress Testing', 'Load Testing'],
+      correct: 1,
+      explanation: 'Smoke Testing (Build Verification Testing) mein sirf basic critical features test hote hain — ye check karta hai ki build stable hai ya nahi. Agar smoke test fail ho toh detailed testing nahi karte.'
+    },
+    {
+      id: 32, topic: 'sdlc',
+      question: 'The Waterfall model does NOT allow:',
+      options: ['Documentation', 'Sequential execution', 'Backtracking to a previous phase', 'Testing'],
+      correct: 2,
+      explanation: 'Waterfall model ki key limitation ye hai ki ek baar phase complete hone ke baad previous phase pe wapas nahi ja sakte (no backtracking). Ye iska biggest disadvantage hai.'
+    },
+    {
+      id: 33, topic: 'project-management',
+      question: 'The COCOMO model was proposed by:',
+      options: ['Pressman', 'Boehm', 'Sommerville', 'Dijkstra'],
+      correct: 1,
+      explanation: 'COCOMO (COnstructive COst MOdel) Barry Boehm ne 1981 mein propose kiya tha. Ye software effort estimation ka ek popular model hai.'
+    },
+    {
+      id: 34, topic: 'testing',
+      question: 'For a valid input range of 1 to 100, using BVA, the test values should be:',
+      options: ['0, 1, 50, 100, 101', '1, 50, 100', '0, 50, 101', '1, 100'],
+      correct: 0,
+      explanation: 'BVA mein boundary aur boundary ke just andar/bahar test karte hain: 0 (just below min), 1 (min), 50 (normal), 100 (max), 101 (just above max).'
+    },
+    {
+      id: 35, topic: 'srs',
+      question: 'A Data Flow Diagram (DFD) represents:',
+      options: ['The sequence of operations in a program', 'The flow of data through a system', 'The entity-relationship model of a database', 'The class hierarchy of the system'],
+      correct: 1,
+      explanation: 'DFD specifically data ka flow dikhata hai — kahan se data aata hai (source), kahan process hota hai, kahan store hota hai, aur kahan jata hai (destination).'
+    },
+    {
+      id: 36, topic: 'project-management',
+      question: 'In a software project, "Data Coupling" between two modules means:',
+      options: ['Modules share global data', 'One module controls the execution flow of another', 'Modules communicate only through simple data parameters', 'One module modifies the internal data of another'],
+      correct: 2,
+      explanation: 'Data Coupling mein modules sirf simple data values (parameters) pass karte hain — ye best (lowest) type of coupling hai. Koi shared global data, control flow, ya internal access nahi hota.'
+    },
+    {
+      id: 37, topic: 'testing',
+      question: 'McCabe\'s Cyclomatic Complexity metric provides:',
+      options: ['The number of bugs in the code', 'The minimum number of linearly independent paths through the code', 'The execution time of the program', 'The memory usage of the program'],
+      correct: 1,
+      explanation: 'Cyclomatic Complexity minimum linearly independent paths ki count deta hai. Ye batata hai ki minimum kitne test cases chahiye complete path coverage ke liye.'
+    },
+    {
+      id: 38, topic: 'sdlc',
+      question: 'The Spiral Model has four quadrants. Which quadrant is unique to this model compared to others?',
+      options: ['Planning', 'Engineering', 'Risk Analysis', 'Customer Evaluation'],
+      correct: 2,
+      explanation: 'Risk Analysis quadrant Spiral Model ko unique banata hai. Ye kisi aur model mein explicitly nahi hota. Har iteration mein risk identify, analyze, aur resolve kiya jata hai.'
     }
   ]
 };
