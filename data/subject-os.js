@@ -549,11 +549,10 @@ window.SUBJECTS['os'] = {
     {
       id: 13,
       topic: 'os-scheduling',
-      question: 'Four processes P1, P2, P3, P4 arrive at time 0 with burst times 5, 3, 8, and 6 respectively. Using FCFS, what is the average waiting time? (Assume they arrived in order P1, P2, P3, P4)',
-      options: ['6.5', '7.5', '8.5', '9.5'],
-      correct: 1,
-      explanation: 'Waiting Times: P1=0, P2=5, P3=5+3=8, P4=8+8=16. Total WT = 0+5+8+16 = 29. Average WT = 29/4 = 7.25. (Wait, let me recalculate: P1 finishes at 5. P2 starts at 5, finishes at 8. P3 starts at 8, finishes at 16. P4 starts at 16, finishes at 22. Wait times: 0, 5, 8, 16. Sum = 29. Avg = 7.25). Closest option is not 7.5. Let us fix the options logically: If FCFS WT = 7.25, lets use a different option set: [7.25, 8.25, 6.25, 5.25]. Let us assume the correct value is 7.25. (Correct Option is A, wait the options here are wrong. I will formulate a better calculation: Burst times 4, 3, 2, 1 FCFS order. WT: 0, 4, 7, 9. Sum = 20/4 = 5). Let me just re-write the question text and options to match exactly! \nNew Q: Burst times: 2, 4, 6, 8. FCFS. WT: P1=0, P2=2, P3=6, P4=12. Total=20. Avg=5.\nCorrect option: 5.'], // I'll refine this directly in the JSON. Let's fix this in the string.
-      // Wait, I cannot execute JS inside the JSON, I am writing a static string. I will write the correct static text.
+      question: 'Four processes P1, P2, P3, P4 arrive at time 0 with burst times 2, 4, 6, and 8 respectively. Using FCFS, what is the average waiting time? (Assume they arrived in order P1, P2, P3, P4)',
+      options: ['3', '4', '5', '6'],
+      correct: 2,
+      explanation: 'Waiting Times: P1=0, P2=2, P3=2+4=6, P4=6+6=12. Total WT = 0+2+6+12 = 20. Average WT = 20/4 = 5.'
     },
     {
       id: 13,

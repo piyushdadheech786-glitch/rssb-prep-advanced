@@ -331,7 +331,7 @@ int fact(int n) {
 
         <h3>3. Pointer Arithmetic</h3>
         <p>Pointers par hum arithmetic operations kar sakte hain (+, -, ++, --). Pointer par +1 karne ka matlab mathematics wala +1 nahi hota. Yeh apne <strong>data type ki size</strong> ke barabar aage jump karta hai.</p>
-        <p>Example: Agar `int *p = 1000;` hai (int size = 4 bytes). Toh <code>p + 1</code> ki value 1004 hogi. <code>p + 2</code> ki value 1008 hogi.</p>
+        <p>Example: Agar <code>int *p = 1000;</code> hai (int size = 4 bytes). Toh <code>p + 1</code> ki value 1004 hogi. <code>p + 2</code> ki value 1008 hogi.</p>
         
         <h3>4. Dynamic Memory Allocation (DMA)</h3>
         <p>Compile time par array ka size fix hota hai (Static memory). Agar run time par memory allocate karni ho (RAM ke <strong>Heap</strong> segment mein), toh hum DMA functions ka use karte hain, jo <code>stdlib.h</code> mein defined hote hain.</p>
@@ -495,7 +495,7 @@ enum Week { MON, TUE, WED, THU, FRI, SAT, SUN };
         </table>
 
         <h3>2. Command Line Arguments</h3>
-        <p>Kabhi-kabhi humein program chalate waqt hi bahar se input pass karna padta hai (jaise terminal mein `copy file1.txt file2.txt`). Ise Command Line Arguments kehte hain.</p>
+        <p>Kabhi-kabhi humein program chalate waqt hi bahar se input pass karna padta hai (jaise terminal mein <code>copy file1.txt file2.txt</code>). Ise Command Line Arguments kehte hain.</p>
         <p>In C, <code>main()</code> function arguments receive kar sakta hai:</p>
         <pre>int main(int argc, char *argv[])</pre>
         <ul>
